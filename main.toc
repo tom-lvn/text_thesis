@@ -1,0 +1,13 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Executive Summary}{i}{chapter*.1}%
+\contentsline {chapter}{Abstract}{ii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Overview of tools}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Friends}{1}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Material and Methods}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Data analysis}{2}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Results}{3}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Discussion}{4}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{5}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Acknowledgments}{6}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Supplementary Material}{8}{appendix.1.A}%

@@ -1,0 +1,169 @@
+\documentclass[12pt]{report}
+
+
+
+%------------------- declaring packages---------------------------------
+
+
+% styling and graphics-based
+
+\usepackage{graphicx} 
+\usepackage{emptypage}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{pgf}
+\usepackage{pgffor}
+\usepackage{svg}
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+\doublespacing
+
+% for figures and tables
+
+% figures:
+\usepackage{subfigure}  
+\usepackage{adjustbox}
+\usepackage{wrapfig}
+\usepackage{subfigure}
+\usepackage{rotating}
+\usepackage{lscape}
+% tables:
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\usepackage{multicol,tabularx,capt-of}
+\usepackage{hhline}
+\usepackage{multirow}
+\usepackage{array}
+
+
+% for math equations
+
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{amsmath} 
+\usepackage{amsthm}   
+
+
+% for acronyms and glossaries
+
+\usepackage{acronym}
+\usepackage{glossaries}
+
+
+% for hyperlinks
+
+\usepackage[round]{natbib}
+\usepackage[colorlinks = true,
+            linkcolor = black,
+            urlcolor  = black,
+            citecolor = black,
+            anchorcolor = black]{hyperref}
+
+\usepackage{sectsty}
+\allsectionsfont{\bfseries}
+\chapterfont{\centering\Large}
+\sectionfont{\normalsize}
+\subsectionfont{\normalsize}
+
+
+\usepackage [english]{babel}
+\usepackage [autostyle, english = british]{csquotes}
+\MakeOuterQuote{"}
+
+% header formatting
+
+\usepackage{layout}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{\textbf{\nouppercase{\rightmark}}}
+\fancyfoot[L]{}
+
+\fancypagestyle{custompagestyle}{%
+    \fancyhf{}
+    \fancyhead[R]{\thepage}
+}
+
+\fancypagestyle{noheaderfooter}{%
+    \fancyhf{} % Clear header and footer
+    \renewcommand{\headrulewidth}{0pt} % Remove header line
+}
+\usepackage{titlesec}  % Import titlesec for custom chapter formatting
+
+% Remove "Chapter" and display number inline with title
+\renewcommand{\thechapter}{\arabic{chapter}}  % Only display chapter number
+\titleformat{\chapter}[hang]{\normalfont\Huge\bfseries\centering}
+{\thechapter}{1em}{}
+
+\titlespacing*{\chapter}{0pt}{-50pt}{20pt} 
+
+%appendix formatting
+\usepackage{appendix}
+
+%footer formatting
+
+\interfootnotelinepenalty=10000
+
+\usepackage{epstopdf}
+
+% specify files to use, especially useful if you want to build only one chapter due to build time
+%\includeonly{introduction}
+
+%----------------------------begin document-------------------------------
+\setcounter{secnumdepth}{2}  % Chapters and sections are numbered
+\begin{document}
+
+%\frontmatter
+\pagenumbering{roman}
+
+\input{titlepage}
+
+\chapter*{Executive Summary}
+
+The executive summary goes here.
+
+\addcontentsline{toc}{chapter}{Executive Summary}
+
+\chapter*{Abstract}
+
+Abstract goes here.
+
+\addcontentsline{toc}{chapter}{Abstract}
+
+\tableofcontents{}
+
+%\listoftables{}
+
+%\listoffigures{}
+
+\thispagestyle{noheaderfooter}
+\cleardoublepage
+
+\pagenumbering{arabic}
+
+\setcounter{page}{1}
+
+\include{introduction}
+
+\include{material_methods}
+
+\include{results}
+
+\include{discussion}
+
+\include{conclusion}
+
+\include{acknowledgments}
+
+\bibliographystyle{plainnat}
+\bibliography{bibliography}
+
+\begin{appendices}
+
+\include{appendix}
+
+\end{appendices}
+
+\end{document}

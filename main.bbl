@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Paolo et~al.(2024)Paolo, Kroodsma, Raynor, Hochberg, Davis, Cleary,
+  Marsaglia, Orofino, Thomas, and Halpin]{paolo24satellite}
+Fernando~S Paolo, David Kroodsma, Jennifer Raynor, Tim Hochberg, Pete Davis,
+  Jesse Cleary, Luca Marsaglia, Sara Orofino, Christian Thomas, and Patrick
+  Halpin.
+\newblock Satellite mapping reveals extensive industrial activity at sea.
+\newblock \emph{Nature}, 625\penalty0 (7993):\penalty0 85--91, 2024.
+
+\end{thebibliography}
