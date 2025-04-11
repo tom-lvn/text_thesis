@@ -1,16 +1,52 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Kontas(n.d.)]{kontasvesselupdate}
+Vasilis Kontas.
+\newblock {How often do the positions of the vessels get updated on Marine
+  Traffic?}, n.d.
+\newblock URL
+  \url{https://support.marinetraffic.com/en/articles/9552905-how-often-do-the-positions-of-the-vessels-get-updated-on-marinetraffic}.
+\newblock Retrieved 5 January 2025.
+
+\bibitem[Kroodsma et~al.(2018)Kroodsma, Mayorga, Hochberg, Miller, Boerder,
+  Ferretti, Wilson, Bergman, White, Block, Woods, Sullivan, Costello, and
+  Worm]{Kroodsma18}
+David~A. Kroodsma, Juan Mayorga, Timothy Hochberg, Nathan~A. Miller, Kristina
+  Boerder, Francesco Ferretti, Alex Wilson, Bjorn Bergman, Timothy~D. White,
+  Barbara~A. Block, Paul Woods, Brian Sullivan, Christopher Costello, and Boris
+  Worm.
+\newblock Tracking the global footprint of fisheries.
+\newblock \emph{Science}, 359\penalty0 (6378):\penalty0 904--908, 2018.
+\newblock \doi{10.1126/science.aao5646}.
+\newblock URL \url{https://www.science.org/doi/abs/10.1126/science.aao5646}.
+
 \bibitem[Paolo et~al.(2024)Paolo, Kroodsma, Raynor, Hochberg, Davis, Cleary,
   Marsaglia, Orofino, Thomas, and Halpin]{paolo24satellite}
-Fernando~S Paolo, David Kroodsma, Jennifer Raynor, Tim Hochberg, Pete Davis,
+Fernando~S. Paolo, David Kroodsma, Jennifer Raynor, Tim Hochberg, Pete Davis,
   Jesse Cleary, Luca Marsaglia, Sara Orofino, Christian Thomas, and Patrick
   Halpin.
 \newblock Satellite mapping reveals extensive industrial activity at sea.
 \newblock \emph{Nature}, 625\penalty0 (7993):\penalty0 85--91, 2024.
+\newblock \doi{10.1038/s41586-023-06825-8}.
+\newblock URL \url{https://doi.org/10.1038/s41586-023-06825-8}.
+
+\bibitem[Taconet et~al.(2019)Taconet, Kroodsma, Gee, and
+  Fernandes]{taconet2019global}
+M.~Taconet, D.~Kroodsma, J.~Gee, and J.~A. Fernandes.
+\newblock {Introduction of Global Atlas of AIS-based fishing activity}.
+\newblock In M.~Taconet, D.~Kroodsma, and J.~A. Fernandes, editors,
+  \emph{Global Atlas of AIS-based fishing activity - Challenges and
+  opportunities}. FAO, Rome, 2019.
+\newblock URL \url{http://www.fao.org/3/ca7012en/ca7012en.pdf}.
+
+\bibitem[Watch(2025)]{gfw_dataset}
+Global~Fishing Watch.
+\newblock Global ais-based apparent fishing effort dataset, version 3.0, 2025.
+\newblock URL \url{https://doi.org/10.5281/zenodo.14982712}.
 
 \end{thebibliography}

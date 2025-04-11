@@ -14,6 +14,7 @@
 \usepackage{pgf}
 \usepackage{pgffor}
 \usepackage{svg}
+\usepackage{xcoffins}
 \usepackage{fontspec}
 \setmainfont{Arial}
 
@@ -109,7 +110,7 @@
 \usepackage{epstopdf}
 
 % specify files to use, especially useful if you want to build only one chapter due to build time
-%\includeonly{introduction}
+%\includeonly{material_methods}
 
 %----------------------------begin document-------------------------------
 \setcounter{secnumdepth}{2}  % Chapters and sections are numbered
@@ -118,7 +119,7 @@
 %\frontmatter
 \pagenumbering{roman}
 
-\input{titlepage}
+%\input{titlepage}
 
 \chapter*{Executive Summary}
 
@@ -155,7 +156,7 @@ Abstract goes here.
 
 \include{conclusion}
 
-\include{acknowledgments}
+\include{acknowledgements}
 
 \bibliographystyle{plainnat}
 \bibliography{bibliography}

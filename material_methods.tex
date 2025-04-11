@@ -1,5 +1,20 @@
 \chapter{Material and Methods}
+\section{Data sources}
+Fishing effort data was obtained from Global Fishing Watch (GFW). They generate
+a publicly available global dataset of apparent fishing hours based on AIS data \citep{gfw_dataset}. 
+For this, GFW analyses >190,000 unique AIS devices which are each assigned a unique Maritime Mobile Service Identity (MMSI).
+The AIS devices ping the location of the vessel up to every 2 seconds \citep{kontasvesselupdate, taconet2019global}. Along with the exact location,
+the AIS message also transmits the time, speed, and heading of the vessel. These positional data points are then analysed by two 
+different Convolutional Neural Networks (CNN's) which are described in detail in \cite{Kroodsma18}. 
+The first CNN classifies fishing vessels into one of sixteen categories.
 
-Lorem ipsum dolor sit amet \cite{paolo24satellite}.
 
-\section{Data analysis}
+\section{Data filtering}
+Global apparent fishing hours were:\begin{enumerate}
+    \item daily csv files aggregated for each year
+    \item cropped with Med shapefile
+    \item filtered for gear type drifting longlines and purse seiners
+    \item filtered with ICCAT registry being listed
+    \item known purse seiners assigned a different gear type were added from own database
+    \item 0 added where value was recorded in one year but not in others
+\end{enumerate}

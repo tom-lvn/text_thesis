@@ -1,0 +1,9 @@
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Qnoheaderfooter\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Qcustompagestyle [R]\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q[english]babel [autostyle, english = british]csquotes \"\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q[english]babel [autostyle, english = british]csquotes \"\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QKroodsma et al. took advantage of the automatic identification system installed on all industrial fishing vessels to map and quantify fishing efforts across the world (see the Perspective by Poloczanska).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QWe processed 22 billion automatic identification system messages and tracked &gt;70,000 industrial fishing vessels from 2012 to 2016, creating a global dynamic footprint of fishing effort with spatial and temporal resolution two to three orders of magnitude higher than for previous data sets.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QOur data show that industrial fishing occurs in &gt;55% of ocean area and has a spatial extent more than four times that of agriculture.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QWe also find that 21–30% of transport and energy vessel activity is missing from public tracking systems.\\E$"}

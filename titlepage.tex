@@ -1,35 +1,33 @@
-\begin{titlepage}
-    \begin{center}
-        
-% Insert logos (left center and right)
+\newgeometry{top=0cm, bottom=3cm, left=1cm, right=1cm}
+\begin{titlepage} 
+      \begin{minipage}{0.3\textwidth}
+        \begin{flushleft}
+            \includegraphics[height=3cm]{Figures/logo_cob.png} % Replace with your left logo
+        \end{flushleft}
+      \end{minipage}
+      \hfill
+      \raisebox{-17ex}{\begin{minipage}{0.3\textwidth}
+        \begin{center}
+          \includegraphics[height=4cm, trim=0.5cm 0 0 0]{Figures/logo_imbrsea.png} % Replace with your center logo
+        \end{center}
+      \end{minipage}}
+      \hfill
+      \begin{minipage}{0.3\textwidth}
+        \begin{flushright}
+          \includegraphics[height=5.5cm]{Figures/logo_ghent.png} % Replace with your right logo
+        \end{flushright}
+      \end{minipage}
 
 
-\begin{minipage}{0.3\textwidth}
-    \begin{flushleft}
-        \includegraphics[height=1.8cm]{Figures/logo_cob.png} % Replace with your left logo
-    \end{flushleft}
-  \end{minipage}
-  \hfill
-  \begin{minipage}{0.3\textwidth}
-    \begin{center}
-      \includegraphics[height=2cm]{Figures/logo_imbrsea.png} % Replace with your center logo
-    \end{center}
-  \end{minipage}
-  \hfill  
-  \begin{minipage}{0.3\textwidth}
-    \begin{flushright}
-      \includegraphics[height=3cm]{Figures/logo_ghent.png} % Replace with your right logo
-    \end{flushright}
-  \end{minipage}
-  
-  \vspace{1.8cm}
+
+% Move logos closer to top margin
+\vspace{2cm} 
   
   % Title of the Thesis
   \begin{center}
-    {\LARGE \textbf{Spatio-temporal fishing risk of large pelagic fish in the Mediterranean Sea}}\\[0.5cm]
+    {\LARGE \textbf{Spatio-temporal fishing risk of large pelagic fish in the Mediterranean Sea}}\\[1cm]
   
-    \textbf{Master Thesis}\\[0.5cm]
-    of\\[0.5cm]
+    \textbf{Master Thesis}\\
     \textbf{Tom Leven}\\[0.5cm]
     02312706\\[1.5cm]
   
@@ -42,6 +40,6 @@
 
 
     \end{center}
-  \end{center}
 
 \end{titlepage}
+\restoregeometry
