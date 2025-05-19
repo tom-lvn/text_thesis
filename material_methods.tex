@@ -1,20 +1,346 @@
 \chapter{Material and Methods}
+
 \section{Data sources}
-Fishing effort data was obtained from Global Fishing Watch (GFW). They generate
-a publicly available global dataset of apparent fishing hours based on AIS data \citep{gfw_dataset}. 
-For this, GFW analyses >190,000 unique AIS devices which are each assigned a unique Maritime Mobile Service Identity (MMSI).
-The AIS devices ping the location of the vessel up to every 2 seconds \citep{kontasvesselupdate, taconet2019global}. Along with the exact location,
-the AIS message also transmits the time, speed, and heading of the vessel. These positional data points are then analysed by two 
-different Convolutional Neural Networks (CNN's) which are described in detail in \cite{Kroodsma18}. 
-The first CNN classifies fishing vessels into one of sixteen categories.
+\subsection{Fishing hours}
+Data on fishing hours was obtained from Global Fishing Watch (GFW). This non-profit organization provides a global dataset of estimated fishing activity
+derived from AIS data \citep{gfw_dataset}. 
+They process data from over 190,000 unique AIS transmitters, each assigned a unique Maritime Mobile Service Identity (MMSI).
+These AIS devices broadcast a vessel's location as frequently as every 2 seconds \citep{kontasvesselupdate, taconet2019global}. Along with the exact location,
+each AIS transmission includes a timestamp, speed, and heading of the vessel. GFW then analyses these positional data points via two 
+different Convolutional Neural Networks (CNN's), which are described in detail in \cite{Kroodsma18}, to infer fishing activity. 
+
+\bigskip
+
+A first CNN classifies fishing vessels into one of sixteen categories \figref{fig:vessel_classification} and 
+predicts vessel characteristics such as length, tonnage, and engine power. This deep-learning model is trained on
+a dataset of vessels matched to official vessel registries which are \textit{known} fishing vessels. Vessels without
+gear information in the registries used are assigned a gear if their movement patterns resemble those of a known
+vessel class. A second CNN classifies every obtained AIS position as either fishing or non-fishing based on characteristic fishing movement \citep{Kroodsma18}. 
+These individual fishing events are then aggregated into grid cells spanning either 0.1° or 0.01° on a side. For the present analysis, 0.1° resolution was chosen as the study area includes
+the whole Mediterranean and is thus, quite large. See \Cref{fig:workflow} for an overview of the GFW processing pipeline.
+
+\bigskip
+
+Unique vessels are identified based on their MMSI number and the dataset contains information
+on the vessel's registration and flag country. The gear class estimated by the CNN is also compared with the information
+from different vessel registries, such as the EU fleet register or the ICCAT record of vessels. In case the derived vessel class
+does not match to the one in the registry, GFW assigns the broadest gear type that allows for agreement. If for example,
+a vessel is registered as a purse seiner but is inferred to be a tuna purse seiner, it would ultimately be assigned to the
+purse seiner class \figref{fig:vessel_classification}.
+\medskip
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{forest}
+    [
+    Fishing, fill=grayBase, for tree={
+        grow=east,
+        draw,
+        rounded corners,
+        minimum height=1.2em,
+        text width=4cm,
+        align=center,
+        parent anchor=east,
+        child anchor=west,
+        edge path={
+            \noexpand\path [draw, \forestoption{edge}]
+            (!u.parent anchor) -- +(5pt,0) |- (.child anchor)\forestoption{edge label};
+        },
+        l sep+=10pt,
+        s sep+=10pt
+    }
+        [Squid Jigger, fill=grayLeaf]
+        [Drifting Longlines, fill=grayLeaf]
+        [Pole And Line, fill=grayLeaf]
+        [Trollers, fill=grayLeaf]
+        [Fixed Gear, fill=blueBase
+            [Pots And Traps, fill=blueLeaf]
+            [Set Longlines, fill=blueLeaf]
+            [Set Gillnets, fill=blueLeaf]
+        ]
+        [Trawlers, fill=grayLeaf]
+        [Dredge Fishing, fill=grayLeaf]
+        [Seiners, fill=greenBase
+            [Purse Seines, fill=greenBase
+                [Tuna Purse Seines, fill=greenLeaf]
+                [Other Purse Seines, fill=greenLeaf]
+            ]
+            [Other Seines, fill=greenLeaf]
+        ]
+    ]
+    \end{forest}
+} % end resizebox
+\medskip
+\caption{Hierarchy of fishing gears recognised by GFW}
+\label{fig:vessel_classification}
+\end{figure}
+
+\subsection{ICCAT catch data}
+Data on catches of large-pelagic species in the Mediterranean is openly available from the International Commission for the 
+Conservation of Atlantic Tunas (ICCAT). Nominal catch data was obtained for the period 2015-2023 and filtered for the major 
+large pelagic species like tunas and billfishes \citep{iccat_catches}.
+
+
+\subsection{Bluefin Tuna vessels}
+Individual purse seine vessels that were assigned a bluefin tuna quota for 2024 were obtained from the corresponding national notices. In France,
+quotas are allocated and published by the \cite{registry_france}. In Spain,
+by the \cite{registry_spain} and in Italy by the \cite{registry_italy}. These countries were chosen exemplary because in the period from 2015 to 2023,
+they made up more than half of the total landings of BFT for all contracting parties to ICCAT, of which close to 90\% are fished with purse seine nets \citep{iccat_bft_summary}.
+Since the national notices did not contain the vessels MMSI number (which is the identifier used by GFW), the vessel names and registration numbers were
+cross-referenced with the Europan Fleet Register to obtain it \citep{eu_fleet_register}. 
 
 
 \section{Data filtering}
-Global apparent fishing hours were:\begin{enumerate}
-    \item daily csv files aggregated for each year
-    \item cropped with Med shapefile
-    \item filtered for gear type drifting longlines and purse seiners
-    \item filtered with ICCAT registry being listed
-    \item known purse seiners assigned a different gear type were added from own database
-    \item 0 added where value was recorded in one year but not in others
-\end{enumerate}
+All data filtering was conducted using R (v4.4.1; \citeauthor{r_language}, \citeyear{r_language}) within the RStudio environment \citep{rstudio}.
+The GFW dataset was first cropped and adjusted to a shapefile of the Mediterranean Sea, obtained from the General Fisheries
+Commission for the Mediterranean (GFCM). Subsequent filtering was based on the assigned gear type and GFW registry
+information. Only entries with the gear type drifting longlines or tuna purse seines, and that were registered with
+ICCAT were retained \figref{fig:workflow}. These gear types were chosen as they are the main \textit{metiers} involved in the exploitation of large-pelagic species in the Mediterranean.
+Since 2015, on average, 95\% of BFT's, and 99\% of albacore tunas are caught using either longlines or purse seine nets and close to 100\% of swordfish catches use longlines \citep{iccat_bft_summary,iccat_alb_summary,iccat_swo_summary}
+The GFW dataset is available from the year 2012 until 2024. However, only entries from 2015 were retained, in order to avoid masking \textit{real} fishing dynamics with the increase in
+adoption of AIS devices, which only became mandatory in the EU in 2014 for all vessels > 15 m in length \citep{ec2011directive}. It is estimated however, that in the Mediterranean the EU fishing fleet >15 m is 100\% equipped with AIS since 2018 \citep{taconet2019global}.
+
+\begin{figure}[htp]
+      \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.9cm,
+            gfwbox/.style={rectangle, draw, rounded corners, text width=4.2cm, align=center, minimum height=1cm, fill=lightblue},
+            yourbox/.style={rectangle, draw, rounded corners, text width=4.2cm, align=center, minimum height=1cm, fill=lightgray},
+            gfwfinal/.style={rectangle, draw, rounded corners, text width=4.2cm, align=center, minimum height=1cm, fill=highlightblue},
+            yourfinal/.style={rectangle, draw, rounded corners, text width=4.2cm, align=center, minimum height=1cm, fill=highlightgray},
+            gfwheader/.style={font=\bfseries\large, text width=5.5cm, align=center},
+            yourheader/.style={font=\bfseries\large, text width=4.2cm, align=center},
+            arrow/.style={-{Stealth}, thick}
+        ]
+        
+        % GFW Header (wider)
+        \node[gfwheader] (gfwheader) at (0,0) {Global Fishing Watch Processing};
+        %GFW logo
+        \node[anchor=north west] at ([xshift=-1.5cm,yshift=2cm]gfwheader.north east) {\includegraphics[width=3cm]{Figures/logos/GFW_logo.png}};
+        % GFW Steps
+        \node[gfwbox, below=of gfwheader] (raw) {Raw AIS positions};
+        \node[gfwbox, below=of raw] (cnn1) {CNN 1: Vessel classification};
+        \node[gfwbox, below=of cnn1] (cnn2) {CNN 2: Detect fishing activity};
+        \node[gfwfinal, below=of cnn2] (grid) {Gridded fishing hours per MMSI/trip};
+        
+        \draw[arrow] (raw) -- (cnn1);
+        \draw[arrow] (cnn1) -- (cnn2);
+        \draw[arrow] (cnn2) -- (grid);
+        
+        % Your Workflow Header
+        \node[yourheader, right=3cm of gfwheader] (yourheader) {Filtering Steps};
+        % R Logo in top-right corner
+        \node[anchor=north west] at ([xshift=-1cm,yshift=1.3cm]yourheader.north east) {\includegraphics[width=1.5cm]{Figures/logos/R_logo.png}};
+
+        % Your Steps
+        \node[yourbox, below=of yourheader] (crop) {Crop to Mediterranean Sea area};
+        \node[yourbox, below=of crop] (gear) {Gear types: \\ Drifting longlines \& tuna purse seines};
+        \node[yourbox, below=of gear] (registry) {GFW registry \\ includes ICCAT};
+        \node[yourbox, below=of registry] (national) {Manually adding known purse seiners \\ based on national quota allocation};
+        \node[yourbox, below=of national] (port) {Remove cells <1 km \\ from port};
+        \node[yourfinal, left=2cm of port] (final) {Final dataset used};
+        
+        \draw[arrow] (crop) -- (gear);
+        \draw[arrow] (gear) -- (registry);
+        \draw[arrow] (registry) -- (national);
+        \draw[arrow] (national) -- (port);
+        \draw[arrow] (port) -- (final.east);
+        
+        % Connector from GFW to your steps
+        \draw[arrow] (grid.east) -- ++(0.5,0) |- (crop.west);
+        
+        \end{tikzpicture}
+        \end{center}        
+\caption{Global Fishing Watch data processing pipeline and filtering steps to obtain the final dataset used in this study. CNN = Convolutional Neural Network}
+\label{fig:workflow}
+\end{figure}
+
+\medskip
+
+In case of the tuna purse seiners, these filtering steps also removed some vessels which are known to be fishing for bluefin tuna based on 
+national quota allocations (obtained for Spain, France, and Italy). These vessels were
+removed by the filtering steps either because GFW assigns them a different gear type, or they are not present in the
+registry information from ICCAT that GFW uses. For the present analysis, these vessels were thus, manually included from the
+curated list of tuna purse seiners based on the national vessel registries.
+
+\medskip
+
+Irregular vessel movement patterns occurring in or near ports can falsely resemble fishing activity and should therefore be excluded when estimating fishing effort. 
+These movements include cruising towards the harbour to land catches or vessel maintenance \citep{souza}. Thus,
+to remove these areas from the analysis, the points inside the 1 km boundary around ports were removed. Distance from port was determined based on a dataset from 
+GFW, which contains anchorages that are either known ports, or that contained at least 20 unique stationary vessels since 2012 \citep{gfw_distance}. 
+
+\section{Data analysis}
+To identify persistent hotspot areas throughout the one decade study time and analyse spatio-temporal trends, the \textit{Emerging Hotspot Analysis} (EHA) tool
+was used in ArcGIS Pro \citep{arcgis}. For this, multidimensional netCDF (network common data form) files of the fishing hours data were generated after curation and filtering in R, using
+the "terra" package (v1.8.18; \citeauthor{terra_package}, \citeyear{terra_package}). Subsequently, they were read in as multidimensional raster files in ArcGIS Pro, with the
+dimensions corresponding to longitude, latitude and time. Data was aggregated annually, using the sum of fishing hours per year for each cell.
+From this, I created a space-time cube which is the input required for the EHA tool (Fig.\ref{fig:cube}).
+
+\begin{figure}[htp]
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \begin{tikzpicture}[scale=.6, every node/.style={minimum size=1cm}]
+        \node[anchor=north west, font=\large] at (-6,7.7) {(A)};
+        % Define grid and insets
+        \def\gridsize{5}
+        \def\cellsize{1}
+        \def\inset{0.1} % amount to inset the fill from each side
+        
+        % Function to draw filled cell with inset
+        \newcommand{\fillcell}[3]{
+            \fill[#3, fill opacity = 0.6] (#1+\inset,#2+\inset) rectangle (#1+1-\inset,#2+1-\inset);
+            }
+            
+        % === First Grid (lower, 3D perspective) ===
+        \begin{scope}[yshift=-5cm, xshift=1cm, every node/.append style={yslant=0.5,xslant=-1}, yslant=0.5, xslant=-1]
+            \draw[step=\cellsize, black] (0,0) grid (\gridsize,\gridsize);
+            \draw[black, thick] (0,0) rectangle (\gridsize,\gridsize);
+
+  % Center cell
+  \fillcell{2}{2}{darkgreenMW}
+
+  % 8-neighbourhood
+  \foreach \x/\y in {1/1, 1/2, 1/3, 2/1, 2/3, 3/1, 3/2, 3/3} {
+    \fillcell{\x}{\y}{lightgreenMW}
+  }
+\end{scope}
+
+% === Arrow (behind top grid) ===
+\coordinate (center_tminus1) at (1,3.5-6); % center of bottom grid
+\coordinate (center_t) at (0,2.6);       % center of top grid
+\draw[-latex, thick, black] (center_tminus1) -- (center_t);
+\node[below left, font=\bfseries\large] at (center_tminus1) {$t\!-\!1$};
+
+% === Second Grid (upper, semi-transparent overlay) ===
+\begin{scope}[yshift=0cm, every node/.append style={yslant=0.5,xslant=-1}, yslant=0.5, xslant=-1]
+  \fill[white, fill opacity=0.4] (0,0) rectangle (\gridsize,\gridsize);
+  \draw[step=\cellsize, black] (0,0) grid (\gridsize,\gridsize);
+  \draw[black, thick] (0,0) rectangle (\gridsize,\gridsize);
+
+  % Center cell
+  \fillcell{2}{2}{darkgreenMW}
+
+  % 8-neighbourhood
+  \foreach \x/\y in {1/1, 1/2, 1/3, 2/1, 2/3, 3/1, 3/2, 3/3} {
+    \fillcell{\x}{\y}{lightgreenMW}
+  }
+\end{scope}
+
+% === Annotations ===
+\node[font=\bfseries\large] at (-0.5,2.7) {$t$}; % Position manually above the top grid
+
+        \end{tikzpicture}
+    \end{subfigure}
+\hspace{-1.4cm}
+\begin{subfigure}[b]{0.4\textwidth}
+    \tdplotsetmaincoords{60}{45} 
+    % the first argument cannot be larger than 90
+    \begin{tikzpicture}[tdplot_main_coords, line join=round, 3d cube/.cd,
+        num cubes x=4, num cubes y=4, num cubes z=4]
+        \node[font=\large] at (-8,1) {(B)};
+        \path pic {cube array={}};
+
+        Longitude, Latitude, Time) aligned with cube edges
+        % Make sure you're inside this scope:
+        \begin{scope}[tdplot_main_coords]
+            
+            % Arrow: Longitude (X-axis): from left-bottom-front to middle-bottom-front
+            \draw[->, thick, orangeBase]
+            (-2.5, -2.5, -2.5) -- (3, -3, -2)
+            node[midway, below, sloped] {Longitude};
+            
+            % Arrow: Latitude (Y-axis): from middle-bottom-front to right-bottom-front
+            \draw[->, thick, grayLeaf]
+            (3, -3, -2) -- (3, 2, -2)
+            node[midway, below, sloped] {Latitude};
+            % Arrow: Time (Z-axis): from bottom-left to top-left
+            \draw[->, thick, greenBase]
+            (-2.5, -2.5, -2.5) -- (-2, -3, 2)
+            node[midway, left] {\shortstack{Time\\(Years)}};
+
+            \draw[->, thick, red!70]
+            (2, -1.2, 2.4) .. controls (0,0.5,2.2) .. (0.7,0.7,3.5);
+            
+            \node[text=black] at (1,1,3.9) {Time series bin};
+
+        \end{scope}
+        
+    \end{tikzpicture}
+\end{subfigure}
+\bigskip
+\caption{A) Conceptualization of space-time dependency as implemented in the Emerging Hotspot Analysis tool. One \textit{neighbourhood  bin}
+is defined as the cell itself (darkgreen) plus the cells surrounding it (lightgreen), as well as those cells in the previous time step. 
+B) Structure of the space-time cube in ArcGIS\@. Each individual cube corresponds to one \textit{neighbourhood bin}. One \textit{time series bin}
+corresponds to the same location over time (red).}
+\label{fig:cube}
+\end{figure}
+
+EHA uses a combination of two statistical methods. First, the Getis-Ord \(G_i^*\) statistic to identify areas where low/high values are spatially clustered \citep{getis_ord}. The null hypothesis
+states that the sum of values of location \( i \) and its neighbours, is not significantly different from what would be expected by chance, based on all observations. In our case, neighbours are
+defined as shown in Figure~\ref{fig:cube}A. So each \textit{neighbourhood} contains the cell itself, plus all cells contiguous with it via edges and corners at time \(t\) and \(t-1\).
+Each neighbourhood is compared to all global observations at the current and preceding time step. Based on the neighbourhood definition,
+a binary spatial weight matrix is constructed, where each entry \(w_{i,j}\), is either 1 (if features \(i\) and \(j\) are neighbours) or 0 otherwise. The \(G_i^*\) statistic is then
+calculated as:
+
+\begin{equation}
+G_i^* = \frac{\displaystyle\sum_{j=1}^{n} w_{i,j} x_j - \bar{X} \displaystyle\sum_{j=1}^{n} w_{i,j}}{S \sqrt{\frac{n \displaystyle\sum_{j=1}^{n} w_{i,j}^2 - \left( \displaystyle\sum_{j=1}^{n} w_{i,j} \right)^2}{n-1}}}
+\end{equation}
+
+\bigskip
+
+where \( x_j \) is the value for feature \( j \), 
+\( w_{i,j} \) is the spatial weight between feature \( i \) and \( j \), 
+and \( n \) is the total number of features. The terms \( \bar{X} \) and \( S \) represent the global mean and standard deviation
+of the attribute values, respectively, and are given by:
+
+\begin{equation}
+\bar{X} = \frac{\displaystyle\sum_{j=1}^{n} x_j}{n}
+\end{equation}
+\medskip
+\begin{equation}
+S = \sqrt{ \frac{\displaystyle\sum_{j=1}^{n} x_j^2}{n} - \left(\bar{X}\right)^2 }
+\end{equation}\\
+
+The implementation of \(G_i^*\) in the EHA tool also applies a False Discovery Rate (FDR) correction to account for multiple testing and spatial dependency in the data.
+This approach is preferred over methods like Bonferroni correction, which only accounts for multiple testing, as FDR is less conservative and less likely to miss true 
+positives \citep{fdr_correction}. EHA is thus, a spatio-temporal extension of the \(G_i^*\) statistic, as it extends each cell not only to its spatial but
+also to the temporal neighbours. 
+
+\bigskip
+
+Second, EHA applies the Mann-Kendall trend test to evaluate whether there is a monotonic upward or downward trend in each time series bin \citep{mann1945nonparametric,kendall1990rank}.
+The non-parametric Mann-Kendall statistic \(S\) analyses each time series bin. It ranks and compares each point \( x_i \) (for \( i = 1, 2, \ldots, n-1 \)) 
+to all subsequent points \( x_j \) (for \( j = i+1, i+2, \ldots, n \)) and is given by (\citeauthor{kendall1990rank}, \citeyear{kendall1990rank}, Section 1.9)
+
+\begin{equation}
+S = \sum_{i=1}^{n-1} \sum_{j=i+1}^{n} \text{sign}(x_j - x_i)
+\end{equation}
+
+\bigskip
+
+Where the sign function is defined as:
+
+\begin{equation}
+\text{sign}(x_j - x_i) = \text{sign}(R_j - R_i)
+\begin{cases}
+\phantom{-}1 & x_i < x_j \\
+\phantom{-}0 & x_i = x_j \\
+  -1 & x_i > x_j
+\end{cases}
+\end{equation}
+
+\bigskip
+
+and \(R_i\) and \(R_j\) are the ranks of observations \(x_i\) and \(x_j\) of each time series.
+Thus, for every time point, it assigns a 1 if the value is higher than the previous one, a 0 if the value is the same, and a -1 if the value is lower. These scores are
+then summed for each time series bin and under the null hypothesis of no trend, the value of \(S\) is zero. To assess the significance of \(S\), the variance \(V^*_0\)
+can be calculated as (\citeauthor{kendall1990rank}, \citeyear{kendall1990rank}, Section 5.6)
+
+\begin{equation}
+    V^*_0 (S) = n(n - 1)(2n + 5) / 18 - \sum_{j=1}^{m} t_j(t_j - 1)(2t_j + 5) /18
+\end{equation}
+
+\bigskip
+
+where \(n\) is the total number of observations, and \(m\) the number of groups with tied ranks, each with \(t_j\) tied observations. 

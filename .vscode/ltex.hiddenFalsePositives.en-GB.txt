@@ -7,3 +7,5 @@
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QWe processed 22 billion automatic identification system messages and tracked &gt;70,000 industrial fishing vessels from 2012 to 2016, creating a global dynamic footprint of fishing effort with spatial and temporal resolution two to three orders of magnitude higher than for previous data sets.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QOur data show that industrial fishing occurs in &gt;55% of ocean area and has a spatial extent more than four times that of agriculture.\\E$"}
 {"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QWe also find that 21–30% of transport and energy vessel activity is missing from public tracking systems.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsub1:fig:seines_ridge) Time series of fishing hours, summed per year and day.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsub0:fig:seines_ridge) Spatial differences between seasons.\\E$"}

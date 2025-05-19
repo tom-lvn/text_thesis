@@ -1,9 +1,102 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Caldas~de Castro and Singer(2006)]{fdr_correction}
+Marcia Caldas~de Castro and Burton~H. Singer.
+\newblock Controlling the false discovery rate: A new application to account
+  for multiple and dependent tests in local statistics of spatial association.
+\newblock \emph{Geographical Analysis}, 38\penalty0 (2):\penalty0 180--208,
+  2006.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0016-7363.2006.00682.x}.
+
+\bibitem[de~Souza et~al.(2016)de~Souza, Boerder, Matwin, and Worm]{souza}
+Erico~N. de~Souza, Kristina Boerder, Stan Matwin, and Boris Worm.
+\newblock Improving fishing pattern detection from satellite ais using data
+  mining and machine learning.
+\newblock \emph{PLOS ONE}, 11\penalty0 (7):\penalty0 1--20, 07 2016.
+\newblock URL \url{https://doi.org/10.1371/journal.pone.0158248}.
+
+\bibitem[{Esri Inc.}(2024)]{arcgis}
+{Esri Inc.}
+\newblock {ArcGIS Pro (Version 3.4)}.
+\newblock \url{https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview},
+  2024.
+\newblock Esri Inc.
+
+\bibitem[{European Commission}(2011)]{ec2011directive}
+{European Commission}.
+\newblock {Commission Directive 2011/15/EU of 23 February 2011 amending
+  Directive 2002/59/EC of the European Parliament and of the Council
+  establishing a Community vessel traffic monitoring and information system
+  Text with EEA relevance}.
+\newblock \emph{Official Journal of the European Union}, L49/33, 2011.
+\newblock URL
+  \url{https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32011L0015}.
+
+\bibitem[{European Commission, Directorate-General for Maritime Affairs and
+  Fisheries}(2025)]{eu_fleet_register}
+{European Commission, Directorate-General for Maritime Affairs and Fisheries}.
+\newblock Eu fleet register, version 1.2.0.1, 2025.
+\newblock URL \url{https://webgate.ec.europa.eu/fleet-europa/index_en}.
+\newblock Accessed 2025-05-17.
+
+\bibitem[Getis and Ord(1992)]{getis_ord}
+Arthur Getis and J.~K. Ord.
+\newblock The analysis of spatial association by use of distance statistics.
+\newblock \emph{Geographical Analysis}, 24\penalty0 (3):\penalty0 189--206,
+  1992.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1992.tb00261.x}.
+
+\bibitem[{Global Fishing Watch}(2020)]{gfw_distance}
+{Global Fishing Watch}.
+\newblock {Distance from port in meters, Version 20201104}, 2020.
+\newblock URL
+  \url{https://globalfishingwatch.org/data-download/datasets/public-distance-from-port-v1}.
+
+\bibitem[{Global Fishing Watch}(2025)]{gfw_dataset}
+{Global Fishing Watch}.
+\newblock {Global AIS-based Apparent Fishing Effort Dataset, Version 3.0},
+  2025.
+\newblock URL \url{https://doi.org/10.5281/zenodo.14982712}.
+
+\bibitem[Hijmans(2025)]{terra_package}
+Robert~J. Hijmans.
+\newblock \emph{terra: Spatial Data Analysis}, 2025.
+\newblock URL \url{https://rspatial.org/}.
+\newblock R package version 1.8-18, https://rspatial.github.io/terra/.
+
+\bibitem[ICCAT(2024{\natexlab{a}})]{iccat_alb_summary}
+ICCAT.
+\newblock {Executive Summary ALB-MD}, 2024{\natexlab{a}}.
+\newblock URL
+  \url{https://www.iccat.int/Documents/SCRS/ExecSum/ALB_MED_ENG.pdf}.
+
+\bibitem[ICCAT(2024{\natexlab{b}})]{iccat_bft_summary}
+ICCAT.
+\newblock {Executive Summary BFT-E}, 2024{\natexlab{b}}.
+\newblock URL \url{https://www.iccat.int/Documents/SCRS/ExecSum/BFT_E_ENG.pdf}.
+
+\bibitem[ICCAT(2024{\natexlab{c}})]{iccat_swo_summary}
+ICCAT.
+\newblock {Executive Summary SWO-MD}, 2024{\natexlab{c}}.
+\newblock URL \url{https://www.iccat.int/Documents/SCRS/ExecSum/BFT_E_ENG.pdf}.
+
+\bibitem[{ICCAT}(2025)]{iccat_catches}
+{ICCAT}.
+\newblock {Nominal catches of Atlantic tunas and tuna-like fish (including
+  sharks), by gear, region and flag (Excel table)}, 2025.
+\newblock URL \url{https://www.iccat.int/Data/t1nc_20250131.7z}.
+
+\bibitem[Kendall and Gibbons(1990)]{kendall1990rank}
+M.~G. Kendall and J.~D. Gibbons.
+\newblock \emph{Rank Correlation Methods}.
+\newblock Griffin, London, 5th edition, 1990.
 
 \bibitem[Kontas(n.d.)]{kontasvesselupdate}
 Vasilis Kontas.
@@ -25,15 +118,58 @@ David~A. Kroodsma, Juan Mayorga, Timothy Hochberg, Nathan~A. Miller, Kristina
 \newblock \doi{10.1126/science.aao5646}.
 \newblock URL \url{https://www.science.org/doi/abs/10.1126/science.aao5646}.
 
-\bibitem[Paolo et~al.(2024)Paolo, Kroodsma, Raynor, Hochberg, Davis, Cleary,
-  Marsaglia, Orofino, Thomas, and Halpin]{paolo24satellite}
-Fernando~S. Paolo, David Kroodsma, Jennifer Raynor, Tim Hochberg, Pete Davis,
-  Jesse Cleary, Luca Marsaglia, Sara Orofino, Christian Thomas, and Patrick
-  Halpin.
-\newblock Satellite mapping reveals extensive industrial activity at sea.
-\newblock \emph{Nature}, 625\penalty0 (7993):\penalty0 85--91, 2024.
-\newblock \doi{10.1038/s41586-023-06825-8}.
-\newblock URL \url{https://doi.org/10.1038/s41586-023-06825-8}.
+\bibitem[Mann(1945)]{mann1945nonparametric}
+H.~B. Mann.
+\newblock Nonparametric tests against trend.
+\newblock \emph{Econometrica}, 13:\penalty0 245--259, 1945.
+
+\bibitem[{\textit{Ministero dell'agricoltura, della sovranita'alimentare e
+  delle foreste}}(2024)]{registry_italy}
+{\textit{Ministero dell'agricoltura, della sovranita'alimentare e delle
+  foreste}}.
+\newblock {Allegato 1, TONNO ROSSO - CAMPAGNIA DI PESCA 2024}.
+\newblock \emph{Gazzetta Ufficiale della Repubblica Italiana}, \penalty0 (117),
+  2024.
+\newblock URL
+  \url{https://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2024-05-21&atto.codiceRedazionale=24A02500&elenco30giorni=false}.
+
+\bibitem[{\textit{Ministère de la Transition écologique et de la Cohésion
+  des territoires}}(2024)]{registry_france}
+{\textit{Ministère de la Transition écologique et de la Cohésion des
+  territoires}}.
+\newblock {Arrêté du 13 février 2024 établissant les modalités de
+  répartition du quota de thon rouge (\textit{Thunnus thynnus}) accordé à la
+  France pour la zone «océan Atlantique à l’est de la longitude 45° O et
+  Méditerranée» pour l’année 2024}.
+\newblock \emph{Journal officiel de la République française}, \penalty0
+  (Texte 20 sur 103), 2024.
+\newblock URL
+  \url{https://www.legifrance.gouv.fr/download/pdf?id=wSCtx11Gzpq9uWOcYXc7s-_AvWkqbw3aGTWSBldcbDg=}.
+
+\bibitem[{Posit team}(2024)]{rstudio}
+{Posit team}.
+\newblock \emph{RStudio: Integrated Development Environment for R}.
+\newblock Posit Software, PBC, Boston, MA, 2024.
+\newblock URL \url{http://www.posit.co/}.
+
+\bibitem[{R Core Team}(2024)]{r_language}
+{R Core Team}.
+\newblock \emph{R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2024.
+\newblock URL \url{https://www.R-project.org/}.
+
+\bibitem[{\textit{Secretaría General de Pesca}}(2024)]{registry_spain}
+{\textit{Secretaría General de Pesca}}.
+\newblock Resolución de 8 de marzo de 2024, de la secretaría general de
+  pesca, por la que se dispone la asignación de cuotas de atún rojo y
+  publicación del censo específico de la flota autorizada para el ejercicio
+  de la pesca del atún rojo creado por el real decreto 46/2019, de 8 de
+  febrero, por el que se regula la pesquería de atún rojo en el atlántico
+  oriental y mediterráneo.
+\newblock \emph{Boletín Oficial del Estado}, \penalty0 (70):\penalty0
+  32846--32871, 2024.
+\newblock URL
+  \url{https://www.boe.es/boe/dias/2024/03/20/pdfs/BOE-A-2024-5591.pdf}.
 
 \bibitem[Taconet et~al.(2019)Taconet, Kroodsma, Gee, and
   Fernandes]{taconet2019global}
@@ -43,10 +179,5 @@ M.~Taconet, D.~Kroodsma, J.~Gee, and J.~A. Fernandes.
   \emph{Global Atlas of AIS-based fishing activity - Challenges and
   opportunities}. FAO, Rome, 2019.
 \newblock URL \url{http://www.fao.org/3/ca7012en/ca7012en.pdf}.
-
-\bibitem[Watch(2025)]{gfw_dataset}
-Global~Fishing Watch.
-\newblock Global ais-based apparent fishing effort dataset, version 3.0, 2025.
-\newblock URL \url{https://doi.org/10.5281/zenodo.14982712}.
 
 \end{thebibliography}

@@ -1,6 +1,6 @@
 \documentclass[12pt]{report}
 
-
+\setlength\parindent{0cm}
 
 %------------------- declaring packages---------------------------------
 
@@ -9,32 +9,206 @@
 
 \usepackage{graphicx} 
 \usepackage{emptypage}
-\usepackage{geometry}
+\usepackage[a4paper,
+left=3cm,
+right=3cm,
+top=3cm,
+bottom=3cm]{geometry}
+\usepackage[percent]{overpic}
 \usepackage{setspace}
 \usepackage{pgf}
 \usepackage{pgffor}
 \usepackage{svg}
 \usepackage{xcoffins}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{changepage}
 \usepackage{fontspec}
 \setmainfont{Arial}
 
 \doublespacing
 
+%define colors
+% Define custom colors
+\definecolor{blueBase}{RGB}{70,130,180}
+\definecolor{blueLeaf}{RGB}{135,206,250}
+
+\definecolor{greenBase}{RGB}{34,139,34}
+\definecolor{greenLeaf}{RGB}{144,238,144}
+
+\definecolor{orangeBase}{RGB}{255,140,0}
+\definecolor{orangeLeaf}{RGB}{255,200,120}
+
+\definecolor{purpleBase}{RGB}{138,43,226}
+\definecolor{purpleLeaf}{RGB}{186,85,211}
+
+\definecolor{redBase}{RGB}{178,34,34}
+\definecolor{redLeaf}{RGB}{240,128,128}
+
+\definecolor{grayBase}{RGB}{105,105,105}
+\definecolor{grayLeaf}{RGB}{169,169,169}
+
+\definecolor{lightblue}{RGB}{225,245,254}
+\definecolor{highlightblue}{RGB}{144,202,249}
+
+\definecolor{lightgray}{RGB}{240,240,240}
+\definecolor{highlightgray}{RGB}{200,200,200}
+
+\definecolor{darkgreenMW}{RGB}{0, 170, 0} % or choose your own color
+\definecolor{lightgreenMW}{RGB}{144,238,144}
+
 % for figures and tables
 
 % figures:
-\usepackage{subfigure}  
-\usepackage{adjustbox}
+\usepackage{subcaption}
+\renewcommand{\thesubfigure}{\Alph{subfigure}}
+\usepackage{forloop}
+\newcounter{subfigurenumber}
+\newcommand{\subplot}[5]{%
+  \begin{subfigure}[t]{1\textwidth}
+    \centering
+    \includegraphics[#2]{#3}
+    \phantomcaption\label{sub0:#5}
+  \end{subfigure}
+  \forloop{subfigurenumber}{1}{\value{subfigurenumber} < #1}{%
+    \parbox{0pt}{\phantomsubcaption\label{sub\arabic{subfigurenumber}:#5}}
+  }
+  \vspace{-0.8cm}
+  \caption{#4}\label{#5}
+}
+% Define subplot with overpic and manual label positioning
+\newcounter{customsubfig}
+\newcommand{\customsubplot}[8]{%
+  \begin{subfigure}[t]{1\textwidth}
+    \centering
+    \begin{overpic}[width=#2, trim=#3, clip]{#4}
+        \put(#5){\large\text{(A)}}
+        \put(#6){\large\text{(B)}}
+        \phantomcaption\label{sub0:#7}%
+    \end{overpic}
+\end{subfigure}
+\forloop{customsubfig}{1}{\value{customsubfig} < #1}{%
+    \parbox{0pt}{\phantomsubcaption\label{sub\arabic{customsubfig}:#7}}
+  }
+    \vspace{-0.8cm}  
+    \caption{#8}
+    \label{#7}
+}
+\usepackage[export]{adjustbox}
 \usepackage{wrapfig}
-\usepackage{subfigure}
 \usepackage{rotating}
 \usepackage{lscape}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, 3d, calc}
+\usepackage{pgfmath-xfp}
+\usepackage{tikz-3dplot}
+\tikzset{plane/.style n args={3}{insert path={%
+#1 -- ++ #2 -- ++ #3 -- ++ ($-1*#2$) -- cycle}},
+unit xy plane/.style={plane={#1}{(1,0,0)}{(0,1,0)}},
+unit xz plane/.style={plane={#1}{(1,0,0)}{(0,0,1)}},
+unit yz plane/.style={plane={#1}{(0,1,0)}{(0,0,1)}},
+get projections/.style={insert path={%
+let \p1=(1,0,0),\p2=(0,1,0)  in 
+[/utils/exec={\pgfmathtruncatemacro{\xproj}{sign(\x1)}\xdef\xproj{\xproj}
+\pgfmathtruncatemacro{\yproj}{sign(\x2)}\xdef\yproj{\yproj}
+\pgfmathtruncatemacro{\zproj}{sign(cos(\tdplotmaintheta))}\xdef\zproj{\zproj}}]}},
+pics/unit cube/.style={code={
+\path[get projections];
+\draw (0,0,0) -- (1,1,1);
+\ifnum\zproj=-1
+ \path[3d cube/every face,3d cube/xy face,unit xy plane={(0,0,0)}]; 
+\fi
+\ifnum\yproj=1
+ \path[3d cube/every face,3d cube/yz face,unit yz plane={(1,0,0)}]; 
+\else
+ \path[3d cube/every face,3d cube/yz face,unit yz plane={(0,0,0)}]; 
+\fi
+\ifnum\xproj=1
+ \path[3d cube/every face,3d cube/xz face,unit xz plane={(0,0,0)}]; 
+\else
+ \path[3d cube/every face,3d cube/xz face,unit xz plane={(0,1,0)}]; 
+\fi
+\ifnum\zproj>-1
+ \path[3d cube/every face,3d cube/xy face,unit xy plane={(0,0,1)}]; 
+\fi
+}},
+3d cube/.cd,
+xy face/.style={fill=blue!10},
+xz face/.style={fill=blue!20},
+yz face/.style={fill=blue!30},
+num cubes x/.estore in=\NumCubesX,
+num cubes y/.estore in=\NumCubesY,
+num cubes z/.estore in=\NumCubesZ,
+num cubes x=1,num cubes y/.initial=1,num cubes z/.initial=1,
+cube scale/.initial=0.9,
+every face/.style={draw,very thick},
+/tikz/pics/.cd,
+cube array/.style={code={%
+ \tikzset{3d cube/.cd,#1}
+ %\typeout{\NumCubesX,\NumCubesY,\NumCubesZ}
+  \path[get projections];
+  \ifnum\yproj=1
+   \def\LstX{1,...,\NumCubesX}
+  \else 
+   \ifnum\NumCubesX>1
+    \pgfmathtruncatemacro{\NextToLast}{\NumCubesX-1}
+    \def\LstX{\NumCubesX,\NextToLast,...,1}
+   \else
+    \def\LstX{1}   
+   \fi 
+  \fi
+  \ifnum\xproj=-1
+   \def\LstY{1,...,\NumCubesY}
+  \else 
+   \ifnum\NumCubesY>1
+    \pgfmathtruncatemacro{\NextToLast}{\NumCubesX-1}
+    \def\LstY{\NumCubesY,\NextToLast,...,1}
+   \else
+    \def\LstY{1}   
+   \fi 
+  \fi
+  \ifnum\zproj=1
+   \def\LstZ{1,...,\NumCubesZ}
+  \else 
+   \ifnum\NumCubesZ>1
+    \pgfmathtruncatemacro{\NextToLast}{\NumCubesX-1}
+    \def\LstZ{\NumCubesZ,\NextToLast,...,1}
+   \else
+    \def\LstZ{1}   
+   \fi 
+   \def\LstZ{\NumCubesZ,\NextToLast,...,1}
+  \fi
+  \foreach \X in \LstX
+  {\foreach \Y in \LstY
+   {\foreach \Z in \LstZ
+    {
+    \ifnum\X=4
+      \ifnum\Y=2
+        \path (\X-\NumCubesX/2-1,\Y-\NumCubesY/2-1,\Z-\NumCubesZ/2-1)
+          pic[scale=\pgfkeysvalueof{/tikz/3d cube/cube scale},
+               3d cube/.cd,
+               xy face/.style={fill=red!10},
+               xz face/.style={fill=red!20},
+               yz face/.style={fill=red!30}]{unit cube};
+      \else
+        \path (\X-\NumCubesX/2-1,\Y-\NumCubesY/2-1,\Z-\NumCubesZ/2-1)
+          pic[scale=\pgfkeysvalueof{/tikz/3d cube/cube scale}]{unit cube};
+      \fi
+    \else
+      \path (\X-\NumCubesX/2-1,\Y-\NumCubesY/2-1,\Z-\NumCubesZ/2-1)
+        pic[scale=\pgfkeysvalueof{/tikz/3d cube/cube scale}]{unit cube};
+    \fi
+  }}
+  } 
+}}
+}
 % tables:
 \usepackage{tabularx,ragged2e,booktabs,caption}
 \usepackage{multicol,tabularx,capt-of}
 \usepackage{hhline}
 \usepackage{multirow}
 \usepackage{array}
+\usepackage[edges]{forest}
 
 
 % for math equations
@@ -50,7 +224,7 @@
 
 \usepackage{acronym}
 \usepackage{glossaries}
-
+\usepackage{placeins}
 
 % for hyperlinks
 
@@ -60,6 +234,13 @@
             urlcolor  = black,
             citecolor = black,
             anchorcolor = black]{hyperref}
+\newcommand{\figref}[1]{\hyperref[#1]{(Fig.~\ref*{#1})}}
+\newcommand{\tabref}[1]{\hyperref[#1]{(Tab.~\ref*{#1})}}
+
+\usepackage{cleveref}
+% Make URL links (like DOIs or website links) use Arial
+\usepackage{url}
+\renewcommand{\UrlFont}{\fontspec{Arial}}
 
 \usepackage{sectsty}
 \allsectionsfont{\bfseries}
@@ -76,15 +257,10 @@
 
 \usepackage{layout}
 \usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[R]{\thepage}
-\fancyhead[L]{\textbf{\nouppercase{\rightmark}}}
-\fancyfoot[L]{}
 
 \fancypagestyle{custompagestyle}{%
     \fancyhf{}
-    \fancyhead[R]{\thepage}
+    \fancyfoot[R]{\thepage}
 }
 
 \fancypagestyle{noheaderfooter}{%
@@ -109,17 +285,28 @@
 
 \usepackage{epstopdf}
 
+\def\cx{.85} % relative size of cube vs grid unit
+\newcommand{\cube}[4][black]{
+  \fill[#1!20] (#2,#3,#4) -- (#2+\cx,#3,#4) -- (#2+\cx,#3+\cx,#4) -- (#2,#3+\cx,#4) -- cycle;
+  \fill[#1!10] (#2,#3+\cx,#4) -- (#2,#3+\cx,#4-\cx) -- (#2+\cx,#3+\cx,#4-\cx) -- (#2+\cx,#3+\cx,#4) -- cycle;
+  \fill[#1!30] (#2+\cx,#3,#4) -- (#2+\cx,#3+\cx,#4) -- (#2+\cx,#3+\cx,#4-\cx) -- (#2+\cx,#3,#4-\cx) -- cycle;
+}
+
 % specify files to use, especially useful if you want to build only one chapter due to build time
 %\includeonly{material_methods}
 
 %----------------------------begin document-------------------------------
 \setcounter{secnumdepth}{2}  % Chapters and sections are numbered
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+\counterwithout{equation}{chapter}
+
 \begin{document}
 
 %\frontmatter
 \pagenumbering{roman}
 
-%\input{titlepage}
+\input{titlepage}
 
 \chapter*{Executive Summary}
 
@@ -143,7 +330,6 @@ Abstract goes here.
 \cleardoublepage
 
 \pagenumbering{arabic}
-
 \setcounter{page}{1}
 
 \include{introduction}
@@ -162,6 +348,8 @@ Abstract goes here.
 \bibliography{bibliography}
 
 \begin{appendices}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\setcounter{figure}{0}
 
 \include{appendix}
 
