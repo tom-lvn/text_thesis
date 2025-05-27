@@ -112,8 +112,7 @@ let \p1=(1,0,0),\p2=(0,1,0)  in
 [/utils/exec={\pgfmathtruncatemacro{\xproj}{sign(\x1)}\xdef\xproj{\xproj}
 \pgfmathtruncatemacro{\yproj}{sign(\x2)}\xdef\yproj{\yproj}
 \pgfmathtruncatemacro{\zproj}{sign(cos(\tdplotmaintheta))}\xdef\zproj{\zproj}}]}},
-pics/unit cube/.style={code={
-\path[get projections];
+pics/unit cube/.style={code={\path[get projections];
 \draw (0,0,0) -- (1,1,1);
 \ifnum\zproj=-1
  \path[3d cube/every face,3d cube/xy face,unit xy plane={(0,0,0)}]; 
@@ -181,8 +180,7 @@ cube array/.style={code={%
   \foreach \X in \LstX
   {\foreach \Y in \LstY
    {\foreach \Z in \LstZ
-    {
-    \ifnum\X=4
+    {\ifnum\X=4
       \ifnum\Y=2
         \path (\X-\NumCubesX/2-1,\Y-\NumCubesY/2-1,\Z-\NumCubesZ/2-1)
           pic[scale=\pgfkeysvalueof{/tikz/3d cube/cube scale},
@@ -283,8 +281,6 @@ cube array/.style={code={%
 
 \interfootnotelinepenalty=10000
 
-\usepackage{epstopdf}
-
 \def\cx{.85} % relative size of cube vs grid unit
 \newcommand{\cube}[4][black]{
   \fill[#1!20] (#2,#3,#4) -- (#2+\cx,#3,#4) -- (#2+\cx,#3+\cx,#4) -- (#2,#3+\cx,#4) -- cycle;
@@ -306,7 +302,7 @@ cube array/.style={code={%
 %\frontmatter
 \pagenumbering{roman}
 
-\input{titlepage}
+%\input{titlepage}
 
 \chapter*{Executive Summary}
 

@@ -9,3 +9,4 @@
 {"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QWe also find that 21–30% of transport and energy vessel activity is missing from public tracking systems.\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsub1:fig:seines_ridge) Time series of fishing hours, summed per year and day.\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsub0:fig:seines_ridge) Spatial differences between seasons.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QAlong with the exact location, each AIS transmission includes a timestamp, speed, and heading of the vessel.\\E$"}

@@ -1,12 +1,14 @@
 \chapter{Results}
 \section{Cumulative apparent fishing hours}
-
-In total, there were 213 unique longliners and purse seiners recorded for 2015-2024. These vessels together accounted
-for an average of 5115 fishing days per year, with an average of 24 days per vessel per year. 
+A total of 213 unique longliners and purse seiners were recorded for 2015-2024. These vessels together accounted
+for an average of 5115 fishing days per year, with an average of 24 days per vessel per year. Areas that show  the highest effort throughout
+the study time include the Mediterranean coast of Spain, around Sardinia and Sicily, south of Malta, the Adriatic, and
+south of Cyprus \figref{sub0:fig:sum_cv}. Areas with high effort generally also show the lowest coefficient of variation \figref{sub1:fig:sum_cv}.
+There does not appear to be any fishing activity based on AIS around the African Mediterranean coast \figref{fig:sum_cv}.
 
 \medskip
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \subplot{2}
     {width=1\linewidth, trim=1.2cm 0 1.2cm 0,clip}
     {Figures/plots/sum_cv.pdf}
@@ -16,19 +18,15 @@ for an average of 5115 fishing days per year, with an average of 24 days per ves
     }{fig:sum_cv}
 \end{figure}
 
-Areas that show  the highest effort throughout
-the study time include the Mediterranean coast of Spain, around Sardinia and Sicily, south of Malta, the Adriatic, and
-south of Cyprus \figref{sub0:fig:sum_cv}. Areas with high effort generally also show the lowest coefficient of variation \figref{sub1:fig:sum_cv}.
-There does not appear to be any fishing activity based on AIS around the African Mediterranean coast.
 
 \FloatBarrier
 \section{Hotspot analysis}
-There were numerous persistent longline hotspot areas identified throughout the Mediterranean including the southern coast of Spain, south of Sardinia, 
+Numerous persistent longline hotspot areas were identified throughout the Mediterranean including the southern coast of Spain, south of Sardinia, 
 around Sicily and Malta, as well as south of Cyprus \figref{sub0:fig:longline_hotspots}. These hotspots show however, differing trends. Fishing hours
 in the south of Malta appear to be increasing throughout, with a similar trend of increase in the Adriatic Sea. Other areas that appear to be consistent
-hotspots like the east of Sicily show a decreasing trend \figref{sub1:fig:longline_hotspots}.
+hotspots, like the east of Sicily, show a decreasing trend \figref{sub1:fig:longline_hotspots}.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \subplot{2}
     {width=1\linewidth, trim=0.85cm 0 1.2cm 0,clip}
     {Figures/plots/dll_hotspot_trend.pdf}
@@ -40,10 +38,10 @@ hotspots like the east of Sicily show a decreasing trend \figref{sub1:fig:longli
 \end{figure}
 
 Purse seine hotspots appear persistent around the Balearic Islands, in the Adriatic Sea, and along the Calabrian coast in Italy \figref{sub0:fig:seines_hotspots}.
-Trends in these areas show a clear increase around Ibiza and in the central Adriatic while areas around the coast in the Adriatic show a decrease \figref{sub1:fig:seines_hotspots}.
+Trends in these areas show a clear increase around Ibiza and in the central Adriatic, while areas around the coast in the Adriatic show a decrease \figref{sub1:fig:seines_hotspots}.
 The hotspot area along Calabria shows no clear trend.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \subplot{2}
     {width=1\linewidth, trim=0.4cm 0 0.7cm 0,clip}
     {Figures/plots/pss_hotspot_trend.pdf}
@@ -56,7 +54,7 @@ The hotspot area along Calabria shows no clear trend.
 
 \FloatBarrier
 \section{Temporal changes}
-Longline fishing hours show a clear seasonal trend where activity is highest in the summer and lowest in the winter \figref{sub0:fig:longlines_ridge}. Some areas show high
+Longline fishing hours show a clear seasonal trend where activity is highest during warmer months (mainly in the summer) and lowest in the colder months around winter \figref{sub0:fig:longlines_ridge}. Some areas show high
 effort earlier in the season in spring (for example south of Malta) and others are more persistent later in the season in fall (for instance around Ibiza).
 Daily fishing shows a similar seasonal trend, although the intensity varies between years. The highest annual longline fishing hours throughout the study time were recorded for 2022
 and the lowest for 2015 \tabref{tab:year_hours}.
@@ -71,11 +69,11 @@ and the lowest for 2015 \tabref{tab:year_hours}.
     {fig:longlines_ridge}
     {%
     Temporal changes in longline fishing hours. \subref{sub0:fig:longlines_ridge}) Spatial differences between seasons. 
-    Hours are summed per season and cell. \subref{sub1:fig:longlines_ridge}) Time series of fishing hours, summed per year 
+    Hours are summed per season and cell and colour is on a log-scale. \subref{sub1:fig:longlines_ridge}) Time series of fishing hours, summed per year 
     and day.}
 \end{figure}
 
-\begin{table}[h]
+\begin{table}[ht]
 \centering
 \caption{Annual sum of fishing hours for purse seiners and longliners.}
 \medskip
@@ -100,13 +98,13 @@ and the lowest for 2015 \tabref{tab:year_hours}.
 \label{tab:year_hours}
 \end{table}
 
-Purse seine fishing hours show a very pronounced seasonal trend with a peak in spring \figref{fig:seines_ridge}. The core areas of the fishery
+Regarding the purse seine fleet, fishing hours show a very pronounced seasonal trend with a peak in spring \figref{fig:seines_ridge}. The core areas of the fishery
 during spring are the Balearic Islands, along the coast of Calabria (south-west Italy), and the central Adriatic. In the Adriatic, there appears to be
 purse seine activity throughout the whole year \figref{sub0:fig:seines_ridge}. The purse seine season for large-pelagic species is limited to the months
 of May and June and is consistent between years \figref{sub1:fig:seines_ridge}. Highest annual fishing hours for purse seiners were recorded in 2024 and the
 lowest in 2015 \tabref{tab:year_hours}.
 
-\begin{figure}
+\begin{figure}[ht]
     \customsubplot{2}
     {1\linewidth}
     {1.2cm 0 0.9cm 0}                       % trim
@@ -116,20 +114,20 @@ lowest in 2015 \tabref{tab:year_hours}.
     {fig:seines_ridge}
     {%
     Temporal changes in purse seine fishing hours. \subref{sub0:fig:seines_ridge}) Spatial differences between seasons. 
-    Hours are summed per season and cell. \subref{sub1:fig:seines_ridge}) Time series of fishing hours, summed per year 
+    Hours are summed per season and cell and colour is on a log-scale. \subref{sub1:fig:seines_ridge}) Time series of fishing hours, summed per year 
     and day.}
 \end{figure}
 
 \FloatBarrier
 \section{Flag countries}
 
-Vessels were flagged to a total of 10 countries and the majority of vessels analysed were longliners \tabref{tab:countries_vessels}. 
-For an overview of fishing hours for each country see Figure~\ref{fig:longline_effort_countries} and~\ref{fig:seine_effort_countries}.
-Italy has the highest amount of both purse seiners and longliners in the GFW data.
+Vessels were flagged to a total of 10 countries and the majority of vessels analysed were longliners (Tab.~\ref{tab:countries_vessels}; see 
+Fig.~\ref{fig:longline_effort_countries} and~\ref{fig:seine_effort_countries} for an overview by country).
+Italy shows the highest amount of both purse seiners and longliners identified in the GFW data.
 
 \medskip
 
-\begin{table}[h]
+\begin{table}[ht]
 \centering
 \caption{Number of vessels by country and gear type based on GFW data and national registry information. ‘--’ indicates no recorded vessels for that gear.}
 \medskip
@@ -156,8 +154,8 @@ Tunisia   & 2   & -- \\
 \label{tab:countries_vessels}
 \end{table}
 
-Most regions with high fishing activity also have vessels flagged to multiple countries fishing in the same area. Regions with high overlap between flag countries
-for longliners include the Balearic Islands, south of Crete, and south of Malta \figref{fig:no_countries}, which are also areas with high fishing hours \figref{sub0:fig:sum_cv}.
+Most regions with high fishing activity are fishing grounds shared by multiple countries \figref{fig:no_countries}. Regions with high overlap between flag countries
+for longliners include the Balearic Islands, south of Crete, and south of Malta, which are also areas with high fishing hours \figref{sub0:fig:sum_cv}.
 For purse seiners, fishing generally is more concentrated and thus, overlap is also higher, as seen in the core fishing areas of the Balearic Islands and south of Malta \figref{fig:no_countries}.
 
 \begin{figure}[H]
@@ -167,11 +165,11 @@ For purse seiners, fishing generally is more concentrated and thus, overlap is a
     \label{fig:no_countries}
 \end{figure}
 
-A comparison of fishing hours from the GFW data with catch data from ICCAT shows that AIS underrepresents fishing activity by non-EU countries relative to EU countries
+A comparison of fishing hours from the GFW data with catch data from ICCAT shows that AIS under-represents fishing activity by non-EU countries relative to EU countries
 \figref{fig:ais_iccat}. Even though, many non-EU countries account for a substantial share of the total reported catches. Notably, AIS also does not capture any French
 longline vessels.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=1\linewidth, trim=0 0 0 1cm,clip]{Figures/plots/ais_vs_iccat.pdf}
     \caption{Comparison of relative percentages between GFW AIS data and ICCAT catch data. AIS percentages are relative to the
@@ -184,9 +182,9 @@ longline vessels.
 
 The relationship between the cumulative proportion of fishing hours and the distance to port reveals that most fishing activity of both gear types is concentrated
 less than 100 km from the closest port \figref{sub0:fig:depth_dist}. The trend for the depth is different between gear types, where most purse seine
-fishing occurs at shallower depths (below 1000 m) and longline effort takes place over much greater depth ranges \figref{sub1:fig:depth_dist}.
+fishing occurs at shallower depths (> 1000 m; 50\% above 500 m depth) and longline fishing takes place over much greater depth ranges (Fig.~\ref{sub1:fig:depth_dist}; 50\% above 1600 m depth).
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \customsubplot{2}
     {1\linewidth}                           % width
     {0 0 0 0}                       % trim
