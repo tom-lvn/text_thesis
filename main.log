@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.21)  27 MAY 2025 18:12
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.21)  27 MAY 2025 18:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1337,20 +1337,77 @@ Package hyperref Info: Link coloring ON on input line 300.
 \openout5 = `main.out'.
 
 Package csquotes Info: Making character " active on input line 300.
- [1
+ (./titlepage.tex
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
+* v-part:(T,H,B)=(0.0pt, 759.68858pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=540.60239pt
+* \textheight=759.68858pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-109.26999pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: Figures/logos/logo_cob.png Graphic file (type bmp)
+<Figures/logos/logo_cob.png>
+
+Overfull \hbox (70.83163pt too wide) in paragraph at lines 5--6
+[]  
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+File: Figures/logos/logo_imbrsea.png Graphic file (type bmp)
+<Figures/logos/logo_imbrsea.png>
+
+Overfull \hbox (25.18753pt too wide) in paragraph at lines 13--13
+ [] 
+ []
+
+File: Figures/logos/logo_ghent.png Graphic file (type bmp)
+<Figures/logos/logo_ghent.png>
+
+Overfull \hbox (33.4747pt too wide) in paragraph at lines 17--18
+ []
+ []
+
+[1
+
+
+]) [1
 
 
 ] [2
 
-] (./main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+] (./main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1649,12 +1706,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: ED873BA83EABB4103607ED448543B410;2659.
  ) 
 Here is how much of TeX's memory you used:
- 49934 strings out of 474773
- 1087019 string characters out of 5757723
+ 49980 strings out of 474773
+ 1088411 string characters out of 5757723
  1958839 words of memory out of 5000000
- 71246 multiletter control sequences out of 15000+600000
- 565881 words of font info for 92 fonts, out of 8000000 for 9000
+ 71285 multiletter control sequences out of 15000+600000
+ 565897 words of font info for 94 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 137i,16n,133p,2400b,2091s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 137i,16n,133p,2400b,2093s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (42 pages).
+Output written on main.pdf (43 pages).
