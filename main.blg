@@ -10,50 +10,48 @@ A level-1 auxiliary file: acknowledgements.aux
 The style file: mjo.bst
 A level-1 auxiliary file: appendix.aux
 Database file #1: bibliography.bib
-Warning--I'm ignoring bias's extra "doi" field
---line 114 of file bibliography.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--missing publisher in FAO2024
-You've used 81 entries,
+You've used 88 entries,
             3067 wiz_defined-function locations,
-            1168 strings with 27767 characters,
-and the built_in function-call counts, 53603 in all, are:
-= -- 3934
-> -- 3093
-< -- 43
-+ -- 1028
-- -- 942
-* -- 4704
-:= -- 8043
-add.period$ -- 459
-call.type$ -- 81
-change.case$ -- 717
-chr.to.int$ -- 78
-cite$ -- 163
-duplicate$ -- 3935
-empty$ -- 3937
-format.name$ -- 1148
-if$ -- 10689
+            1207 strings with 30129 characters,
+and the built_in function-call counts, 59311 in all, are:
+= -- 4319
+> -- 3524
+< -- 44
++ -- 1170
+- -- 1077
+* -- 5234
+:= -- 8905
+add.period$ -- 500
+call.type$ -- 88
+change.case$ -- 797
+chr.to.int$ -- 85
+cite$ -- 177
+duplicate$ -- 4331
+empty$ -- 4303
+format.name$ -- 1302
+if$ -- 11805
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 831
-newline$ -- 339
-num.names$ -- 327
-pop$ -- 1607
+missing$ -- 920
+newline$ -- 367
+num.names$ -- 355
+pop$ -- 1784
 preamble$ -- 1
-purify$ -- 637
+purify$ -- 710
 quote$ -- 0
-skip$ -- 1130
+skip$ -- 1222
 stack$ -- 0
-substring$ -- 1914
-swap$ -- 1738
+substring$ -- 2103
+swap$ -- 1924
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 714
+type$ -- 777
 warning$ -- 1
-while$ -- 304
+while$ -- 331
 width$ -- 0
-write$ -- 1059
-(There were 2 warnings)
+write$ -- 1148
+(There was 1 warning)

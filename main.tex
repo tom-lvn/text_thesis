@@ -307,9 +307,13 @@ cube array/.style={code={%
 \begin{document}
 
 %\frontmatter
-\pagenumbering{roman}
+\pagenumbering{gobble}
 
 \input{titlepage}
+
+% Start Roman numbering AFTER the disclaimer
+\newpage
+\pagenumbering{roman}
 
 \chapter*{Executive Summary}
 
