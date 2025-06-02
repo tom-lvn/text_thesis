@@ -31,6 +31,7 @@ bottom=3cm]{geometry}
 %define colors
 % Define custom colors
 \definecolor{blueBase}{RGB}{70,130,180}
+\definecolor{linkblue}{RGB}{0, 102, 204}
 \definecolor{blueLeaf}{RGB}{135,206,250}
 
 \definecolor{greenBase}{RGB}{34,139,34}
@@ -227,18 +228,20 @@ cube array/.style={code={%
 % for hyperlinks
 
 \usepackage[round]{natbib}
+
 \usepackage[colorlinks = true,
             linkcolor = black,
-            urlcolor  = black,
+            urlcolor  = linkblue,
             citecolor = black,
             anchorcolor = black]{hyperref}
 \newcommand{\figref}[1]{\hyperref[#1]{(Fig.~\ref*{#1})}}
 \newcommand{\tabref}[1]{\hyperref[#1]{(Tab.~\ref*{#1})}}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+
+\usepackage[normalem]{ulem}  % for underline
 
 \usepackage{cleveref}
-% Make URL links (like DOIs or website links) use Arial
-\usepackage{url}
-\renewcommand{\UrlFont}{\fontspec{Arial}}
 
 \usepackage{sectsty}
 \allsectionsfont{\bfseries}
@@ -251,6 +254,7 @@ cube array/.style={code={%
 \usepackage [autostyle, english = british]{csquotes}
 \MakeOuterQuote{"}
 
+%url
 % header formatting
 
 \usepackage{layout}
@@ -276,6 +280,7 @@ cube array/.style={code={%
 
 %appendix formatting
 \usepackage{appendix}
+\usepackage{microtype}
 
 %footer formatting
 
@@ -289,13 +294,15 @@ cube array/.style={code={%
 }
 
 % specify files to use, especially useful if you want to build only one chapter due to build time
-%\includeonly{material_methods}
+%\includeonly{introduction}
 
 %----------------------------begin document-------------------------------
 \setcounter{secnumdepth}{2}  % Chapters and sections are numbered
 \counterwithout{figure}{chapter}
 \counterwithout{table}{chapter}
 \counterwithout{equation}{chapter}
+
+\sloppy
 
 \begin{document}
 
@@ -340,14 +347,14 @@ Abstract goes here.
 
 \include{acknowledgements}
 
-\bibliographystyle{plainnat}
+\bibliographystyle{mjo}
 \bibliography{bibliography}
 
 \begin{appendices}
-\renewcommand{\thefigure}{S\arabic{figure}}
-\setcounter{figure}{0}
+	\renewcommand{\thefigure}{S\arabic{figure}}
+	\setcounter{figure}{0}
 
-\include{appendix}
+	\include{appendix}
 
 \end{appendices}
 

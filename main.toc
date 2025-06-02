@@ -11,11 +11,14 @@
 \contentsline {section}{\numberline {2.3}Data analysis}{10}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Results}{14}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Cumulative apparent fishing hours}{14}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Hotspot analysis}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Fishing hotspots and high risk areas}{15}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Temporal changes}{18}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Flag countries}{21}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Depth and distance to port}{23}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Discussion}{25}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{26}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Acknowledgements}{27}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Supplementary Material}{38}{appendix.1.A}%
+\contentsline {section}{\numberline {3.4}Flag countries}{22}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Depth and distance to port}{24}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Discussion}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Main risk areas (hotspots)}{26}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Trends}{29}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Data caveats}{30}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{33}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Acknowledgements}{34}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Supplementary Material}{47}{appendix.1.A}%

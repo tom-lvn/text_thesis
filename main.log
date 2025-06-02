@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.21)  27 MAY 2025 18:15
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.21)  2 JUN 2025 12:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1071,6 +1071,17 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip93
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box150
+\UL@hyphenbox=\box151
+\UL@skip=\skip94
+\UL@hook=\toks78
+\UL@height=\dimen361
+\UL@pe=\count423
+\UL@pixel=\dimen362
+\ULC@box=\box152
+Package: ulem 2019/11/18
+\ULdepth=\dimen363
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -1098,12 +1109,12 @@ LaTeX Warning: Command \underline  has changed.
 
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2024/02/07 v24.2 The Babel package
-\babel@savecnt=\count423
-\U@D=\dimen361
+\babel@savecnt=\count424
+\U@D=\dimen364
 \l@unhyphenated=\language89
  (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/xebabel.def)
 \bbl@readstream=\read6
-\bbl@dirlevel=\count424
+\bbl@dirlevel=\count425
  (/usr/local/texlive/2024/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
@@ -1117,13 +1128,13 @@ Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count425
-\csq@gtype=\count426
-\csq@glevel=\count427
-\csq@qlevel=\count428
-\csq@maxlvl=\count429
-\csq@tshold=\count430
-\csq@ltx@everypar=\toks78
+\csq@reset=\count426
+\csq@gtype=\count427
+\csq@glevel=\count428
+\csq@qlevel=\count429
+\csq@maxlvl=\count430
+\csq@tshold=\count431
+\csq@ltx@everypar=\toks79
  (/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
 )
@@ -1138,94 +1149,114 @@ Package csquotes Info: Redefining alias 'english' -> 'english/british'.
 Package csquotes Info: Allocating character ".
  (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/layout.sty
 Package: layout 2023-08-20 v1.2e Show layout parameters
-\oneinch=\count431
-\cnt@paperwidth=\count432
-\cnt@paperheight=\count433
-\cnt@hoffset=\count434
-\cnt@voffset=\count435
-\cnt@textheight=\count436
-\cnt@textwidth=\count437
-\cnt@topmargin=\count438
-\cnt@oddsidemargin=\count439
-\cnt@evensidemargin=\count440
-\cnt@headheight=\count441
-\cnt@headsep=\count442
-\cnt@marginparsep=\count443
-\cnt@marginparwidth=\count444
-\cnt@marginparpush=\count445
-\cnt@footskip=\count446
-\fheight=\count447
-\ref@top=\count448
-\ref@hoffset=\count449
-\ref@voffset=\count450
-\ref@head=\count451
-\ref@body=\count452
-\ref@foot=\count453
-\ref@margin=\count454
-\ref@marginwidth=\count455
-\ref@marginpar=\count456
-\Interval=\count457
-\ExtraYPos=\count458
-\PositionX=\count459
-\PositionY=\count460
-\ArrowLength=\count461
+\oneinch=\count432
+\cnt@paperwidth=\count433
+\cnt@paperheight=\count434
+\cnt@hoffset=\count435
+\cnt@voffset=\count436
+\cnt@textheight=\count437
+\cnt@textwidth=\count438
+\cnt@topmargin=\count439
+\cnt@oddsidemargin=\count440
+\cnt@evensidemargin=\count441
+\cnt@headheight=\count442
+\cnt@headsep=\count443
+\cnt@marginparsep=\count444
+\cnt@marginparwidth=\count445
+\cnt@marginparpush=\count446
+\cnt@footskip=\count447
+\fheight=\count448
+\ref@top=\count449
+\ref@hoffset=\count450
+\ref@voffset=\count451
+\ref@head=\count452
+\ref@body=\count453
+\ref@foot=\count454
+\ref@margin=\count455
+\ref@marginwidth=\count456
+\ref@marginpar=\count457
+\Interval=\count458
+\ExtraYPos=\count459
+\PositionX=\count460
+\PositionY=\count461
+\ArrowLength=\count462
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip94
-\f@nch@O@elh=\skip95
-\f@nch@O@erh=\skip96
-\f@nch@O@olh=\skip97
-\f@nch@O@orh=\skip98
-\f@nch@O@elf=\skip99
-\f@nch@O@erf=\skip100
-\f@nch@O@olf=\skip101
-\f@nch@O@orf=\skip102
+\f@nch@headwidth=\skip95
+\f@nch@O@elh=\skip96
+\f@nch@O@erh=\skip97
+\f@nch@O@olh=\skip98
+\f@nch@O@orh=\skip99
+\f@nch@O@elf=\skip100
+\f@nch@O@erf=\skip101
+\f@nch@O@olf=\skip102
+\f@nch@O@orf=\skip103
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box150
-\beforetitleunit=\skip103
-\aftertitleunit=\skip104
-\ttl@plus=\dimen362
-\ttl@minus=\dimen363
-\ttl@toksa=\toks79
-\titlewidth=\dimen364
-\titlewidthlast=\dimen365
-\titlewidthfirst=\dimen366
+\ttl@box=\box153
+\beforetitleunit=\skip104
+\aftertitleunit=\skip105
+\ttl@plus=\dimen365
+\ttl@minus=\dimen366
+\ttl@toksa=\toks80
+\titlewidth=\dimen367
+\titlewidthlast=\dimen368
+\titlewidthfirst=\dimen369
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count462
-\c@@ppsavesec=\count463
-\c@@ppsaveapp=\count464
+\c@@pps=\count463
+\c@@ppsavesec=\count464
+\c@@ppsaveapp=\count465
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+\MT@toks=\toks81
+\MT@tempbox=\box154
+\MT@count=\count466
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks82
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen370
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count467
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2023/03/13 v3.1a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 238.
 )
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (./main.aux (./introduction.aux) (./material_methods.aux) (./results.aux) (./discussion.aux) (./conclusion.aux) (./acknowledgements.aux) (./appendix.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 300.
-LaTeX Font Info:    ... okay on input line 300.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 300.
-LaTeX Font Info:    ... okay on input line 300.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 300.
-LaTeX Font Info:    ... okay on input line 300.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 300.
-LaTeX Font Info:    ... okay on input line 300.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 300.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 300.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 307.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 307.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 300.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 300.
-LaTeX Font Info:    ... okay on input line 300.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 300.
-LaTeX Font Info:    ... okay on input line 300.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 300.
-LaTeX Font Info:    ... okay on input line 300.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 300.
-LaTeX Font Info:    ... okay on input line 300.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 300.
-LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 307.
+LaTeX Font Info:    ... okay on input line 307.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1263,8 +1294,8 @@ LaTeX Font Info:    ... okay on input line 300.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen367
-\caption@adjustwidth@linewidth=\dimen368
+\caption@adjustwidth@hsize=\dimen371
+\caption@adjustwidth@linewidth=\dimen372
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1281,62 +1312,77 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 300.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 300.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 300.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 300.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 300.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 300.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 300.
-LaTeX Font Info:    Redeclaring math accent \check on input line 300.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 300.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 300.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 300.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 300.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 300.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 300.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 300.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 300.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 300.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 300.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 300.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 300.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 300.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 300.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 300.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 300.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 307.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 307.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 307.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 307.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 307.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 307.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 307.
+LaTeX Font Info:    Redeclaring math accent \check on input line 307.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 307.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 307.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 307.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 307.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 307.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 300.
+(Font)              `operators' in the math version `normal' on input line 307.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Arial(0)/m/n on input line 300.
+(Font)                  OT1/cmr/m/n --> TU/Arial(0)/m/n on input line 307.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 300.
+(Font)              `operators' in the math version `bold' on input line 307.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/m/n on input line 300.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/m/n on input line 307.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 300.
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 307.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 300.
+(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 307.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 300.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 307.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 300.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 307.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 300.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 307.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/b/n on input line 300.
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/b/n on input line 307.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/b/it on input line 300.
+(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/b/it on input line 307.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 300.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 307.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 300.
-Package hyperref Info: Link coloring ON on input line 300.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 307.
+Package hyperref Info: Link coloring ON on input line 307.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-Package csquotes Info: Making character " active on input line 300.
+Package csquotes Info: Making character " active on input line 307.
+LaTeX Info: Redefining \microtypecontext on input line 307.
+Package microtype Info: Applying patch `item' on input line 307.
+Package microtype Info: Applying patch `toc' on input line 307.
+Package microtype Info: Applying patch `eqnum' on input line 307.
+Package microtype Info: Applying patch `footnote' on input line 307.
+Package microtype Info: Applying patch `verbatim' on input line 307.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `Arial' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
  (./titlepage.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
@@ -1380,10 +1426,16 @@ Overfull \hbox (70.83163pt too wide) in paragraph at lines 5--6
 LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 File: Figures/logos/logo_imbrsea.png Graphic file (type bmp)
 <Figures/logos/logo_imbrsea.png>
@@ -1407,24 +1459,31 @@ Overfull \hbox (33.4747pt too wide) in paragraph at lines 17--18
 
 ] [2
 
-] (./main.toc)
+] (./main.toc [3
+
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [3
-
-]
+ [4]
 \openout2 = `introduction.aux'.
 
  (./introduction.tex
 Chapter 1.
+
+Package natbib Warning: Citation `andrews_ancient' on page 1 undefined on input line 25.
+
 File: Figures/plots/study_area_test.pdf Graphic file (type pdf)
 <use Figures/plots/study_area_test.pdf>
 [1
 
 
 
-] [2] [3] [4]) [5]
+] [2] [3]
+
+Package natbib Warning: Citation `fishing_climate_change_shifts' on page 4 undefined on input line 102.
+
+[4]) [5]
 \openout2 = `material_methods.aux'.
 
  (./material_methods.tex
@@ -1434,14 +1493,7 @@ Chapter 2.
 
 
 
-] [7]
-
-LaTeX Warning: Hyper reference `fig:med' on page 8 undefined on input line 86.
-
-
-LaTeX Warning: Reference `fig:med' on page 8 undefined on input line 86.
-
-[8]
+] [7] [8]
 File: Figures/logos/GFW_logo.png Graphic file (type bmp)
 <Figures/logos/GFW_logo.png>
 File: Figures/logos/R_logo.png Graphic file (type bmp)
@@ -1492,17 +1544,17 @@ Missing character: There is no g ("67) in font nullfont!
 Missing character: There is no e ("65) in font nullfont!
 Missing character: There is no s ("73) in font nullfont!
 
-Overfull \hbox (63.3723pt too wide) in paragraph at lines 205--206
+Overfull \hbox (63.3723pt too wide) in paragraph at lines 234--235
 [][] 
  []
 
 
-Overfull \hbox (4.44267pt too wide) in paragraph at lines 172--261
+Overfull \hbox (4.44267pt too wide) in paragraph at lines 201--290
 [][]   []
  []
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
@@ -1519,8 +1571,8 @@ File: Figures/plots/sum_cv.pdf Graphic file (type pdf)
 
 
 ]
-Overfull \hbox (3.4567pt too wide) in paragraph at lines 24--28
-\TU/Arial(0)/m/n/12 Numerous persistent longline hotspot areas were identified throughout the Mediter-
+Underfull \hbox (badness 1635) in paragraph at lines 25--31
+\TU/Arial(0)/m/n/12 Numerous persistent longline hotspot areas were identified throughout the
  []
 
 File: Figures/plots/dll_hotspot_trend.pdf Graphic file (type pdf)
@@ -1535,33 +1587,45 @@ File: Figures/plots/purse_seines_ridge_seasons.pdf Graphic file (type pdf)
 <use Figures/plots/purse_seines_ridge_seasons.pdf>
  [18
 
-] [19] [20]
+] [19] [20] [21]
+Overfull \hbox (4.9599pt too wide) in paragraph at lines 170--170
+ []|\TU/Arial(0)/b/n/12 Detected 
+ []
+
+
+Overfull \hbox (4.9599pt too wide) in paragraph at lines 170--170
+ []|\TU/Arial(0)/b/n/12 Detected 
+ []
+
 File: Figures/plots/no_countries.pdf Graphic file (type pdf)
 <use Figures/plots/no_countries.pdf>
- [21
+[22
 
 ]
 File: Figures/plots/ais_vs_iccat.pdf Graphic file (type pdf)
 <use Figures/plots/ais_vs_iccat.pdf>
- [22]
+ [23]
 File: Figures/plots/depth_dist_both.pdf Graphic file (type pdf)
 <use Figures/plots/depth_dist_both.pdf>
-) [23] [24]
+) [24] [25]
 \openout2 = `discussion.aux'.
 
  (./discussion.tex
 Chapter 4.
-) [25
+
+Package natbib Warning: Citation `iccat_bft_catches_adria' on page 26 undefined on input line 35.
+
+[26
 
 
 
 
-]
+] [27] [28] [29] [30]) [31] [32]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
 Chapter 5.
-) [26
+) [33
 
 
 
@@ -1571,147 +1635,156 @@ Chapter 5.
 
  (./acknowledgements.tex
 Chapter 6.
-) [27
+) [34
 
 
 
 
 ] (./main.bbl
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 
-Package fontspec Info: Font family 'Arial(1)' created for font 'Arial' with
-(fontspec)             options [].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"Arial/OT:script=latn;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"Arial/B/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"Arial/I/OT:script=latn;language=dflt;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->"Arial/BI/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-
-
-Underfull \hbox (badness 1062) in paragraph at lines 17--24
-[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][] [] [] [] [][][][][][][][][][] [] [][][][] [] [][][][][] [] []$\TU/Arial(0)/m/n/12 .  URL [][]$[][][][][] [] [] [] [][][][][][][][][][][] []
+Underfull \hbox (badness 2409) in paragraph at lines 41--50
+[]\TU/Arial(0)/m/n/12 Balbín, R., J.L. López-Jurado, M.M. Flexas, P. Reglero, P. Vélez-Velchí,
  []
 
-[28
+[35
 
 
 
-] [29] [30]
-Underfull \hbox (badness 1577) in paragraph at lines 180--184
-[]\TU/Arial(0)/m/n/12 Global Fishing Watch.  Distance from port in meters, Version 20201104,
+]
+Underfull \hbox (badness 1448) in paragraph at lines 77--84
+[]\TU/Arial(0)/m/n/12 Bell, James B., Johannes H. Fischer, Ana P.B. Carneiro, Shane Griffiths,
+ []
+
+[36]
+Underfull \hbox (badness 2503) in paragraph at lines 131--136
+\TU/Arial(0)/m/n/12 Improving fishing pattern detection from satellite ais using data mining
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--184
-\TU/Arial(0)/m/n/12 2020.  URL [][]$[][][][][] [] [] [] [][][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][][][][][][] [] [][][][][][][][] []
- []
-
-[31]
-Underfull \hbox (badness 1571) in paragraph at lines 233--237
-[]\TU/Arial(0)/m/n/12 ICCAT.  Executive Summary ALB-MD, 2024a.  URL [][]$[][][][][] [] [] [] [][][] [] [][][][][] [] [][][] []
+Underfull \hbox (badness 1789) in paragraph at lines 131--136
+\TU/Arial(0)/m/n/12 and machine learning. \TU/Arial(0)/m/it/12 PLOS ONE\TU/Arial(0)/m/n/12 , 11, 1–20. [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][] [] [][]:[][][][] []
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 244--247
-[]\TU/Arial(0)/m/n/12 ICCAT.  Executive Summary SWO-MD, 2024c.  URL [][]$[][][][][] [] [] [] [][][] [] [][][][][] [] [][][] []
+Underfull \hbox (badness 7238) in paragraph at lines 138--144
+[]\TU/Arial(0)/m/n/12 Di Natale, A. (2012). Literature on the Eastern Atlantic and Mediter-
  []
 
 
-Underfull \hbox (badness 6316) in paragraph at lines 271--277
-\TU/Arial(0)/m/n/12 Marine Traffic?, n.d.  URL [][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][] [] [][][][][][][][] []
+Underfull \hbox (badness 3179) in paragraph at lines 138--144
+\TU/Arial(0)/m/n/12 ranean Tuna Trap Fishery. \TU/Arial(0)/m/it/12 Collective Volume of Scientific Papers, IC-
  []
 
 
-Overfull \hbox (21.43326pt too wide) in paragraph at lines 271--277
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[][]\TU/Arial(0)/m/n/12 .
+Underfull \hbox (badness 6741) in paragraph at lines 138--144
+\TU/Arial(0)/m/it/12 CAT\TU/Arial(0)/m/n/12 , 67, 175–220. [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][][][]:[][][] [] [][][][][][][][][] [] [][][][] [] [][][][][][][][][][] []
  []
 
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 331--337
-[][][][][][][][] [] [][][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][] [] [][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][] []
+[37]
+Underfull \hbox (badness 5802) in paragraph at lines 218--223
+[]\TU/Arial(0)/m/n/12 Farrugio, H. (2013). \TU/Arial(0)/m/it/12 Fisheries in the Gulf of Lions\TU/Arial(0)/m/n/12 . RAC/SPA, UNEP-
  []
 
-
-Underfull \hbox (badness 3815) in paragraph at lines 341--350
-[]\TU/Arial(0)/m/it/12 Ministère de la Transition écologique et de la Cohésion des territoires\TU/Arial(0)/m/n/12 .
- []
-
-
-Underfull \hbox (badness 4181) in paragraph at lines 341--350
-\TU/Arial(0)/m/n/12 Arrêté du 13 février 2024 établissant les modalités de répartition du
+[38] [39]
+Underfull \hbox (badness 3029) in paragraph at lines 325--331
+[][][]\OML/cmm/m/it/12 :[][][][][]:[][][] [] [][][][][][][][][] [] [][][][] [] [][][][][][][][][][] [] [][][] [] [][][][][][][][][][][]:[][][]$[][] \TU/Arial(0)/m/n/12 accessed
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 341--350
-\TU/Arial(0)/m/n/12 quota de thon rouge (\TU/Arial(0)/m/it/12 Thunnus thynnus\TU/Arial(0)/m/n/12 ) accordé à la France pour la
+Underfull \hbox (badness 10000) in paragraph at lines 333--337
+[]\TU/Arial(0)/m/n/12 ICCAT. (2024a). Executive Summary ALB-MD. [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][][][]:[][][] []
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 345--349
+[]\TU/Arial(0)/m/n/12 ICCAT. (2024c). Executive Summary SWO-MD. [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][][][]:[][][] []
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 341--350
-\TU/Arial(0)/m/n/12 zone «océan Atlantique à l’est de la longitude 45° O et Méditerranée»
+Underfull \hbox (badness 10000) in paragraph at lines 371--376
+\TU/Arial(0)/m/n/12 on Marine Traffic? [][]$[][][][][] [] [] [] [][][][][][][]\OML/cmm/m/it/12 :[][][][][][][][][][][][][]:[][][] [] [][] [] [][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 341--350
-\TU/Arial(0)/m/n/12 pour l’année 2024.  \TU/Arial(0)/m/it/12 Journal officiel de la République française\TU/Arial(0)/m/n/12 , (Texte
+Underfull \hbox (badness 10000) in paragraph at lines 371--376
+[][][][][][][] [][] [][][] [][] [][][][][] [][] [][] [][] [][][] [][] [][][][][][][][][] [][] [][] [][] [][][] [][] [][][][][][][] [][] [][][] [][] [][][][][][][] [][] [][] [][]
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 439--444
+[]\TU/Arial(0)/m/it/12 Ministero dell’agricoltura, della sovranita’alimentare e delle
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 341--350
-\TU/Arial(0)/m/n/12 20 sur 103), 2024.  URL [][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][] [] [][][][] [] [][] [] [][][][][][][][] [] [][][] [] [][] []
+Underfull \hbox (badness 10000) in paragraph at lines 439--444
+\TU/Arial(0)/m/it/12 foreste\TU/Arial(0)/m/n/12 . (2024). Allegato 1, TONNO ROSSO - CAMPAG-
  []
 
-[33]
-Underfull \hbox (badness 2894) in paragraph at lines 373--379
-\TU/Arial(0)/m/it/12 ranean Marine Science\TU/Arial(0)/m/n/12 , 1(1):5–18, Jun. 2000.  URL [][]$[][][][][] [] [] [] [][][][][][][][][] []
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--444
+\TU/Arial(0)/m/n/12 NIA DI PESCA 2024. \TU/Arial(0)/m/it/12 Gazzetta Ufficiale della Repubblica Ital-
  []
 
-[34] [35] [36]
-Underfull \hbox (badness 1019) in paragraph at lines 524--537
-\TU/Arial(0)/m/n/12 trophodynamics of marine top predators: Current knowledge, recent ad-
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--444
+\TU/Arial(0)/m/it/12 iana\TU/Arial(0)/m/n/12 . [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][][][][][][][][][][][][][][][]:[][] [] [][][][] [] [][][][][][][][][][][][][][] []
  []
 
-) [37]
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--444
+[][][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][]\OT1/cmr/m/n/12 ?[][][][]\OML/cmm/m/it/12 :[][][][][][][][][][][][][][][][][][][][][][][][][] \OT1/cmr/m/n/12 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--444
+[][][][] [][] [][] [][] [][][][][][][]\OML/cmm/m/it/12 :[][][][][][][][][][][][][][][][][] \OT1/cmr/m/n/12 = [][][][][][][][][][][][][][][][][][][][][][][] = [][][][][]$[][]
+ []
+
+[42] [43] [44] [45]) [46]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
 Appendix A.
+File: Figures/plots/dist_med.pdf Graphic file (type pdf)
+<use Figures/plots/dist_med.pdf>
 File: Figures/plots/longline_countries.pdf Graphic file (type pdf)
 <use Figures/plots/longline_countries.pdf>
+[47
+
+
+]
 File: Figures/plots/seines_countries.pdf Graphic file (type pdf)
 <use Figures/plots/seines_countries.pdf>
-) [38
+ [48]
+File: Figures/plots/hrv_catches.pdf Graphic file (type pdf)
+<use Figures/plots/hrv_catches.pdf>
+ [49]) [50]
 
+Package natbib Warning: There were undefined citations.
 
-] [39] (./main.aux (./introduction.aux) (./material_methods.aux) (./results.aux) (./discussion.aux) (./conclusion.aux) (./acknowledgements.aux) (./appendix.aux))
+(./main.aux (./introduction.aux) (./material_methods.aux) (./results.aux) (./discussion.aux) (./conclusion.aux) (./acknowledgements.aux) (./appendix.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: ED873BA83EABB4103607ED448543B410;2659.
+(rerunfilecheck)             Checksum: 0DCE802C3BA982B8C4498A243ECE70BC;3174.
  ) 
 Here is how much of TeX's memory you used:
- 49980 strings out of 474773
- 1088411 string characters out of 5757723
- 1958839 words of memory out of 5000000
- 71285 multiletter control sequences out of 15000+600000
- 565897 words of font info for 94 fonts, out of 8000000 for 9000
+ 51942 strings out of 474773
+ 1124476 string characters out of 5757723
+ 1959839 words of memory out of 5000000
+ 73218 multiletter control sequences out of 15000+600000
+ 566019 words of font info for 97 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 137i,16n,133p,2400b,2093s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 137i,16n,133p,2400b,2085s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (43 pages).
+Output written on main.pdf (55 pages).

@@ -7,54 +7,54 @@ A level-1 auxiliary file: results.aux
 A level-1 auxiliary file: discussion.aux
 A level-1 auxiliary file: conclusion.aux
 A level-1 auxiliary file: acknowledgements.aux
-The style file: plainnat.bst
+The style file: mjo.bst
 A level-1 auxiliary file: appendix.aux
 Database file #1: bibliography.bib
-Warning--empty publisher in FAO2024
-Warning--empty journal in iccat_climate_change
-Warning--empty journal in pew_tuna_value
-Warning--there's a number but no volume in registry_italy
-Warning--there's a number but no volume in registry_france
-Warning--there's a number but no volume in registry_spain
-You've used 61 entries,
-            2773 wiz_defined-function locations,
-            1021 strings with 20929 characters,
-and the built_in function-call counts, 30729 in all, are:
-= -- 2730
-> -- 2062
-< -- 35
-+ -- 705
-- -- 642
-* -- 2694
-:= -- 4931
-add.period$ -- 270
-call.type$ -- 61
-change.case$ -- 390
-chr.to.int$ -- 59
-cite$ -- 128
-duplicate$ -- 1200
-empty$ -- 2247
-format.name$ -- 719
-if$ -- 6320
-int.to.chr$ -- 3
+Warning--I'm ignoring bias's extra "doi" field
+--line 99 of file bibliography.bib
+Warning--I didn't find a database entry for ""
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--missing publisher in FAO2024
+You've used 78 entries,
+            3067 wiz_defined-function locations,
+            1150 strings with 26625 characters,
+and the built_in function-call counts, 51034 in all, are:
+= -- 3762
+> -- 2901
+< -- 43
++ -- 973
+- -- 882
+* -- 4458
+:= -- 7659
+add.period$ -- 442
+call.type$ -- 78
+change.case$ -- 683
+chr.to.int$ -- 75
+cite$ -- 157
+duplicate$ -- 3758
+empty$ -- 3765
+format.name$ -- 1079
+if$ -- 10179
+int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 51
-newline$ -- 399
-num.names$ -- 247
-pop$ -- 698
+missing$ -- 791
+newline$ -- 327
+num.names$ -- 315
+pop$ -- 1528
 preamble$ -- 1
-purify$ -- 335
+purify$ -- 605
 quote$ -- 0
-skip$ -- 951
+skip$ -- 1091
 stack$ -- 0
-substring$ -- 913
-swap$ -- 86
+substring$ -- 1822
+swap$ -- 1652
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 651
-warning$ -- 6
-while$ -- 233
+type$ -- 687
+warning$ -- 1
+while$ -- 292
 width$ -- 0
-write$ -- 959
-(There were 6 warnings)
+write$ -- 1021
+(There were 3 warnings)

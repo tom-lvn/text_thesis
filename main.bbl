@@ -1,548 +1,647 @@
-\begin{thebibliography}{61}
+\begin{thebibliography}{78}
+\renewcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\providecommand{\urlprefix}{}
+\providecommand{\urlaccessed}{accessed}
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+  \providecommand{\doi}{\begingroup \urlstyle{tt}\Url}
 
-\bibitem[Addis et~al.(2012)Addis, Cannas, Cau, Dean, Greco, Locci, and
-  Secci]{cultural_social_addis}
-P.~Addis, R.~Cannas, A.~Cau, J.~M. Dean, G.~Greco, I.~Locci, and M.~Secci.
-\newblock {Social, cultural and basic economic analysis of the trap fishery of
-  Sardinia: first step towards parameterization}.
-\newblock \emph{{Collective Volume of Scientific Papers, ICCAT}}, 67\penalty0
-  (1):\penalty0 380--389, 2012.
+\bibitem[{Addis et~al.(2012)Addis, Cannas, Cau, Dean, Greco, Locci, and
+  Secci}]{cultural_social_addis}
+Addis, P., R.~Cannas, A.~Cau, J.~M. Dean, G.~Greco, I.~Locci, and M.~Secci.
+  (2012). {Social, cultural and basic economic analysis of the trap fishery of
+  Sardinia: first step towards parameterization}. \emph{{Collective Volume of
+  Scientific Papers, ICCAT}},  67, 380--389.
+  \href{{https://www.iccat.int/Documents/CVSP/CV067\_2012/CV067010380.pdf}}{\url{{https://www.iccat.int/Documents/CVSP/CV067\_2012/CV067010380.pdf}}}
+   \urlaccessed\ 2025-05-29.
+\bibAnnoteFile{cultural_social_addis}
 
-\bibitem[Baum and Worm(2009)]{baum_worm_cascading}
-Julia~K. Baum and Boris Worm.
-\newblock Cascading top-down effects of changing oceanic predator abundances.
-\newblock \emph{Journal of Animal Ecology}, 78\penalty0 (4):\penalty0 699--714,
-  2009.
-\newblock \doi{https://doi.org/10.1111/j.1365-2656.2009.01531.x}.
-\newblock URL
-  \url{https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2656.2009.01531.x}.
+\bibitem[{Alvarez-Berastegui et~al.(2012)Alvarez-Berastegui, Reglero, Alemany,
+  Ciannelli, Balb{\'\i}n, and L{\'o}pez-Jurado}]{reglero_12}
+Alvarez-Berastegui, D., P.~Reglero, F.~Alemany, L.~Ciannelli, R.~Balb{\'\i}n,
+  and J.~L. L{\'o}pez-Jurado. (2012). Geographically and environmentally driven
+  spawning distributions of tuna species in the western mediterranean sea.
+  \emph{Marine Ecology Progress Series},  463, 273--284.
+  \href{https://doi.org/10.3354/meps09800}{\url{https://doi.org/10.3354/meps09800}}.
+\bibAnnoteFile{reglero_12}
 
-\bibitem[Beamish et~al.(2005)Beamish, McFarlane, and King]{linking_study}
-R.J. Beamish, G.A. McFarlane, and J.R. King.
-\newblock Migratory patterns of pelagic fishes and possible linkages between
-  open ocean and coastal ecosystems off the pacific coast of north america.
-\newblock \emph{Deep Sea Research Part II: Topical Studies in Oceanography},
-  52\penalty0 (5):\penalty0 739--755, 2005.
-\newblock ISSN 0967-0645.
-\newblock \doi{https://doi.org/10.1016/j.dsr2.2004.12.016}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S096706450500007X}.
-\newblock Linkages between coastal and open ocean ecosystems.
+\bibitem[{Arocha(2007)}]{arocha_2007}
+Arocha, F. (2007). Swordfish reproduction in the atlantic ocean: An overview.
+  \emph{Gulf and Caribbean Research},  19, 21--36.
+\bibAnnoteFile{arocha_2007}
 
-\bibitem[Bell et~al.(2025)Bell, Fischer, Carneiro, Griffiths, Bielli, Jiménez,
-  Oppel, Phillips, Wade, Yates, and Reeves]{ais_bird_bycatch}
-James~B. Bell, Johannes~H. Fischer, Ana~P.B. Carneiro, Shane Griffiths,
+\bibitem[{Balbín et~al.(2014)Balbín, López-Jurado, Flexas, Reglero,
+  Vélez-Velchí, González-Pola, Rodríguez, García, and Alemany}]{balbin_14}
+Balbín, R., J.L. López-Jurado, M.M. Flexas, P.~Reglero, P.~Vélez-Velchí,
+  C.~González-Pola, J.M. Rodríguez, A.~García, and F.~Alemany. (2014).
+  Interannual variability of the early summer circulation around the balearic
+  islands: Driving factors and potential effects on the marine ecosystem.
+  \emph{Journal of Marine Systems},  138, 70--81.
+  \href{https://doi.org/10.1016/j.jmarsys.2013.07.004}{\url{https://doi.org/10.1016/j.jmarsys.2013.07.004}}.
+  The wrapping up of the IDEADOS project: International Workshop on
+  Environment, Ecosystems and Demersal Resources, and Fisheries.
+\bibAnnoteFile{balbin_14}
+
+\bibitem[{{Barcelona, Salvador García} et~al.(2010){Barcelona, Salvador
+  García}, {Ortiz de Urbina, José M.}, {de la Serna, José M.}, {Alot,
+  Enrique}, and {Macías, David}}]{spain_swo_gear}
+{Barcelona, Salvador García}, {Ortiz de Urbina, José M.}, {de la Serna, José
+  M.}, {Alot, Enrique}, and {Macías, David}. (2010). Seabird bycatch in
+  spanish mediterranean large pelagic longline fisheries, 2000-2008.
+  \emph{Aquatic Living Resources},  23, 363--371.
+  \href{https://doi.org/10.1051/alr/2010022}{\url{https://doi.org/10.1051/alr/2010022}}.
+\bibAnnoteFile{spain_swo_gear}
+
+\bibitem[{Baum and Worm(2009)}]{baum_worm_cascading}
+Baum, Julia~K. and Boris Worm. (2009). Cascading top-down effects of changing
+  oceanic predator abundances. \emph{Journal of Animal Ecology},  78, 699--714.
+  \href{https://doi.org/10.1111/j.1365-2656.2009.01531.x}{\url{https://doi.org/10.1111/j.1365-2656.2009.01531.x}}.
+\bibAnnoteFile{baum_worm_cascading}
+
+\bibitem[{Beamish et~al.(2005)Beamish, McFarlane, and King}]{linking_study}
+Beamish, R.J., G.A. McFarlane, and J.R. King. (2005). Migratory patterns of
+  pelagic fishes and possible linkages between open ocean and coastal
+  ecosystems off the pacific coast of north america. \emph{Deep Sea Research
+  Part II: Topical Studies in Oceanography},  52, 739--755.
+  \href{https://doi.org/10.1016/j.dsr2.2004.12.016}{\url{https://doi.org/10.1016/j.dsr2.2004.12.016}}.
+\bibAnnoteFile{linking_study}
+
+\bibitem[{Bell et~al.(2025)Bell, Fischer, Carneiro, Griffiths, Bielli,
+  Jiménez, Oppel, Phillips, Wade, Yates, and Reeves}]{ais_bird_bycatch}
+Bell, James~B., Johannes~H. Fischer, Ana~P.B. Carneiro, Shane Griffiths,
   Alessandra Bielli, Sebastián Jiménez, Steffen Oppel, Richard~A. Phillips,
-  Helen~M. Wade, Oliver Yates, and Stuart~A. Reeves.
-\newblock Evaluating the effectiveness of seabird bycatch mitigation measures
-  for pelagic longlines in the south atlantic.
-\newblock \emph{Biological Conservation}, 302:\penalty0 110981, 2025.
-\newblock ISSN 0006-3207.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0006320725000187}.
+  Helen~M. Wade, Oliver Yates, and Stuart~A. Reeves. (2025). Evaluating the
+  effectiveness of seabird bycatch mitigation measures for pelagic longlines in
+  the south atlantic. \emph{Biological Conservation},  302.
+  \href{https://doi.org/10.1016/j.biocon.2025.110981}{\url{https://doi.org/10.1016/j.biocon.2025.110981}}.
+\bibAnnoteFile{ais_bird_bycatch}
 
-\bibitem[Caldas~de Castro and Singer(2006)]{fdr_correction}
-Marcia Caldas~de Castro and Burton~H. Singer.
-\newblock Controlling the false discovery rate: A new application to account
-  for multiple and dependent tests in local statistics of spatial association.
-\newblock \emph{Geographical Analysis}, 38\penalty0 (2):\penalty0 180--208,
-  2006.
-\newblock URL
-  \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0016-7363.2006.00682.x}.
+\bibitem[{{Bertolino, F. and Camolese, C. and Dell'Aquila, M. and Mariani, A.
+  and Valastro, M.}(2015)}]{swo_gear_italy}
+{Bertolino, F. and Camolese, C. and Dell'Aquila, M. and Mariani, A. and
+  Valastro, M.} (2015). Swordfish \textit{Xiphias gladius L.} fisheries using
+  mesopelagic longline in the mediterranean sea by italian fishing fleet.
+  \emph{Collective Volume of Scientific Papers, ICCAT},  71, 2073--2078.
+  \href{{https://www.iccat.int/Documents/CVSP/CV071\_2015/n\_5/CV071052073.pdf}}{\url{{https://www.iccat.int/Documents/CVSP/CV071\_2015/n\_5/CV071052073.pdf}}}
+   \urlaccessed\ 2025-06-02.
+\bibAnnoteFile{swo_gear_italy}
 
-\bibitem[Carpentieri et~al.(2021)Carpentieri, Nastasi, Sessa, and
-  Srour]{bycatch_book}
-P.~Carpentieri, A.~Nastasi, M.~Sessa, and A.~Srour, editors.
-\newblock \emph{Incidental Catch of Vulnerable Species in Mediterranean and
-  Black Sea Fisheries -- A Review}, volume 101 of \emph{Studies and Reviews}.
-\newblock General Fisheries Commission for the Mediterranean, FAO, Rome, 2021.
-\newblock \doi{10.4060/cb5405en}.
-\newblock URL \url{https://doi.org/10.4060/cb5405en}.
+\bibitem[{Burgess et~al.(2010)Burgess, Dimech, Caruana, Darmanin, Raine,
+  Harrison, and Schembri}]{bycatch_malta}
+Burgess, E., M.~Dimech, R.~Caruana, M.~Darmanin, H.~Raine, A.~Harrison, and
+  P.~J. Schembri. (2010). {Social, cultural and basic economic analysis of the
+  trap fishery of Sardinia: first step towards parameterization}.
+  \emph{{Collective Volume of Scientific Papers, ICCAT}},  65, 2262--2269.
+  \href{{https://www.iccat.int/Documents/CVSP/CV065_2010/n_6/CV065062262.pdf}}{\url{{https://www.iccat.int/Documents/CVSP/CV065_2010/n_6/CV065062262.pdf}}}
+   \urlaccessed\ 2025-05-29.
+\bibAnnoteFile{bycatch_malta}
 
-\bibitem[de~Souza et~al.(2016)de~Souza, Boerder, Matwin, and Worm]{souza}
-Erico~N. de~Souza, Kristina Boerder, Stan Matwin, and Boris Worm.
-\newblock Improving fishing pattern detection from satellite ais using data
-  mining and machine learning.
-\newblock \emph{PLOS ONE}, 11\penalty0 (7):\penalty0 1--20, 07 2016.
-\newblock URL \url{https://doi.org/10.1371/journal.pone.0158248}.
+\bibitem[{Caldas~de Castro and Singer(2006)}]{fdr_correction}
+Caldas~de Castro, Marcia and Burton~H. Singer. (2006). Controlling the false
+  discovery rate: A new application to account for multiple and dependent tests
+  in local statistics of spatial association. \emph{Geographical Analysis},
+  38, 180--208.
+  \href{https://doi.org/10.1111/j.0016-7363.2006.00682.x}{\url{https://doi.org/10.1111/j.0016-7363.2006.00682.x}}.
+\bibAnnoteFile{fdr_correction}
 
-\bibitem[Di~Natale(2012)]{natale2012}
-A.~Di~Natale.
-\newblock {Literature on the Eastern Atlantic and Mediterranean Tuna Trap
-  Fishery}.
-\newblock \emph{Collect. Vol. Sci. Pap. ICCAT}, 67\penalty0 (1):\penalty0
-  175--220, 2012.
-\newblock SCRS/2011/037.
+\bibitem[{Carpentieri et~al.(2021)Carpentieri, Nastasi, Sessa, and
+  Srour}]{bycatch_book}
+Carpentieri, P., A.~Nastasi, M.~Sessa, and A.~Srour, eds. (2021).
+  \emph{Incidental Catch of Vulnerable Species in Mediterranean and Black Sea
+  Fisheries -- A Review} volume 101 of \emph{Studies and Reviews}. General
+  Fisheries Commission for the Mediterranean, FAO, Rome
+  \href{https://doi.org/10.4060/cb5405en}{\url{https://doi.org/10.4060/cb5405en}}.
+\bibAnnoteFile{bycatch_book}
 
-\bibitem[Di~Natale et~al.(2005)Di~Natale, Celona, and Mangano]{natale2005}
-A.~Di~Natale, A.~Celona, and A.~Mangano.
-\newblock {A series of catch records by the harpoon fishery in the Strait of
-  Messina from 1976 to 2003}.
-\newblock \emph{{Collective Volume of Scientific Papers, ICCAT}}, 58:\penalty0
-  1348--1359, 2005.
+\bibitem[{Damalas and and(2014)}]{damalas_14_swo}
+Damalas, Dimitrios and Persefoni~Megalofonou and. (2014). Age-dependent habitat
+  identification of mediterranean swordfish: Application on commercial fishery
+  data and potential use in fisheries management. \emph{Reviews in Fisheries
+  Science \& Aquaculture},  22, 257--273.
+  \href{10.1080/23308249.2014.951987}{\url{10.1080/23308249.2014.951987}}.
+\bibAnnoteFile{damalas_14_swo}
 
-\bibitem[{Esri Inc.}(2024)]{arcgis}
-{Esri Inc.}
-\newblock {ArcGIS Pro (Version 3.4)}.
-\newblock \url{https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview},
-  2024.
-\newblock Esri Inc.
+\bibitem[{de~Souza et~al.(2016)de~Souza, Boerder, Matwin, and Worm}]{souza}
+de~Souza, Erico~N., Kristina Boerder, Stan Matwin, and Boris Worm. (2016).
+  Improving fishing pattern detection from satellite ais using data mining and
+  machine learning. \emph{PLOS ONE},  11, 1--20.
+  \href{https://doi.org/10.1371/journal.pone.0158248}{\url{https://doi.org/10.1371/journal.pone.0158248}}.
+\bibAnnoteFile{souza}
 
-\bibitem[{European Commission}(1993)]{euregulation1993}
-{European Commission}.
-\newblock {Council Regulation No. 2847/93 of 12 October 1993 establishing a
-  control system applicable to the common fisheries policy}.
-\newblock \emph{Official Journal of the European Union}, 261:\penalty0 93, 10
-  1993.
+\bibitem[{Di~Natale(2012)}]{natale2012}
+Di~Natale, A. (2012). {Literature on the Eastern Atlantic and Mediterranean
+  Tuna Trap Fishery}. \emph{Collective Volume of Scientific Papers, ICCAT},
+  67, 175--220.
+  \href{{https://www.iccat.int/Documents/CVSP/CV067\_2012/CV067010175.pdf}}{\url{{https://www.iccat.int/Documents/CVSP/CV067\_2012/CV067010175.pdf}}}
+   \urlaccessed\ 2025-05-29.
+\bibAnnoteFile{natale2012}
 
-\bibitem[{European Commission}(2003)]{ec2003regulation}
-{European Commission}.
-\newblock {Commission Regulation No. 2244/2003 of 18 December 2003 laying down
-  detailed provisions regarding satellite-based vessel monitoring systems}.
-\newblock \emph{Official Journal of the European Union}, L333:\penalty0 17--27,
-  2003.
+\bibitem[{Di~Natale et~al.(2005)Di~Natale, Celona, and Mangano}]{natale2005}
+Di~Natale, A., A.~Celona, and A.~Mangano. (2005). {A series of catch records by
+  the harpoon fishery in the Strait of Messina from 1976 to 2003}.
+  \emph{{Collective Volume of Scientific Papers, ICCAT}},  58, 1348--1359.
+  \href{{https://www.iccat.int/Documents/CVSP/CV058\_2005/n\_4/CV058041348.pdf}}{\url{{https://www.iccat.int/Documents/CVSP/CV058\_2005/n\_4/CV058041348.pdf}}}
+   \urlaccessed\ 2025-05-29.
+\bibAnnoteFile{natale2005}
 
-\bibitem[{European Commission}(2011)]{ec2011directive}
-{European Commission}.
-\newblock {Commission Directive 2011/15/EU of 23 February 2011 amending
-  Directive 2002/59/EC of the European Parliament and of the Council
-  establishing a Community vessel traffic monitoring and information system
-  Text with EEA relevance}.
-\newblock \emph{Official Journal of the European Union}, L49/33, 2011.
-\newblock URL
-  \url{https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32011L0015}.
+\bibitem[{DiMatteo et~al.(2022)DiMatteo, Cañadas, Roberts, Sparks, Panigada,
+  Boisseau, Moscrop, Fortuna, Lauriano, Holcer, Peltier, Ridoux, Raga, Tomás,
+  Broderick, Godley, Haywood, March, Snape, Sagarminaga, and
+  Hochscheid}]{dimatteo_turtles}
+DiMatteo, Andrew, Ana Cañadas, Jason Roberts, Laura Sparks, Simone Panigada,
+  Olivier Boisseau, Anna Moscrop, Caterina~Maria Fortuna, Giancarlo Lauriano,
+  Draško Holcer, Hélène Peltier, Vincent Ridoux, Juan~Antonia Raga, Jesús
+  Tomás, Annette~C. Broderick, Brendan~J. Godley, Julia Haywood, David March,
+  Robin Snape, Ricardo Sagarminaga, and Sandra Hochscheid. (2022). Basin-wide
+  estimates of loggerhead turtle abundance in the mediterranean sea derived
+  from line transect surveys. \emph{Frontiers in Marine Science},  9.
+  \href{https://doi.org/10.3389/fmars.2022.930412}{\url{https://doi.org/10.3389/fmars.2022.930412}}.
+\bibAnnoteFile{dimatteo_turtles}
 
-\bibitem[{European Commission, Directorate-General for Maritime Affairs and
-  Fisheries}(2025)]{eu_fleet_register}
+\bibitem[{{Esri Inc.}(2024)}]{arcgis}
+{Esri Inc.} (2024). {ArcGIS Pro (Version 3.4)}.
+  \href{https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview}{\url{https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview}}.
+  Esri Inc.
+\bibAnnoteFile{arcgis}
+
+\bibitem[{{European Commission}(1993)}]{euregulation1993}
+{European Commission}. (1993). {Council Regulation No. 2847/93 of 12 October
+  1993 establishing a control system applicable to the common fisheries
+  policy}. \emph{Official Journal of the European Union},  261, 93.
+  \href{https://eur-lex.europa.eu/eli/reg/1993/2847/oj/eng}{\url{https://eur-lex.europa.eu/eli/reg/1993/2847/oj/eng}}.
+\bibAnnoteFile{euregulation1993}
+
+\bibitem[{{European Commission}(2003)}]{ec2003regulation}
+{European Commission}. (2003). {Commission Regulation No. 2244/2003 of 18
+  December 2003 laying down detailed provisions regarding satellite-based
+  vessel monitoring systems}. \emph{Official Journal of the European Union},
+  L333, 17--27.
+  \href{https://eur-lex.europa.eu/eli/reg/2003/2244/oj/eng}{\url{https://eur-lex.europa.eu/eli/reg/2003/2244/oj/eng}}.
+\bibAnnoteFile{ec2003regulation}
+
+\bibitem[{{European Commission}(2011)}]{ec2011directive}
+{European Commission}. (2011). {Commission Directive 2011/15/EU of 23 February
+  2011 amending Directive 2002/59/EC of the European Parliament and of the
+  Council establishing a Community vessel traffic monitoring and information
+  system Text with EEA relevance}. \emph{Official Journal of the European
+  Union},  L49/33.
+  \href{https://eur-lex.europa.eu/eli/dir/2011/15/oj/eng}{\url{https://eur-lex.europa.eu/eli/dir/2011/15/oj/eng}}.
+\bibAnnoteFile{ec2011directive}
+
+\bibitem[{{European Commission, Directorate-General for Maritime Affairs and
+  Fisheries}(2025)}]{eu_fleet_register}
 {European Commission, Directorate-General for Maritime Affairs and Fisheries}.
-\newblock Eu fleet register, version 1.2.0.1, 2025.
-\newblock URL \url{https://webgate.ec.europa.eu/fleet-europa/index_en}.
-\newblock Accessed 2025-05-17.
+  (2025). {EU Fleet Register, Version 1.2.0.1}.
+  \href{{https://webgate.ec.europa.eu/fleet-europa/index\_en}}{\url{{https://webgate.ec.europa.eu/fleet-europa/index\_en}}}
+   \urlaccessed\ 2025-05-17.
+\bibAnnoteFile{eu_fleet_register}
 
-\bibitem[{FAO}(2024)]{FAO2024}
-{FAO}.
-\newblock \emph{The State of World Fisheries and Aquaculture 2024 – Blue
-  Transformation in Action}.
-\newblock {Food and Agriculture Organization, Rome}, 2024.
-\newblock URL \url{https://doi.org/10.4060/cd0683en}.
+\bibitem[{{FAO}(2024)}]{FAO2024}
+{FAO}. (2024). \emph{The State of World Fisheries and Aquaculture 2024 – Blue
+  Transformation in Action}. {Food and Agriculture Organization, Rome}
+  \href{https://doi.org/10.4060/cd0683en}{\url{https://doi.org/10.4060/cd0683en}}.
+\bibAnnoteFile{FAO2024}
 
-\bibitem[{FAO}(2025)]{FAO2025Longlines}
-{FAO}.
-\newblock Fishing gear types: Drifting longlines. technology fact sheets, 2025.
-\newblock URL \url{https://www.fao.org/fishery/en/geartype/233/en}.
-\newblock Accessed 2025-05-26.
+\bibitem[{{FAO}(2025)}]{FAO2025Longlines}
+{FAO}. (2025). Fishing gear types: Drifting longlines. technology fact sheets.
+  \href{https://www.fao.org/fishery/en/geartype/233/en}{\url{https://www.fao.org/fishery/en/geartype/233/en}}
+   \urlaccessed\ 2025-05-26.
+\bibAnnoteFile{FAO2025Longlines}
 
-\bibitem[Ferrà et~al.(2018)Ferrà, Tassetti, Grati, Pellini, Polidori,
-  Scarcella, and Fabi]{ferra_trawlers_change}
-Carmen Ferrà, Anna~Nora Tassetti, Fabio Grati, Giulio Pellini, Piero Polidori,
-  Giuseppe Scarcella, and Gianna Fabi.
-\newblock Mapping change in bottom trawling activity in the mediterranean sea
-  through ais data.
-\newblock \emph{Marine Policy}, 94:\penalty0 275--281, 2018.
-\newblock ISSN 0308-597X.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0308597X17301859}.
+\bibitem[{Farrugio(2013)}]{french_longlines}
+Farrugio, H. (2013). \emph{Fisheries in the Gulf of Lions}. RAC/SPA, UNEP-MAP,
+  Tunis
+  \href{https://www.rac-spa.org/sites/default/files/doc_open_seas/fisheries_gulf_lions.pdf}{\url{https://www.rac-spa.org/sites/default/files/doc_open_seas/fisheries_gulf_lions.pdf}}.
+  Ed. RAC/SPA.
+\bibAnnoteFile{french_longlines}
 
-\bibitem[Fromentin and Powers(2005)]{fromentin_2005_tunareview}
-Jean-Marc Fromentin and Joseph~E Powers.
-\newblock Atlantic bluefin tuna: population dynamics, ecology, fisheries and
-  management.
-\newblock \emph{Fish and Fisheries}, 6\penalty0 (4):\penalty0 281--306, 2005.
-\newblock \doi{https://doi.org/10.1111/j.1467-2979.2005.00197.x}.
-\newblock URL
-  \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-2979.2005.00197.x}.
+\bibitem[{Ferrà et~al.(2018)Ferrà, Tassetti, Grati, Pellini, Polidori,
+  Scarcella, and Fabi}]{ferra_trawlers_change}
+Ferrà, Carmen, Anna~Nora Tassetti, Fabio Grati, Giulio Pellini, Piero
+  Polidori, Giuseppe Scarcella, and Gianna Fabi. (2018). Mapping change in
+  bottom trawling activity in the mediterranean sea through ais data.
+  \emph{Marine Policy},  94, 275--281.
+  \href{https://doi.org/10.1016/j.marpol.2017.12.013}{\url{https://doi.org/10.1016/j.marpol.2017.12.013}}.
+\bibAnnoteFile{ferra_trawlers_change}
 
-\bibitem[Gerritsen and Lordan(2010)]{gerritsen2010}
-Hans Gerritsen and Colm Lordan.
-\newblock {Integrating vessel monitoring systems (VMS) data with daily catch
-  data from logbooks to explore the spatial distribution of catch and effort at
-  high resolution}.
-\newblock \emph{ICES Journal of Marine Science}, 68\penalty0 (1):\penalty0
-  245--252, 09 2010.
-\newblock ISSN 1054-3139.
-\newblock \doi{10.1093/icesjms/fsq137}.
-\newblock URL \url{https://doi.org/10.1093/icesjms/fsq137}.
+\bibitem[{Fromentin and Lopuszanski(2013)}]{bft_mig_med}
+Fromentin, Jean-Marc and Daniel Lopuszanski. (2013). Migration, residency, and
+  homing of bluefin tuna in the western mediterranean sea. \emph{ICES Journal
+  of Marine Science},  71, 510--518.
+  \href{https://doi.org/10.1093/icesjms/fst157}{\url{https://doi.org/10.1093/icesjms/fst157}}.
+\bibAnnoteFile{bft_mig_med}
 
-\bibitem[Getis and Ord(1992)]{getis_ord}
-Arthur Getis and J.~K. Ord.
-\newblock The analysis of spatial association by use of distance statistics.
-\newblock \emph{Geographical Analysis}, 24\penalty0 (3):\penalty0 189--206,
-  1992.
-\newblock URL
-  \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1992.tb00261.x}.
+\bibitem[{Fromentin and Powers(2005)}]{fromentin_2005_tunareview}
+Fromentin, Jean-Marc and Joseph~E Powers. (2005). Atlantic bluefin tuna:
+  population dynamics, ecology, fisheries and management. \emph{Fish and
+  Fisheries},  6, 281--306.
+  \href{https://doi.org/10.1111/j.1467-2979.2005.00197.x}{\url{https://doi.org/10.1111/j.1467-2979.2005.00197.x}}.
+\bibAnnoteFile{fromentin_2005_tunareview}
 
-\bibitem[{Global Fishing Watch}(2020)]{gfw_distance}
-{Global Fishing Watch}.
-\newblock {Distance from port in meters, Version 20201104}, 2020.
-\newblock URL
-  \url{https://globalfishingwatch.org/data-download/datasets/public-distance-from-port-v1}.
+\bibitem[{García-Barcelona et~al.(2020)García-Barcelona, Macías, Saber,
+  Gómez-Vives, Rioja, and Ortiz~de Urbina}]{iccat_swo_discards}
+García-Barcelona, S., D.~Macías, S.~Saber, M.-J.~José Gómez-Vives,
+  P.~Rioja, and J.~Ortiz~de Urbina. (2020). {Effects of ICCAT Rec [2016-05]
+  size regulation on the discards of the Spanish longline fishery targeting
+  swordfish (\textit{Xiphias gladius} Linnaeus, 1758) in the western
+  Mediterranean}. \emph{{Collective Volume of Scientific Papers, ICCAT}},  76,
+  172--179.
+  \href{{https://www.iccat.int/Documents/CVSP/CV076\_2019/n\_3/CV076003172.pdf}}{\url{{https://www.iccat.int/Documents/CVSP/CV076\_2019/n\_3/CV076003172.pdf}}}
+   \urlaccessed\ 2025-06-02.
+\bibAnnoteFile{iccat_swo_discards}
 
-\bibitem[{Global Fishing Watch}(2025)]{gfw_dataset}
-{Global Fishing Watch}.
-\newblock {Global AIS-based Apparent Fishing Effort Dataset, Version 3.0},
-  2025.
-\newblock URL \url{https://doi.org/10.5281/zenodo.14982712}.
+\bibitem[{Gerritsen and Lordan(2010)}]{gerritsen2010}
+Gerritsen, Hans and Colm Lordan. (2010). {Integrating vessel monitoring systems
+  (VMS) data with daily catch data from logbooks to explore the spatial
+  distribution of catch and effort at high resolution}. \emph{ICES Journal of
+  Marine Science},  68, 245--252.
+  \href{https://doi.org/10.1093/icesjms/fsq137}{\url{https://doi.org/10.1093/icesjms/fsq137}}.
+\bibAnnoteFile{gerritsen2010}
 
-\bibitem[Hijmans(2025)]{terra_package}
-Robert~J. Hijmans.
-\newblock \emph{terra: Spatial Data Analysis}, 2025.
-\newblock URL \url{https://rspatial.org/}.
-\newblock R package version 1.8-18, https://rspatial.github.io/terra/.
+\bibitem[{Getis and Ord(1992)}]{getis_ord}
+Getis, Arthur and J.~K. Ord. (1992). The analysis of spatial association by use
+  of distance statistics. \emph{Geographical Analysis},  24, 189--206.
+  \href{https://doi.org/10.1111/j.1538-4632.1992.tb00261.x}{\url{https://doi.org/10.1111/j.1538-4632.1992.tb00261.x}}.
+\bibAnnoteFile{getis_ord}
 
-\bibitem[Hintzen et~al.(2012)Hintzen, Bastardie, Beare, Piet, Ulrich, Deporte,
-  Egekvist, and Degel]{HINTZEN201231}
-Niels~T. Hintzen, Francois Bastardie, Doug Beare, Gerjan~J. Piet, Clara Ulrich,
-  Nicolas Deporte, Josefine Egekvist, and Henrik Degel.
-\newblock {VMStools: Open-source software for the processing, analysis and
-  visualisation of fisheries logbook and VMS data}.
-\newblock \emph{Fisheries Research}, 115-116:\penalty0 31--43, 2012.
-\newblock ISSN 0165-7836.
-\newblock \doi{https://doi.org/10.1016/j.fishres.2011.11.007}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0165783611003365}.
+\bibitem[{{Global Fishing Watch}(2020)}]{gfw_distance}
+{Global Fishing Watch}. (2020). {Distance from port in meters, Version
+  20201104}.
+  \href{https://globalfishingwatch.org/datasets-and-code/}{\url{https://globalfishingwatch.org/datasets-and-code/}}.
+\bibAnnoteFile{gfw_distance}
 
-\bibitem[Hinz et~al.(2013)Hinz, Murray, Lambert, Hiddink, and
-  Kaiser]{confidentiality}
-H~Hinz, L~G Murray, G~I Lambert, J~G Hiddink, and M~J Kaiser.
-\newblock Confidentiality over fishing effort data threatens science and
-  management progress.
-\newblock \emph{Fish and Fisheries}, 14\penalty0 (1):\penalty0 110--117, 2013.
-\newblock URL
-  \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-2979.2012.00475.x}.
+\bibitem[{{Global Fishing Watch}(2025)}]{gfw_dataset}
+{Global Fishing Watch}. (2025). {Global AIS-based Apparent Fishing Effort
+  Dataset, Version 3.0}.
+  \href{https://doi.org/10.5281/zenodo.14982712}{\url{https://doi.org/10.5281/zenodo.14982712}}.
+\bibAnnoteFile{gfw_dataset}
 
-\bibitem[{ICCAT}(2022)]{iccat_climate_change}
-{ICCAT}.
-\newblock {Resolution by ICCAT on Climate Change}.
-\newblock 2022.
-\newblock URL
-  \url{https://www.iccat.int/Documents/Recs/compendiopdf-e/2022-13-e.pdf}.
+\bibitem[{Hijmans(2025)}]{terra_package}
+Hijmans, Robert~J. (2025). \emph{terra: Spatial Data Analysis}.
+  \href{https://rspatial.org/}{\url{https://rspatial.org/}}. R package version
+  1.8-18, https://rspatial.github.io/terra/.
+\bibAnnoteFile{terra_package}
 
-\bibitem[{ICCAT}(2023)]{tunamed}
-{ICCAT}.
-\newblock Terms of reference for the mediterranean tuna habitat observatory
-  initiative.
-\newblock \emph{Collective Volume of Scientific Papers, ICCAT}, 80\penalty0
-  (7):\penalty0 155--161, 2023.
+\bibitem[{Hintzen et~al.(2012)Hintzen, Bastardie, Beare, Piet, Ulrich, Deporte,
+  Egekvist, and Degel}]{HINTZEN201231}
+Hintzen, Niels~T., Francois Bastardie, Doug Beare, Gerjan~J. Piet, Clara
+  Ulrich, Nicolas Deporte, Josefine Egekvist, and Henrik Degel. (2012).
+  {VMStools: Open-source software for the processing, analysis and
+  visualisation of fisheries logbook and VMS data}. \emph{Fisheries Research},
+  115-116, 31--43.
+  \href{https://doi.org/10.1016/j.fishres.2011.11.007}{\url{https://doi.org/10.1016/j.fishres.2011.11.007}}.
+\bibAnnoteFile{HINTZEN201231}
 
-\bibitem[ICCAT(2024{\natexlab{a}})]{iccat_alb_summary}
-ICCAT.
-\newblock {Executive Summary ALB-MD}, 2024{\natexlab{a}}.
-\newblock URL
-  \url{https://www.iccat.int/Documents/SCRS/ExecSum/ALB_MED_ENG.pdf}.
+\bibitem[{Hintzen et~al.(2025)Hintzen, Brigden, Kaastra, Mackinson, Pastoors,
+  and van de Pol}]{bias}
+Hintzen, Niels~T, Katie Brigden, Hendrik-Jan Kaastra, Steven Mackinson,
+  Martin~A Pastoors, and Lennert van de Pol. (2025). Bias in global fishing
+  watch ais data analyses results in overestimate of northeast atlantic pelagic
+  fishing impact. \emph{ICES Journal of Marine Science},  82, fsaf033.
+  \href{10.1093/icesjms/fsaf033}{\url{10.1093/icesjms/fsaf033}}.
+\bibAnnoteFile{bias}
 
-\bibitem[ICCAT(2024{\natexlab{b}})]{iccat_bft_summary}
-ICCAT.
-\newblock {Executive Summary BFT-E}, 2024{\natexlab{b}}.
-\newblock URL \url{https://www.iccat.int/Documents/SCRS/ExecSum/BFT_E_ENG.pdf}.
+\bibitem[{Hinz et~al.(2013)Hinz, Murray, Lambert, Hiddink, and
+  Kaiser}]{confidentiality}
+Hinz, H, L~G Murray, G~I Lambert, J~G Hiddink, and M~J Kaiser. (2013).
+  Confidentiality over fishing effort data threatens science and management
+  progress. \emph{Fish and Fisheries},  14, 110--117.
+  \href{https://doi.org/10.1111/j.1467-2979.2012.00475.x}{\url{https://doi.org/10.1111/j.1467-2979.2012.00475.x}}.
+\bibAnnoteFile{confidentiality}
 
-\bibitem[ICCAT(2024{\natexlab{c}})]{iccat_swo_summary}
-ICCAT.
-\newblock {Executive Summary SWO-MD}, 2024{\natexlab{c}}.
-\newblock URL \url{https://www.iccat.int/Documents/SCRS/ExecSum/BFT_E_ENG.pdf}.
+\bibitem[{{ICCAT}(2022)}]{iccat_climate_change}
+{ICCAT}. (2022). {Resolution by ICCAT on Climate Change}.
+  \href{https://www.iccat.int/Documents/Recs/compendiopdf-e/2022-13-e.pdf}{\url{https://www.iccat.int/Documents/Recs/compendiopdf-e/2022-13-e.pdf}}
+   \urlaccessed\ 2025-05-25.
+\bibAnnoteFile{iccat_climate_change}
 
-\bibitem[{ICCAT}(2025)]{iccat_catches}
-{ICCAT}.
-\newblock {Nominal catches of Atlantic tunas and tuna-like fish (including
-  sharks), by gear, region and flag (Excel table)}, 2025.
-\newblock URL \url{https://www.iccat.int/Data/t1nc_20250131.7z}.
+\bibitem[{{ICCAT}(2023)}]{tunamed}
+{ICCAT}. (2023). Terms of reference for the mediterranean tuna habitat
+  observatory initiative. \emph{Collective Volume of Scientific Papers, ICCAT},
+   80, 155--161.
+  \href{{https://www.iccat.int/Documents/CVSP/CV080\_2023/n\_7/CV080070155.pdf}}{\url{{https://www.iccat.int/Documents/CVSP/CV080\_2023/n\_7/CV080070155.pdf}}}
+   \urlaccessed\ 2025-05-29.
+\bibAnnoteFile{tunamed}
 
-\bibitem[James et~al.(2018)James, Mendo, Jones, Orr, McKnight, and
-  Thompson]{ais_mpa_designation}
-Mark James, Tania Mendo, Esther~L. Jones, Kyla Orr, Ali McKnight, and John
-  Thompson.
-\newblock Ais data to inform small scale fisheries management and marine
-  spatial planning.
-\newblock \emph{Marine Policy}, 91:\penalty0 113--121, 2018.
-\newblock ISSN 0308-597X.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0308597X17305845}.
+\bibitem[{ICCAT(2024{\natexlab{a}})}]{iccat_alb_summary}
+ICCAT. (2024{\natexlab{a}}). {Executive Summary ALB-MD}.
+  \href{{https://www.iccat.int/Documents/SCRS/ExecSum/ALB\_MED\_ENG.pdf}}{\url{{https://www.iccat.int/Documents/SCRS/ExecSum/ALB\_MED\_ENG.pdf}}}
+   \urlaccessed\ 2025-05-21.
+\bibAnnoteFile{iccat_alb_summary}
 
-\bibitem[Kendall and Gibbons(1990)]{kendall1990rank}
-M.~G. Kendall and J.~D. Gibbons.
-\newblock \emph{Rank Correlation Methods}.
-\newblock Griffin, London, 5th edition, 1990.
+\bibitem[{ICCAT(2024{\natexlab{b}})}]{iccat_bft_summary}
+ICCAT. (2024{\natexlab{b}}). {Executive Summary BFT-E}.
+  \href{{https://www.iccat.int/Documents/SCRS/ExecSum/BFT\_E\_ENG.pdf}}{\url{{https://www.iccat.int/Documents/SCRS/ExecSum/BFT\_E\_ENG.pdf}}}
+   \urlaccessed\ 2025-03-16.
+\bibAnnoteFile{iccat_bft_summary}
 
-\bibitem[Kontas(n.d.)]{kontasvesselupdate}
-Vasilis Kontas.
-\newblock {How often do the positions of the vessels get updated on Marine
-  Traffic?}, n.d.
-\newblock URL
-  \url{https://support.marinetraffic.com/en/articles/9552905-how-often-do-the-positions-of-the-vessels-get-updated-on-marinetraffic}.
-\newblock Retrieved 5 January 2025.
+\bibitem[{ICCAT(2024{\natexlab{c}})}]{iccat_swo_summary}
+ICCAT. (2024{\natexlab{c}}). {Executive Summary SWO-MD}.
+  \href{{https://www.iccat.int/Documents/SCRS/ExecSum/BFT\_E\_ENG.pdf}}{\url{{https://www.iccat.int/Documents/SCRS/ExecSum/BFT\_E\_ENG.pdf}}}
+   \urlaccessed\ 2025-04-20.
+\bibAnnoteFile{iccat_swo_summary}
 
-\bibitem[Kroodsma et~al.(2018)Kroodsma, Mayorga, Hochberg, Miller, Boerder,
+\bibitem[{{ICCAT}(2025)}]{iccat_catches}
+{ICCAT}. (2025). {Nominal catches of Atlantic tunas and tuna-like fish
+  (including sharks), by gear, region and flag (Excel table)}.
+  \href{{https://www.iccat.int/en/accesingdb.html}}{\url{{https://www.iccat.int/en/accesingdb.html}}}
+   \urlaccessed\ 2025-05-07.
+\bibAnnoteFile{iccat_catches}
+
+\bibitem[{James et~al.(2018)James, Mendo, Jones, Orr, McKnight, and
+  Thompson}]{ais_mpa_designation}
+James, Mark, Tania Mendo, Esther~L. Jones, Kyla Orr, Ali McKnight, and John
+  Thompson. (2018). Ais data to inform small scale fisheries management and
+  marine spatial planning. \emph{Marine Policy},  91, 113--121.
+  \href{https://doi.org/10.1016/j.marpol.2018.02.012}{\url{https://doi.org/10.1016/j.marpol.2018.02.012}}.
+\bibAnnoteFile{ais_mpa_designation}
+
+\bibitem[{Kendall and Gibbons(1990)}]{kendall1990rank}
+Kendall, M.~G. and J.~D. Gibbons. (1990). \emph{Rank Correlation Methods} 5th
+  edition. Oxford University Press, New York.
+\bibAnnoteFile{kendall1990rank}
+
+\bibitem[{Kontas(n.d.)}]{kontasvesselupdate}
+Kontas, Vasilis. (n.d.). {How often do the positions of the vessels get updated
+  on Marine Traffic?}
+  \href{https://support.marinetraffic.com/en/articles/9552905-how-often-do-the-positions-of-the-vessels-get-updated-on-marinetraffic}{\url{https://support.marinetraffic.com/en/articles/9552905-how-often-do-the-positions-of-the-vessels-get-updated-on-marinetraffic}}
+   \urlaccessed\ 2025-01-05.
+\bibAnnoteFile{kontasvesselupdate}
+
+\bibitem[{Kroodsma et~al.(2018)Kroodsma, Mayorga, Hochberg, Miller, Boerder,
   Ferretti, Wilson, Bergman, White, Block, Woods, Sullivan, Costello, and
-  Worm]{Kroodsma18}
-David~A. Kroodsma, Juan Mayorga, Timothy Hochberg, Nathan~A. Miller, Kristina
+  Worm}]{Kroodsma18}
+Kroodsma, David~A., Juan Mayorga, Timothy Hochberg, Nathan~A. Miller, Kristina
   Boerder, Francesco Ferretti, Alex Wilson, Bjorn Bergman, Timothy~D. White,
   Barbara~A. Block, Paul Woods, Brian Sullivan, Christopher Costello, and Boris
-  Worm.
-\newblock Tracking the global footprint of fisheries.
-\newblock \emph{Science}, 359\penalty0 (6378):\penalty0 904--908, 2018.
-\newblock \doi{10.1126/science.aao5646}.
-\newblock URL \url{https://www.science.org/doi/abs/10.1126/science.aao5646}.
+  Worm. (2018). Tracking the global footprint of fisheries. \emph{Science},
+  359, 904--908.
+  \href{https://doi.org/10.1126/science.aao5646}{\url{https://doi.org/10.1126/science.aao5646}}.
+\bibAnnoteFile{Kroodsma18}
 
-\bibitem[Maina et~al.(2016)Maina, Kavadas, Katsanevakis, Somarakis, Tserpes,
-  and Georgakarakos]{fishing_grounds_greece}
-I.~Maina, S.~Kavadas, S.~Katsanevakis, S.~Somarakis, G.~Tserpes, and
-  S.~Georgakarakos.
-\newblock A methodological approach to identify fishing grounds: A case study
-  on greek trawlers.
-\newblock \emph{Fisheries Research}, 183:\penalty0 326--339, 2016.
-\newblock ISSN 0165-7836.
-\newblock \doi{https://doi.org/10.1016/j.fishres.2016.06.021}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0165783616302107}.
+\bibitem[{Maina et~al.(2016)Maina, Kavadas, Katsanevakis, Somarakis, Tserpes,
+  and Georgakarakos}]{fishing_grounds_greece}
+Maina, I., S.~Kavadas, S.~Katsanevakis, S.~Somarakis, G.~Tserpes, and
+  S.~Georgakarakos. (2016). A methodological approach to identify fishing
+  grounds: A case study on greek trawlers. \emph{Fisheries Research},  183,
+  326--339.
+  \href{https://doi.org/10.1016/j.fishres.2016.06.021}{\url{https://doi.org/10.1016/j.fishres.2016.06.021}}.
+\bibAnnoteFile{fishing_grounds_greece}
 
-\bibitem[Mann(1945)]{mann1945nonparametric}
-H.~B. Mann.
-\newblock Nonparametric tests against trend.
-\newblock \emph{Econometrica}, 13:\penalty0 245--259, 1945.
+\bibitem[{Mann(1945)}]{mann1945nonparametric}
+Mann, H.~B. (1945). Nonparametric tests against trend. \emph{Econometrica},
+  13, 245--259.
+  \href{https://doi.org/10.2307/1907187}{\url{https://doi.org/10.2307/1907187}}.
+\bibAnnoteFile{mann1945nonparametric}
 
-\bibitem[Marsaglia et~al.(2024)Marsaglia, Parisi, Libralato, Miller, Davis,
-  Paolo, Fiorentino, Garofalo, Costantini, and Russo]{marsaglia_trawling}
-Luca Marsaglia, Antonio Parisi, Simone Libralato, Nathan~A Miller, Pete Davis,
+\bibitem[{Marsaglia et~al.(2024)Marsaglia, Parisi, Libralato, Miller, Davis,
+  Paolo, Fiorentino, Garofalo, Costantini, and Russo}]{marsaglia_trawling}
+Marsaglia, Luca, Antonio Parisi, Simone Libralato, Nathan~A Miller, Pete Davis,
   Fernando~S Paolo, Fabio Fiorentino, Germana Garofalo, Marco Costantini, and
-  Tommaso Russo.
-\newblock Shedding light on trawl fishing activity in the mediterranean sea
-  with remote sensing data.
-\newblock \emph{ICES Journal of Marine Science}, 82\penalty0 (2):\penalty0
-  fsae153, 11 2024.
-\newblock ISSN 1054-3139.
-\newblock \doi{10.1093/icesjms/fsae153}.
-\newblock URL \url{https://doi.org/10.1093/icesjms/fsae153}.
+  Tommaso Russo. (2024). Shedding light on trawl fishing activity in the
+  mediterranean sea with remote sensing data. \emph{ICES Journal of Marine
+  Science},  82.
+  \href{https://doi.org/10.1093/icesjms/fsae153}{\url{https://doi.org/10.1093/icesjms/fsae153}}.
+\bibAnnoteFile{marsaglia_trawling}
 
-\bibitem[McKinney et~al.(2020)McKinney, Gibbon, Wozniak, and
-  Galland]{pew_tuna_value}
-Raiana McKinney, James Gibbon, Esther Wozniak, and Grantly Galland.
-\newblock Netting billions 2020: A global tuna valuation.
-\newblock 2020.
-\newblock URL
-  \url{https://www.pewtrusts.org/-/media/assets/2020/10/nettingbillions2020.pdf}.
+\bibitem[{Mauricio(2020)}]{iccat_juvenile_swo_ortiz}
+Mauricio, O. (2020). Estimation of undersize mediterranean swordfish
+  (\textit{Xiphias gladius})catches between 2008 - 2018 for the longline main
+  fleets. \emph{{Collective Volume of Scientific Papers, ICCAT}},  77,
+  317--329.
+  \href{{https://www.iccat.int/Documents/CVSP/CV077\_2020/n\_3/CV077030317.pdf}}{\url{{https://www.iccat.int/Documents/CVSP/CV077\_2020/n\_3/CV077030317.pdf}}}
+   \urlaccessed\ 2025-06-02.
+\bibAnnoteFile{iccat_juvenile_swo_ortiz}
 
-\bibitem[{\textit{Ministero dell'agricoltura, della sovranita'alimentare e
-  delle foreste}}(2024)]{registry_italy}
+\bibitem[{McKinney et~al.(2020)McKinney, Gibbon, Wozniak, and
+  Galland}]{pew_tuna_value}
+McKinney, Raiana, James Gibbon, Esther Wozniak, and Grantly Galland. (2020).
+  {Netting billions 2020: A global tuna valuation}.
+  \href{https://www.pewtrusts.org/-/media/assets/2020/10/nettingbillions2020.pdf}{\url{https://www.pewtrusts.org/-/media/assets/2020/10/nettingbillions2020.pdf}}
+   \urlaccessed\ 2025-05-29.
+\bibAnnoteFile{pew_tuna_value}
+
+\bibitem[{Medina(2020)}]{medina_spawning}
+Medina, Antonio. (2020). Reproduction of atlantic bluefin tuna. \emph{Fish and
+  Fisheries},  21, 1109--1119.
+  \href{https://doi.org/10.1111/faf.12489}{\url{https://doi.org/10.1111/faf.12489}}.
+\bibAnnoteFile{medina_spawning}
+
+\bibitem[{{\textit{Ministero dell'agricoltura, della sovranita'alimentare e
+  delle foreste}}(2024)}]{registry_italy}
 {\textit{Ministero dell'agricoltura, della sovranita'alimentare e delle
-  foreste}}.
-\newblock {Allegato 1, TONNO ROSSO - CAMPAGNIA DI PESCA 2024}.
-\newblock \emph{Gazzetta Ufficiale della Repubblica Italiana}, \penalty0 (117),
-  2024.
-\newblock URL
-  \url{https://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2024-05-21&atto.codiceRedazionale=24A02500&elenco30giorni=false}.
+  foreste}}. (2024). {Allegato 1, TONNO ROSSO - CAMPAGNIA DI PESCA 2024}.
+  \emph{Gazzetta Ufficiale della Repubblica Italiana}.
+  \href{{https://www.gazzettaufficiale.it/atto/serie\_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2024-05-21\&atto.codiceRedazionale=24A02500\&elenco30giorni=false}}{\url{{https://www.gazzettaufficiale.it/atto/serie\_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2024-05-21\&atto.codiceRedazionale=24A02500\&elenco30giorni=false}}}
+   \urlaccessed\ 2025-05-29.
+\bibAnnoteFile{registry_italy}
 
-\bibitem[{\textit{Ministère de la Transition écologique et de la Cohésion
-  des territoires}}(2024)]{registry_france}
+\bibitem[{{\textit{Ministère de la Transition écologique et de la Cohésion
+  des territoires}}(2024)}]{registry_france}
 {\textit{Ministère de la Transition écologique et de la Cohésion des
-  territoires}}.
-\newblock {Arrêté du 13 février 2024 établissant les modalités de
-  répartition du quota de thon rouge (\textit{Thunnus thynnus}) accordé à la
-  France pour la zone «océan Atlantique à l’est de la longitude 45° O et
-  Méditerranée» pour l’année 2024}.
-\newblock \emph{Journal officiel de la République française}, \penalty0
-  (Texte 20 sur 103), 2024.
-\newblock URL
-  \url{https://www.legifrance.gouv.fr/download/pdf?id=wSCtx11Gzpq9uWOcYXc7s-_AvWkqbw3aGTWSBldcbDg=}.
+  territoires}}. (2024). {Arrêté du 13 février 2024 établissant les
+  modalités de répartition du quota de thon rouge (\textit{Thunnus thynnus})
+  accordé à la France pour la zone «océan Atlantique à l’est de la
+  longitude 45° O et Méditerranée» pour l’année 2024}. \emph{Journal
+  officiel de la République française}.
+  \href{{https://www.legifrance.gouv.fr/download/pdf?id=wSCtx11Gzpq9uWOcYXc7s-\_AvWkqbw3aGTWSBldcbDg=}}{\url{{https://www.legifrance.gouv.fr/download/pdf?id=wSCtx11Gzpq9uWOcYXc7s-\_AvWkqbw3aGTWSBldcbDg=}}}.
+\bibAnnoteFile{registry_france}
 
-\bibitem[Natale et~al.(2015)Natale, Gibin, Alessandrini, Vespe, and
-  Paulrud]{natale}
-Fabrizio Natale, Maurizio Gibin, Alfredo Alessandrini, Michele Vespe, and Anton
-  Paulrud.
-\newblock {Mapping Fishing Effort through AIS Data}.
-\newblock \emph{PLOS ONE}, 10\penalty0 (6):\penalty0 1--16, 06 2015.
-\newblock \doi{10.1371/journal.pone.0130746}.
-\newblock URL \url{https://doi.org/10.1371/journal.pone.0130746}.
+\bibitem[{Natale et~al.(2015)Natale, Gibin, Alessandrini, Vespe, and
+  Paulrud}]{natale}
+Natale, Fabrizio, Maurizio Gibin, Alfredo Alessandrini, Michele Vespe, and
+  Anton Paulrud. (2015). {Mapping Fishing Effort through AIS Data}. \emph{PLOS
+  ONE},  10, 1--16.
+  \href{https://doi.org/10.1371/journal.pone.0130746}{\url{https://doi.org/10.1371/journal.pone.0130746}}.
+\bibAnnoteFile{natale}
 
-\bibitem[Orofino et~al.(2023)Orofino, McDonald, Mayorga, Costello, and
-  Bradley]{orofino_transparency}
-Sara Orofino, Gavin McDonald, Juan Mayorga, Christopher Costello, and Darcy
-  Bradley.
-\newblock Opportunities and challenges for improving fisheries management
-  through greater transparency in vessel tracking.
-\newblock \emph{ICES Journal of Marine Science}, 80\penalty0 (4):\penalty0
-  675--689, 02 2023.
-\newblock ISSN 1054-3139.
-\newblock \doi{10.1093/icesjms/fsad008}.
-\newblock URL \url{https://doi.org/10.1093/icesjms/fsad008}.
+\bibitem[{Niu et~al.(2024)Niu, Chen, Yu, Guo, Zhu, and Zhang}]{niu_ais_cpue}
+Niu, Zixuan, Zhaohui Chen, Wei Yu, Haihong Guo, Ruichen Zhu, and Xiaoyi Zhang.
+  (2024). Temporal and spatial variations in squid jigging catch efficiency in
+  the oyashio extension region. \emph{Fisheries Oceanography},  33, e12692.
+  \href{https://doi.org/10.1111/fog.12692}{\url{https://doi.org/10.1111/fog.12692}}.
+\bibAnnoteFile{niu_ais_cpue}
 
-\bibitem[Papaconstantinou and Farrugio(2000)]{fisheries_med_2000}
-C.~Papaconstantinou and H.~Farrugio.
-\newblock {Fisheries in the Mediterranean}.
-\newblock \emph{Mediterranean Marine Science}, 1\penalty0 (1):\penalty0 5--18,
-  Jun. 2000.
-\newblock URL
-  \url{https://ejournals.epublishing.ekt.gr/index.php/hcmr-med-mar-sc/article/view/11985}.
+\bibitem[{Orofino et~al.(2023)Orofino, McDonald, Mayorga, Costello, and
+  Bradley}]{orofino_transparency}
+Orofino, Sara, Gavin McDonald, Juan Mayorga, Christopher Costello, and Darcy
+  Bradley. (2023). Opportunities and challenges for improving fisheries
+  management through greater transparency in vessel tracking. \emph{ICES
+  Journal of Marine Science},  80, 675--689.
+  \href{https://doi.org/10.1093/icesjms/fsad008}{\url{https://doi.org/10.1093/icesjms/fsad008}}.
+\bibAnnoteFile{orofino_transparency}
 
-\bibitem[Piet et~al.(2006)Piet, Quirijns, Robinson, and
-  Greenstreet]{piet_fishing_indicators}
-G.~J. Piet, F.~J. Quirijns, L.~Robinson, and S.~P.~R. Greenstreet.
-\newblock Potential pressure indicators for fishing, and their data
-  requirements.
-\newblock \emph{ICES Journal of Marine Science}, 64\penalty0 (1):\penalty0
-  110--121, 10 2006.
-\newblock ISSN 1054-3139.
-\newblock \doi{10.1093/icesjms/fsl006}.
-\newblock URL \url{https://doi.org/10.1093/icesjms/fsl006}.
+\bibitem[{Palko et~al.(1981)Palko, Beardsley, and
+  Richards}]{palko1981swordfish}
+Palko, B.~J., G.~L. Beardsley, and W.~J. Richards. (1981). {Synopsis of the
+  Biology of the Swordfish, \textit{Xiphias gladius}, Linnaeus}. Technical
+  Report NMFS Circular 441 United States Department of Commerce, National
+  Oceanic and Atmospheric Administration (NOAA)
+  \href{https://www.fao.org/4/ap932e/ap932e.pdf}{\url{https://www.fao.org/4/ap932e/ap932e.pdf}}.
+\bibAnnoteFile{palko1981swordfish}
 
-\bibitem[{Posit team}(2024)]{rstudio}
-{Posit team}.
-\newblock \emph{RStudio: Integrated Development Environment for R}.
-\newblock Posit Software, PBC, Boston, MA, 2024.
-\newblock URL \url{http://www.posit.co/}.
+\bibitem[{Papaconstantinou and Farrugio(2000)}]{fisheries_med_2000}
+Papaconstantinou, C. and H.~Farrugio. (2000). {Fisheries in the Mediterranean}.
+  \emph{Mediterranean Marine Science},  1, 5--18.
+  \href{https://doi.org/10.12681/mms.2}{\url{https://doi.org/10.12681/mms.2}}.
+\bibAnnoteFile{fisheries_med_2000}
 
-\bibitem[{R Core Team}(2024)]{r_language}
-{R Core Team}.
-\newblock \emph{R: A Language and Environment for Statistical Computing}.
-\newblock R Foundation for Statistical Computing, Vienna, Austria, 2024.
-\newblock URL \url{https://www.R-project.org/}.
+\bibitem[{Piet et~al.(2006)Piet, Quirijns, Robinson, and
+  Greenstreet}]{piet_fishing_indicators}
+Piet, G.~J., F.~J. Quirijns, L.~Robinson, and S.~P.~R. Greenstreet. (2006).
+  Potential pressure indicators for fishing, and their data requirements.
+  \emph{ICES Journal of Marine Science},  64, 110--121.
+  \href{https://doi.org/10.1093/icesjms/fsl006}{\url{https://doi.org/10.1093/icesjms/fsl006}}.
+\bibAnnoteFile{piet_fishing_indicators}
 
-\bibitem[Relano and Pauly(2022)]{migration_lpf}
-Veronica Relano and Daniel Pauly.
-\newblock Philopatry as a tool to define tentative closed migration cycles and
-  conservation areas for large pelagic fishes in the pacific.
-\newblock \emph{Sustainability}, 14\penalty0 (9), 2022.
-\newblock ISSN 2071-1050.
-\newblock \doi{10.3390/su14095577}.
-\newblock URL \url{https://www.mdpi.com/2071-1050/14/9/5577}.
+\bibitem[{{Posit team}(2024)}]{rstudio}
+{Posit team}. (2024). \emph{RStudio: Integrated Development Environment for R}.
+  Posit Software, PBC Boston, MA
+  \href{http://www.posit.co/}{\url{http://www.posit.co/}}.
+\bibAnnoteFile{rstudio}
 
-\bibitem[Russo et~al.(2013)Russo, Parisi, and Cataudella]{russo_indicators}
-T.~Russo, A.~Parisi, and S.~Cataudella.
-\newblock Spatial indicators of fishing pressure: Preliminary analyses and
-  possible developments.
-\newblock \emph{Ecological Indicators}, 26:\penalty0 141--153, 2013.
-\newblock ISSN 1470-160X.
-\newblock \doi{https://doi.org/10.1016/j.ecolind.2012.11.002}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S1470160X12003822}.
+\bibitem[{{R Core Team}(2024)}]{r_language}
+{R Core Team}. (2024). \emph{R: A Language and Environment for Statistical
+  Computing}. R Foundation for Statistical Computing Vienna, Austria
+  \href{https://www.R-project.org/}{\url{https://www.R-project.org/}}.
+\bibAnnoteFile{r_language}
 
-\bibitem[{Sales Henriques} et~al.(2024){Sales Henriques}, Erzini, Gonçalves,
-  and Russo]{henrique_effort_estimation}
-Nuno {Sales Henriques}, Karim Erzini, Jorge~M.S. Gonçalves, and Tommaso Russo.
-\newblock Let’s measure it: An approach of high-resolution estimates of
-  bottom fixed net fishing effort at national level.
-\newblock \emph{Fisheries Research}, 278:\penalty0 107118, 2024.
-\newblock ISSN 0165-7836.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0165783624001826}.
+\bibitem[{Relano and Pauly(2022{\natexlab{a}})}]{migration_lpf}
+Relano, Veronica and Daniel Pauly. (2022{\natexlab{a}}). Philopatry as a tool
+  to define tentative closed migration cycles and conservation areas for large
+  pelagic fishes in the pacific. \emph{Sustainability},  14.
+  \href{https://doi.org/10.3390/su14095577}{\url{https://doi.org/10.3390/su14095577}}.
+\bibAnnoteFile{migration_lpf}
 
-\bibitem[{\textit{Secretaría General de Pesca}}(2024)]{registry_spain}
-{\textit{Secretaría General de Pesca}}.
-\newblock Resolución de 8 de marzo de 2024, de la secretaría general de
-  pesca, por la que se dispone la asignación de cuotas de atún rojo y
-  publicación del censo específico de la flota autorizada para el ejercicio
-  de la pesca del atún rojo creado por el real decreto 46/2019, de 8 de
-  febrero, por el que se regula la pesquería de atún rojo en el atlántico
-  oriental y mediterráneo.
-\newblock \emph{Boletín Oficial del Estado}, \penalty0 (70):\penalty0
-  32846--32871, 2024.
-\newblock URL
-  \url{https://www.boe.es/boe/dias/2024/03/20/pdfs/BOE-A-2024-5591.pdf}.
+\bibitem[{Relano and Pauly(2022{\natexlab{b}})}]{relano_pauly}
+Relano, Veronica and Daniel Pauly. (2022{\natexlab{b}}). Philopatry as a tool
+  to define tentative closed migration cycles and conservation areas for large
+  pelagic fishes in the pacific. \emph{Sustainability},  14.
+  \href{https://doi.org/10.3390/su14095577}{\url{https://doi.org/10.3390/su14095577}}.
+\bibAnnoteFile{relano_pauly}
 
-\bibitem[Shea et~al.(2023)Shea, Gallagher, Bomgardner, and
-  Ferretti]{ais_bycatch}
-Brendan~D. Shea, Austin~J. Gallagher, Lindsay~K. Bomgardner, and Francesco
-  Ferretti.
-\newblock Quantifying longline bycatch mortality for pelagic sharks in western
-  pacific shark sanctuaries.
-\newblock \emph{Science Advances}, 9\penalty0 (33):\penalty0 eadg3527, 2023.
-\newblock URL \url{https://www.science.org/doi/abs/10.1126/sciadv.adg3527}.
+\bibitem[{Russo et~al.(2013)Russo, Parisi, and Cataudella}]{russo_indicators}
+Russo, T., A.~Parisi, and S.~Cataudella. (2013). Spatial indicators of fishing
+  pressure: Preliminary analyses and possible developments. \emph{Ecological
+  Indicators},  26, 141--153.
+  \href{https://doi.org/10.1016/j.ecolind.2012.11.002}{\url{https://doi.org/10.1016/j.ecolind.2012.11.002}}.
+\bibAnnoteFile{russo_indicators}
 
-\bibitem[Shepperson et~al.(2017)Shepperson, Hintzen, Szostek, Bell, Murray, and
-  Kaiser]{shepperson}
-Jennifer~L Shepperson, Niels~T Hintzen, Claire~L Szostek, Ewen Bell, Lee~G
-  Murray, and Michel~J Kaiser.
-\newblock {A comparison of VMS and AIS data: the effect of data coverage and
-  vessel position recording frequency on estimates of fishing footprints}.
-\newblock \emph{ICES Journal of Marine Science}, 75\penalty0 (3):\penalty0
-  988--998, 12 2017.
-\newblock ISSN 1054-3139.
-\newblock URL \url{https://doi.org/10.1093/icesjms/fsx230}.
+\bibitem[{{Sales Henriques} et~al.(2024){Sales Henriques}, Erzini, Gonçalves,
+  and Russo}]{henrique_effort_estimation}
+{Sales Henriques}, Nuno, Karim Erzini, Jorge~M.S. Gonçalves, and Tommaso
+  Russo. (2024). Let’s measure it: An approach of high-resolution estimates
+  of bottom fixed net fishing effort at national level. \emph{Fisheries
+  Research},  278.
+  \href{https://doi.org/10.1016/j.fishres.2024.107118}{\url{https://doi.org/10.1016/j.fishres.2024.107118}}.
+\bibAnnoteFile{henrique_effort_estimation}
 
-\bibitem[Taconet et~al.(2019)Taconet, Kroodsma, Gee, and
-  Fernandes]{taconet2019global}
-M.~Taconet, D.~Kroodsma, J.~Gee, and J.~A. Fernandes.
-\newblock {Introduction of Global Atlas of AIS-based fishing activity}.
-\newblock In M.~Taconet, D.~Kroodsma, and J.~A. Fernandes, editors,
-  \emph{Global Atlas of AIS-based fishing activity - Challenges and
-  opportunities}. FAO, Rome, 2019.
-\newblock URL \url{http://www.fao.org/3/ca7012en/ca7012en.pdf}.
+\bibitem[{{\textit{Secretaría General de Pesca}}(2024)}]{registry_spain}
+{\textit{Secretaría General de Pesca}}. (2024). Resolución de 8 de marzo de
+  2024, de la secretaría general de pesca, por la que se dispone la
+  asignación de cuotas de atún rojo y publicación del censo específico de
+  la flota autorizada para el ejercicio de la pesca del atún rojo creado por
+  el real decreto 46/2019, de 8 de febrero, por el que se regula la pesquería
+  de atún rojo en el atlántico oriental y mediterráneo. \emph{Boletín
+  Oficial del Estado},  32846--32871.
+  \href{https://www.boe.es/boe/dias/2024/03/20/pdfs/BOE-A-2024-5591.pdf}{\url{https://www.boe.es/boe/dias/2024/03/20/pdfs/BOE-A-2024-5591.pdf}}
+   \urlaccessed\ 2025-05-29.
+\bibAnnoteFile{registry_spain}
 
-\bibitem[Tidd et~al.(2015)Tidd, Vermard, Marchal, Pinnegar, Blanchard, and
-  Milner-Gulland]{tidd_importance_effort}
-Alex~N. Tidd, Youen Vermard, Paul Marchal, John Pinnegar, Julia~L. Blanchard,
-  and E.~J. Milner-Gulland.
-\newblock {Fishing for Space: Fine-Scale Multi-Sector Maritime Activities
-  Influence Fisher Location Choice}.
-\newblock \emph{{PLOS ONE}}, 10\penalty0 (1):\penalty0 1--14, 01 2015.
-\newblock URL \url{https://doi.org/10.1371/journal.pone.0116335}.
+\bibitem[{Shea et~al.(2023)Shea, Gallagher, Bomgardner, and
+  Ferretti}]{ais_bycatch}
+Shea, Brendan~D., Austin~J. Gallagher, Lindsay~K. Bomgardner, and Francesco
+  Ferretti. (2023). Quantifying longline bycatch mortality for pelagic sharks
+  in western pacific shark sanctuaries. \emph{Science Advances},  9.
+  \href{https://doi.org/10.1126/sciadv.adg3527}{\url{https://doi.org/10.1126/sciadv.adg3527}}.
+\bibAnnoteFile{ais_bycatch}
 
-\bibitem[Tracey et~al.(2023)Tracey, Wolfe, Hartmann, Pepperell, and
-  Williams]{swordfish_migration}
-Sean~R. Tracey, Barrett~W. Wolfe, Klaas Hartmann, Julian Pepperell, and Sam~M.
-  Williams.
-\newblock Movement behavior of swordfish provisions connectivity between the
-  temperate and tropical southwest pacific ocean.
-\newblock \emph{Scientific Reports}, 13\penalty0 (1):\penalty0 11812, 2023.
-\newblock \doi{10.1038/s41598-023-38744-z}.
-\newblock URL \url{https://doi.org/10.1038/s41598-023-38744-z}.
+\bibitem[{Shepperson et~al.(2017)Shepperson, Hintzen, Szostek, Bell, Murray,
+  and Kaiser}]{shepperson}
+Shepperson, Jennifer~L, Niels~T Hintzen, Claire~L Szostek, Ewen Bell, Lee~G
+  Murray, and Michel~J Kaiser. (2017). {A comparison of VMS and AIS data: the
+  effect of data coverage and vessel position recording frequency on estimates
+  of fishing footprints}. \emph{ICES Journal of Marine Science},  75, 988--998.
+  \href{https://doi.org/10.1093/icesjms/fsx230}{\url{https://doi.org/10.1093/icesjms/fsx230}}.
+\bibAnnoteFile{shepperson}
 
-\bibitem[Usai(2022)]{usai_22_culture}
-Maria~Pina Usai.
-\newblock \emph{{Tuna: underwater natural and cultural heritage. The Tunèa
-  case study, a project for the re-connection between coastal community and
-  marine ecosystem}}, pages 887--895.
-\newblock Firenze University Press, 2022.
-\newblock ISBN 9791221500318.
-\newblock URL \url{http://dx.doi.org/10.36253/979-12-215-0030-1.84}.
+\bibitem[{Taconet et~al.(2019)Taconet, Kroodsma, Gee, and
+  Fernandes}]{taconet2019global}
+Taconet, M., D.~Kroodsma, J.~Gee, and J.~A. Fernandes. (2019). {Introduction of
+  Global Atlas of AIS-based fishing activity}. In \emph{Global Atlas of
+  AIS-based fishing activity - Challenges and opportunities} (M.~Taconet,
+  D.~Kroodsma, and J.~A. Fernandes, eds.) FAO, Rome
+  \href{http://www.fao.org/3/ca7012en/ca7012en.pdf}{\url{http://www.fao.org/3/ca7012en/ca7012en.pdf}}
+   \urlaccessed\ 2025-05-29.
+\bibAnnoteFile{taconet2019global}
 
-\bibitem[Vespe et~al.(2016)Vespe, Gibin, Alessandrini, Natale, Mazzarella, and
-  and]{vespe_map_2016}
-Michele Vespe, Maurizio Gibin, Alfredo Alessandrini, Fabrizio Natale, Fabio
-  Mazzarella, and Giacomo C.~Osio and.
-\newblock Mapping eu fishing activities using ship tracking data.
-\newblock \emph{Journal of Maps}, 12\penalty0 (sup1):\penalty0 520--525, 2016.
-\newblock \doi{10.1080/17445647.2016.1195299}.
-\newblock URL \url{https://doi.org/10.1080/17445647.2016.1195299}.
+\bibitem[{Tidd et~al.(2015)Tidd, Vermard, Marchal, Pinnegar, Blanchard, and
+  Milner-Gulland}]{tidd_importance_effort}
+Tidd, Alex~N., Youen Vermard, Paul Marchal, John Pinnegar, Julia~L. Blanchard,
+  and E.~J. Milner-Gulland. (2015). {Fishing for Space: Fine-Scale Multi-Sector
+  Maritime Activities Influence Fisher Location Choice}. \emph{{PLOS ONE}},
+  10, 1--14.
+  \href{https://doi.org/10.1371/journal.pone.0116335}{\url{https://doi.org/10.1371/journal.pone.0116335}}.
+\bibAnnoteFile{tidd_importance_effort}
 
-\bibitem[Welch et~al.(2024)Welch, Clavelle, White, Cimino, Kroodsma, and
-  Hazen]{welch_overlap_ais_bycatch}
-Heather Welch, Tyler Clavelle, Timothy~D. White, Megan~A. Cimino, David
-  Kroodsma, and Elliott~L. Hazen.
-\newblock Unseen overlap between fishing vessels and top predators in the
-  northeast pacific.
-\newblock \emph{Science Advances}, 10\penalty0 (10):\penalty0 eadl5528, 2024.
-\newblock \doi{10.1126/sciadv.adl5528}.
-\newblock URL \url{https://www.science.org/doi/abs/10.1126/sciadv.adl5528}.
+\bibitem[{Tracey et~al.(2023)Tracey, Wolfe, Hartmann, Pepperell, and
+  Williams}]{swordfish_migration}
+Tracey, Sean~R., Barrett~W. Wolfe, Klaas Hartmann, Julian Pepperell, and Sam~M.
+  Williams. (2023). Movement behavior of swordfish provisions connectivity
+  between the temperate and tropical southwest pacific ocean. \emph{Scientific
+  Reports},  13.
+  \href{https://doi.org/10.1038/s41598-023-38744-z}{\url{https://doi.org/10.1038/s41598-023-38744-z}}.
+\bibAnnoteFile{swordfish_migration}
 
-\bibitem[Young et~al.(2015)Young, Hunt, Cook, Llopiz, Hazen, Pethybridge,
+\bibitem[{Usai(2022)}]{usai_22_culture}
+Usai, Maria~Pina. (2022). \emph{{Tuna: underwater natural and cultural
+  heritage. The Tunèa case study, a project for the re-connection between
+  coastal community and marine ecosystem}} 887--895. Firenze University Press
+  \href{http://doi.org/10.36253/979-12-215-0030-1.84}{\url{http://doi.org/10.36253/979-12-215-0030-1.84}}.
+\bibAnnoteFile{usai_22_culture}
+
+\bibitem[{Vespe et~al.(2016)Vespe, Gibin, Alessandrini, Natale, Mazzarella, and
+  and}]{vespe_map_2016}
+Vespe, Michele, Maurizio Gibin, Alfredo Alessandrini, Fabrizio Natale, Fabio
+  Mazzarella, and Giacomo C.~Osio and. (2016). Mapping eu fishing activities
+  using ship tracking data. \emph{Journal of Maps},  12, 520--525.
+  \href{https://doi.org/10.1080/17445647.2016.1195299}{\url{https://doi.org/10.1080/17445647.2016.1195299}}.
+\bibAnnoteFile{vespe_map_2016}
+
+\bibitem[{Welch et~al.(2024)Welch, Clavelle, White, Cimino, Kroodsma, and
+  Hazen}]{welch_overlap_ais_bycatch}
+Welch, Heather, Tyler Clavelle, Timothy~D. White, Megan~A. Cimino, David
+  Kroodsma, and Elliott~L. Hazen. (2024). Unseen overlap between fishing
+  vessels and top predators in the northeast pacific. \emph{Science Advances},
+  10.
+  \href{https://doi.org/10.1126/sciadv.adl5528}{\url{https://doi.org/10.1126/sciadv.adl5528}}.
+\bibAnnoteFile{welch_overlap_ais_bycatch}
+
+\bibitem[{Young et~al.(2015)Young, Hunt, Cook, Llopiz, Hazen, Pethybridge,
   Ceccarelli, Lorrain, Olson, Allain, Menkes, Patterson, Nicol, Lehodey,
-  Kloser, Arrizabalaga, and {Anela Choy}]{young15}
-Jock~W. Young, Brian~P.V. Hunt, Timothée~R. Cook, Joel~K. Llopiz, Elliott~L.
+  Kloser, Arrizabalaga, and {Anela Choy}}]{young15}
+Young, Jock~W., Brian~P.V. Hunt, Timothée~R. Cook, Joel~K. Llopiz, Elliott~L.
   Hazen, Heidi~R. Pethybridge, Daniela Ceccarelli, Anne Lorrain, Robert~J.
   Olson, Valerie Allain, Christophe Menkes, Toby Patterson, Simon Nicol,
   Patrick Lehodey, Rudy~J. Kloser, Haritz Arrizabalaga, and C.~{Anela Choy}.
-\newblock The trophodynamics of marine top predators: Current knowledge, recent
-  advances and challenges.
-\newblock \emph{Deep Sea Research Part II: Topical Studies in Oceanography},
-  113:\penalty0 170--187, 2015.
-\newblock ISSN 0967-0645.
-\newblock \doi{https://doi.org/10.1016/j.dsr2.2014.05.015}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0967064514001489}.
-\newblock Impacts of climate on marine top predators.
+  (2015). The trophodynamics of marine top predators: Current knowledge, recent
+  advances and challenges. \emph{Deep Sea Research Part II: Topical Studies in
+  Oceanography},  113, 170--187.
+  \href{https://doi.org/10.1016/j.dsr2.2014.05.015}{\url{https://doi.org/10.1016/j.dsr2.2014.05.015}}.
+  Impacts of climate on marine top predators.
+\bibAnnoteFile{young15}
 
-\bibitem[Zhang et~al.(2022)Zhang, Chen, Xu, Xue, and Ren]{zhang_ais_mcs}
-Chongliang Zhang, Yong Chen, Binduo Xu, Ying Xue, and Yiping Ren.
-\newblock The dynamics of the fishing fleet in china seas: A glimpse through
-  ais monitoring.
-\newblock \emph{Science of The Total Environment}, 819:\penalty0 153150, 2022.
-\newblock ISSN 0048-9697.
-\newblock \doi{https://doi.org/10.1016/j.scitotenv.2022.153150}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0048969722002406}.
+\bibitem[{Zhang et~al.(2022)Zhang, Chen, Xu, Xue, and Ren}]{zhang_ais_mcs}
+Zhang, Chongliang, Yong Chen, Binduo Xu, Ying Xue, and Yiping Ren. (2022). The
+  dynamics of the fishing fleet in china seas: A glimpse through ais
+  monitoring. \emph{Science of The Total Environment},  819.
+  \href{https://doi.org/10.1016/j.scitotenv.2022.153150}{\url{https://doi.org/10.1016/j.scitotenv.2022.153150}}.
+\bibAnnoteFile{zhang_ais_mcs}
 
 \end{thebibliography}
