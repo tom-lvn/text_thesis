@@ -1,0 +1,28 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces The Mediterranean Sea, study area for this analysis. The black line indicates the 200 m isobar.}}{2}{figure.caption.6}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2}{\ignorespaces Hierarchy of fishing gears recognized by GFW.}}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Global Fishing Watch data processing pipeline and filtering steps to obtain the final dataset used in this study. CNN = Convolutional Neural Network.}}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {4}{\ignorespaces A) Structure of the space-time cube in ArcGIS\spacefactor \@m {}. Each individual cube corresponds to one \textit {neighbourhood bin}, which is the sum of all coloured cells in B. One \textit {time series bin} corresponds to the same location over time (red). B) Conceptualization of space-time dependency as implemented in the Emerging Hotspot Analysis tool. One \textit {neighbourhood bin} is defined as the cell itself (darkgreen) plus the cells surrounding it (lightgreen), as well as those cells in the previous time step (\(t-1\)).}}{11}{figure.caption.9}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5}{\ignorespaces Summary statistics for both longliners and purse-seiners. \subref {sub0:fig:sum_cv}) Cumulative fishing hours in the Mediterranean (2015-2024). Colors are on a log-scale. \subref {sub1:fig:sum_cv}) Coefficient of variation between years (standard deviation divided by mean) for each cell. }}{15}{figure.caption.10}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Hotspot percentage and trend scores for longliners in the Mediterranean. The percentage reflects the years in which a given cell was a hotspot based on the Getis-Ord Gi* statistic. The Z-score is derived from the Mann-Kendall statistic.}}{16}{figure.caption.11}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Hotspot percentage and trend scores for purse seiners in the Mediterranean. The percentage reflects the years in which a given cell was a hotspot based on the Getis-Ord Gi* statistic. The Z-score is derived from the Mann-Kendall statistic.}}{17}{figure.caption.12}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Temporal changes in longline fishing hours. \subref {sub0:fig:longlines_ridge}) Spatial differences between seasons. Hours are summed per season and cell and colour is on a log-scale. Seasons are defined based on calendar dates: winter (Dec 21 - Mar 19), spring (Mar 20 - Jun 20), summer (Jun 21 - Sep 21), and fall (Sep 22 - Dec 20). \subref {sub1:fig:longlines_ridge}) Time series of fishing hours, summed per year and day.}}{19}{figure.caption.13}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Temporal changes in purse seine fishing hours. \subref {sub0:fig:seines_ridge}) Spatial differences between seasons. Seasons are defined based on calendar dates: winter (Dec 21 - Mar 19), spring (Mar 20 - Jun 20), summer (Jun 21 - Sep 21), and fall (Sep 22 - Dec 20). Hours are summed per season and cell and colour is on a log-scale. \subref {sub1:fig:seines_ridge}) Time series of fishing hours, summed per year and day.}}{21}{figure.caption.15}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Number of countries fishing per cell for longliners and purse seiners between 2015-2024.}}{23}{figure.caption.17}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Comparison of relative percentages between GFW AIS data and ICCAT catch data. AIS percentages are relative to the total fishing hours between all countries. ICCAT percentages are relative to the total weight of catches between all countries.}}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Cumulative proportion of fishing hours with \subref {sub0:fig:depth_dist}) Distance to port and \subref {sub1:fig:depth_dist}) Depth.}}{25}{figure.caption.19}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {S1}{\ignorespaces Distance to port in km throughout the Mediterranean. }}{52}{figure.caption.21}%
+\contentsline {figure}{\numberline {S2}{\ignorespaces Sum of longline fishing hours per flag country (2015-2024). CYP = Cyprus; ESP = Spain, GRC = Greece, ITA = Italy, MLT = Malta}}{53}{figure.caption.22}%
+\contentsline {figure}{\numberline {S3}{\ignorespaces Sum of purse seine fishing hours per flag country (2015-2024). DZA = Algeria, ESP = Spain, FRA = France, HRV = Croatia, ITA = Italy, MAR = Morocco, TUN = Tunisia.}}{54}{figure.caption.23}%
+\contentsline {figure}{\numberline {S4}{\ignorespaces Reported bluefin tuna (BFT) purse seine catches of Croatia from the \href {https://www.iccat.int/en/accesingdb.html}{ICCAT task 2 catch/effort data}. May, June, and July were excluded as they are orders of magnitude higher and did not allow for graphic comparison between months with lower activity.}}{55}{figure.caption.24}%
+\contentsline {figure}{\numberline {S5}{\ignorespaces Sum of longline fishing hours per cell for each month between 2015-2024. Colours are on a log-scale.}}{56}{figure.caption.25}%
+\contentsline {figure}{\numberline {S6}{\ignorespaces Sum of purse seine fishing hours per cell for each month between 2015-2024. Colours are on a log-scale.}}{57}{figure.caption.26}%
+\contentsline {figure}{\numberline {S7}{\ignorespaces Sum of longline fishing hours per cell for each year. Colours are on a log-scale.}}{58}{figure.caption.27}%
+\contentsline {figure}{\numberline {S8}{\ignorespaces Sum of purse seine fishing hours per cell for each year. Colours are on a log-scale.}}{59}{figure.caption.28}%

@@ -1,6 +1,6 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Executive Summary}{i}{chapter*.1}%
-\contentsline {chapter}{Abstract}{ii}{chapter*.2}%
+\contentsline {chapter}{Executive Summary}{ii}{chapter*.1}%
+\contentsline {chapter}{Abstract}{iii}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Material and Methods}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Data sources}{6}{section.2.1}%
@@ -17,7 +17,8 @@
 \contentsline {section}{\numberline {3.5}Depth and distance to port}{24}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Discussion}{26}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Main risk areas (hotspots)}{26}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Data caveats}{30}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Data caveats}{31}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Conclusion}{33}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Acknowledgements}{34}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Supplementary Material}{49}{appendix.1.A}%
+\contentsline {section}{\numberline {6.1}Declaration of generative AI and AI assisted technologies}{35}{section.6.1}%
+\contentsline {chapter}{\numberline {A}Supplementary Material}{52}{appendix.1.A}%

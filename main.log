@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.21)  4 JUN 2025 00:36
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.21)  4 JUN 2025 15:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1456,17 +1456,22 @@ Overfull \hbox (33.4747pt too wide) in paragraph at lines 17--18
 
 ]) [1
 
-] [1
+]
+Underfull \hbox (badness 1019) in paragraph at lines 346--351
+[]\TU/Arial(0)/m/n/12 AIS data under-represented non-EU fishing activity relative to official catch
+ []
 
-] [2
+[1
 
-] (./main.toc)
+] [2] [3
+
+] (./main.toc [4
+
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [3
-
-]
+ [5]
 \openout2 = `introduction.aux'.
 
  (./introduction.tex
@@ -1487,7 +1492,12 @@ Chapter 2.
 
 
 
-] [7] [8]
+] [7]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [8]
 File: Figures/logos/GFW_logo.png Graphic file (type bmp)
 <Figures/logos/GFW_logo.png>
 File: Figures/logos/R_logo.png Graphic file (type bmp)
@@ -1538,17 +1548,17 @@ Missing character: There is no g ("67) in font nullfont!
 Missing character: There is no e ("65) in font nullfont!
 Missing character: There is no s ("73) in font nullfont!
 
-Overfull \hbox (63.3723pt too wide) in paragraph at lines 234--235
+Overfull \hbox (63.3723pt too wide) in paragraph at lines 235--236
 [][] 
  []
 
 
-Overfull \hbox (4.44267pt too wide) in paragraph at lines 201--290
+Overfull \hbox (4.44267pt too wide) in paragraph at lines 202--291
 [][]   []
  []
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
 
  []
 
@@ -1612,7 +1622,7 @@ Chapter 4.
 
 
 
-] [27] [28] [29] [30]) [31] [32]
+] [27] [28] [29] [30] [31]) [32]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
@@ -1627,121 +1637,171 @@ Chapter 5.
 
  (./acknowledgements.tex
 Chapter 6.
-) [34
+[34
 
 
 
 
-] (./main.bbl
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Underfull \hbox (badness 2409) in paragraph at lines 49--58
+]) [35] (./main.bbl
+Underfull \hbox (badness 2409) in paragraph at lines 50--57
 []\TU/Arial(0)/m/n/12 Balbín, R., J.L. López-Jurado, M.M. Flexas, P. Reglero, P. Vélez-Velchí,
  []
 
-[35
+[36
 
 
 
 ]
-Underfull \hbox (badness 1448) in paragraph at lines 85--92
+Underfull \hbox (badness 1448) in paragraph at lines 84--91
 []\TU/Arial(0)/m/n/12 Bell, James B., Johannes H. Fischer, Ana P.B. Carneiro, Shane Griffiths,
  []
 
-[36]
-Underfull \hbox (badness 1189) in paragraph at lines 168--173
+
+Underfull \hbox (badness 1259) in paragraph at lines 94--100
+[]\TU/Arial(0)/m/n/12 Ben Lamine, Emna, Alexandre Schickele, Paolo Guidetti, Denis Allemand,
+ []
+
+[37] [38]
+Underfull \hbox (badness 1189) in paragraph at lines 182--187
 \TU/Arial(0)/m/n/12 and Machine Learning. \TU/Arial(0)/m/it/12 PLOS ONE\TU/Arial(0)/m/n/12 , 11, 1–20. [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][] [] [][]:[][][][] []
  []
 
-[37]
-Underfull \hbox (badness 7238) in paragraph at lines 175--181
+
+Underfull \hbox (badness 7238) in paragraph at lines 189--195
 []\TU/Arial(0)/m/n/12 Di Natale, A. (2012). Literature on the Eastern Atlantic and Mediter-
  []
 
 
-Underfull \hbox (badness 3179) in paragraph at lines 175--181
+Underfull \hbox (badness 3179) in paragraph at lines 189--195
 \TU/Arial(0)/m/n/12 ranean Tuna Trap Fishery. \TU/Arial(0)/m/it/12 Collective Volume of Scientific Papers, IC-
  []
 
 
-Underfull \hbox (badness 6741) in paragraph at lines 175--181
+Underfull \hbox (badness 6741) in paragraph at lines 189--195
 \TU/Arial(0)/m/it/12 CAT\TU/Arial(0)/m/n/12 , 67, 175–220. [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][][][]:[][][] [] [][][][][][][][][] [] [][][][] [] [][][][][][][][][][] []
  []
 
-[38]
-Underfull \hbox (badness 5802) in paragraph at lines 264--269
+
+Underfull \hbox (badness 1960) in paragraph at lines 206--213
+[]\TU/Arial(0)/m/n/12 Di Natale, A., J.M. De La Serna, G. De Metrio, V. Restrepo, A. Srour,
+ []
+
+
+Underfull \hbox (badness 5696) in paragraph at lines 206--213
+\TU/Arial(0)/m/n/12 in the Mediterranean. \TU/Arial(0)/m/it/12 Collective Volume of Scientific Papers, ICCAT\TU/Arial(0)/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 206--213
+\TU/Arial(0)/m/n/12 54, 1529–1533. [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][][][]:[][][] [] [][][][][][][][][] [] [][][][] [] [][][][][][][][][][] [] [][][] []
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+[]\TU/Arial(0)/m/n/12 EMODnet Bathymetry Consortium. (2024). EMODnet Digital Bathymetry
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\TU/Arial(0)/m/n/12 (DTM 2024). [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][] [] [][]:[][][][][] [] [][][][][][][][] [][] [][][][] [][] [][][][] [][] [][][][] [][]
+ []
+
+[40]
+Underfull \hbox (badness 5802) in paragraph at lines 286--290
 []\TU/Arial(0)/m/n/12 Farrugio, H. (2013). \TU/Arial(0)/m/it/12 Fisheries in the Gulf of Lions\TU/Arial(0)/m/n/12 . RAC/SPA, UNEP-
  []
 
-[39] [40]
-Underfull \hbox (badness 7030) in paragraph at lines 386--392
+[41] [42]
+Underfull \hbox (badness 1939) in paragraph at lines 401--407
+[]\TU/Arial(0)/m/n/12 ICCAT. (2008). Report of the standing committee on research and statis-
+ []
+
+
+Underfull \hbox (badness 7030) in paragraph at lines 415--421
 []\TU/Arial(0)/m/n/12 ICCAT. (2023). Terms of Reference for the Mediterranean Tuna Habi-
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 386--392
+Underfull \hbox (badness 6893) in paragraph at lines 415--421
 \TU/Arial(0)/m/n/12 tat Observatory Initiative. \TU/Arial(0)/m/it/12 Collective Volume of Scientific Papers, IC-
  []
 
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 394--398
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--427
 []\TU/Arial(0)/m/n/12 ICCAT. (2024a). Executive Summary ALB-MD. [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][][][]:[][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--410
+Underfull \hbox (badness 10000) in paragraph at lines 435--439
 []\TU/Arial(0)/m/n/12 ICCAT. (2024c). Executive Summary SWO-MD. [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][][][]:[][][] []
  []
 
-
-Underfull \hbox (badness 7981) in paragraph at lines 428--434
+[43]
+Underfull \hbox (badness 7981) in paragraph at lines 457--463
 []\TU/Arial(0)/m/n/12 Jelić Mrčelić, Gorana, Vedrana Nerlović, Merica Slišković, and Ivana
  []
 
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 451--456
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--485
 \TU/Arial(0)/m/n/12 on Marine Traffic? [][]$[][][][][] [] [] [] [][][][][][][]\OML/cmm/m/it/12 :[][][][][][][][][][][][][]:[][][] [] [][] [] [][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--456
+Underfull \hbox (badness 10000) in paragraph at lines 480--485
 [][][][][][][] [][] [][][] [][] [][][][][] [][] [][] [][] [][][] [][] [][][][][][][][][] [][] [][] [][] [][][] [][] [][][][][][][] [][] [][][] [][] [][][][][][][] [][] [][] [][]
  []
 
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 519--524
+
+Underfull \hbox (badness 1509) in paragraph at lines 499--505
+\TU/Arial(0)/m/n/12 Boudouresque, and Thierry Pérez. (2010). Climate change effects on a
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 499--505
+\TU/Arial(0)/m/it/12 Trends in Ecology & Evolution\TU/Arial(0)/m/n/12 , 25, 250–260. [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][] [] [][]:[][][][] []
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 557--562
 []\TU/Arial(0)/m/it/12 Ministero dell’agricoltura, della sovranita’alimentare e delle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--524
+Underfull \hbox (badness 10000) in paragraph at lines 557--562
 \TU/Arial(0)/m/it/12 foreste\TU/Arial(0)/m/n/12 . (2024). Allegato 1, TONNO ROSSO - CAMPAG-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--524
+Underfull \hbox (badness 10000) in paragraph at lines 557--562
 \TU/Arial(0)/m/n/12 NIA DI PESCA 2024. \TU/Arial(0)/m/it/12 Gazzetta Ufficiale della Repubblica Ital-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--524
+Underfull \hbox (badness 10000) in paragraph at lines 557--562
 \TU/Arial(0)/m/it/12 iana\TU/Arial(0)/m/n/12 . [][]$[][][][][] [] [] [] [][][]\OML/cmm/m/it/12 :[][][][][][][][][][][][][][][][][]:[][] [] [][][][] [] [][][][][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--524
+Underfull \hbox (badness 10000) in paragraph at lines 557--562
 [][][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][]\OT1/cmr/m/n/12 ?[][][][]\OML/cmm/m/it/12 :[][][][][][][][][][][][][][][][][][][][][][][][][] \OT1/cmr/m/n/12 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--524
+Underfull \hbox (badness 10000) in paragraph at lines 557--562
 [][][][] [][] [][] [][] [][][][][][][]\OML/cmm/m/it/12 :[][][][][][][][][][][][][][][][][] \OT1/cmr/m/n/12 = [][][][][][][][][][][][][][][][][][][][][][][] = [][][][][]$[][]
  []
 
-[44] [45] [46] [47]) [48]
+[45] [46]
+Underfull \hbox (badness 1052) in paragraph at lines 623--630
+\TU/Arial(0)/m/n/12 Campbell R. Davies. (2018). Southern bluefin tuna habitat use and resi-
+ []
+
+[47] [48] [49]
+Underfull \hbox (badness 1194) in paragraph at lines 796--801
+[]\TU/Arial(0)/m/n/12 Wickham, Hadley, Romain François, Lionel Henry, Kirill Müller, and Davis
+ []
+
+[50]) [51]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
@@ -1750,42 +1810,42 @@ File: Figures/plots/dist_med.pdf Graphic file (type pdf)
 <use Figures/plots/dist_med.pdf>
 File: Figures/plots/longline_countries.pdf Graphic file (type pdf)
 <use Figures/plots/longline_countries.pdf>
-[49
+[52
 
 
 ]
 File: Figures/plots/seines_countries.pdf Graphic file (type pdf)
 <use Figures/plots/seines_countries.pdf>
- [50]
+ [53]
 File: Figures/plots/hrv_catches.pdf Graphic file (type pdf)
 <use Figures/plots/hrv_catches.pdf>
- [51]
+ [54]
 File: Figures/plots/dll_monthly.pdf Graphic file (type pdf)
 <use Figures/plots/dll_monthly.pdf>
- [52]
+ [55]
 File: Figures/plots/pss_monthly.pdf Graphic file (type pdf)
 <use Figures/plots/pss_monthly.pdf>
- [53]
+ [56]
 File: Figures/plots/dll_yearly.pdf Graphic file (type pdf)
 <use Figures/plots/dll_yearly.pdf>
- [54]
+ [57]
 File: Figures/plots/pss_yearly.pdf Graphic file (type pdf)
 <use Figures/plots/pss_yearly.pdf>
-) [55] [56] (./main.aux (./introduction.aux) (./material_methods.aux) (./results.aux) (./discussion.aux) (./conclusion.aux) (./acknowledgements.aux) (./appendix.aux))
+) [58] [59] (./main.aux (./introduction.aux) (./material_methods.aux) (./results.aux) (./discussion.aux) (./conclusion.aux) (./acknowledgements.aux) (./appendix.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6776DABDA3AFF2EB38A0BA9B0DB0672A;3089.
+(rerunfilecheck)             Checksum: CDD190EC47E2FB6B942D226ADBF3740A;3450.
  ) 
 Here is how much of TeX's memory you used:
- 52045 strings out of 474773
- 1127329 string characters out of 5757723
- 1959839 words of memory out of 5000000
- 73316 multiletter control sequences out of 15000+600000
+ 52096 strings out of 474773
+ 1128300 string characters out of 5757723
+ 1958839 words of memory out of 5000000
+ 73367 multiletter control sequences out of 15000+600000
  566027 words of font info for 98 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 137i,16n,133p,2400b,2085s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 137i,15n,133p,2400b,2083s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (61 pages).
+Output written on main.pdf (66 pages).

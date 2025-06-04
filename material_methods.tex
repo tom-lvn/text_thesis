@@ -3,15 +3,16 @@
 \section{Data sources}
 \subsection{Fishing hours}
 Data on fishing hours was obtained from Global Fishing Watch (GFW). This non-profit organization
-provides a global dataset of estimated fishing activity derived from AIS data \citep{gfw_dataset}.
-They process data from over 190,000 unique AIS transmitters, each assigned a unique Maritime Mobile
-Service Identity (MMSI). These AIS devices broadcast a vessel's location as frequently as every 2
-seconds \citep{kontasvesselupdate, taconet2019global}. Along with the exact location, each AIS
-transmission includes a timestamp, speed, and heading of the vessel. GFW then analyses these
-positional data points, to infer fishing activity, via two different Convolutional Neural Networks
-(CNN's), which are described in detail in \cite{Kroodsma18}.
+provides a \href{https://doi.org/10.5281/zenodo.14982712}{global dataset} of estimated fishing
+activity derived from AIS data \citep{gfw_dataset}. They process data from over 190,000 unique AIS
+transmitters, each assigned a unique Maritime Mobile Service Identity (MMSI). These AIS devices
+broadcast a vessel's location as frequently as every 2 seconds \citep{kontasvesselupdate,
+	taconet2019global}. Along with the exact location, each AIS transmission includes a timestamp,
+speed, and heading of the vessel. GFW then analyses these positional data points, to infer fishing
+activity, via two different Convolutional Neural Networks (CNN's), which are described in detail in
+\cite{Kroodsma18}.
 
-\bigskip
+\medskip
 
 A first CNN classifies fishing vessels into one of sixteen fishing gear categories
 \figref{fig:vessel_classification} and predicts vessel characteristics such as length, tonnage, and
@@ -24,7 +25,7 @@ Fig.~\ref{fig:workflow}). These individual fishing events are then aggregated in
 spanning either 0.1° or 0.01° on a side. For the present analysis, 0.1° resolution was chosen,
 covering the study area (Mediterranean Sea; Fig~\ref{fig:study_area}) in sufficient detail.
 
-\bigskip
+\medskip
 
 Unique vessels are identified based on their MMSI number and the dataset contains information on
 the vessel's registration and flag country. The gear class estimated by the CNN is also compared
@@ -32,7 +33,10 @@ with the information from different vessel registries, such as the EU fleet regi
 record of vessels. In case the derived vessel class does not match to the one in the registry, GFW
 assigns the broadest gear type that allows for agreement. If for example, a vessel is registered as
 a purse seiner but is inferred to be a tuna purse seiner, it would ultimately be assigned to the
-purse seiner class \figref{fig:vessel_classification}. \medskip
+purse seiner class \figref{fig:vessel_classification}.
+
+\medskip
+
 \begin{figure}[htbp]
 	\centering
 	\resizebox{\textwidth}{!}{%
@@ -67,7 +71,7 @@ purse seiner class \figref{fig:vessel_classification}. \medskip
 		\end{forest}
 	} % end resizebox
 	\medskip
-	\caption{Hierarchy of fishing gears recognised by GFW}
+	\caption{Hierarchy of fishing gears recognized by GFW.}
 	\label{fig:vessel_classification}
 \end{figure}
 
@@ -86,25 +90,27 @@ the corresponding national notices. In France, quotas are allocated and publishe
 2023, they made up more than half of the total landings of BFT for all contracting parties to
 ICCAT, of which close to 90\% are fished with purse seine nets \citep{iccat_bft_summary}. Since the
 national notices did not contain the vessels MMSI number (which is the identifier used by GFW), the
-vessel names and registration numbers were cross-referenced with the Europan Fleet Register to
+vessel names and registration numbers were cross-referenced with the European Fleet Register to
 obtain it \citep{eu_fleet_register}.
 
 \section{Data filtering}
-All data filtering was conducted using R (v4.4.1; \citeauthor{r_language}, \citeyear{r_language})
-within the RStudio environment \citep{rstudio}. The GFW dataset was first cropped and adjusted to a
-shapefile of the Mediterranean Sea \figref{fig:study_area}, obtained from the General Fisheries
-Commission for the Mediterranean (GFCM). Subsequent filtering was based on the assigned gear type
-and GFW registry information. Only entries with the gear type drifting longlines or tuna purse
-seines, and that were registered with ICCAT were retained \figref{fig:workflow}. These gear types
-were chosen as they are the main \textit{metiers} involved in the exploitation of large-pelagic
-species in the Mediterranean. Since 2015, on average, 95\% of BFT's, and 99\% of albacore tunas are
-caught using either longlines or purse seine nets and close to 100\% of swordfish catches use
-longlines \citep{iccat_bft_summary,iccat_alb_summary,iccat_swo_summary} The GFW dataset is
-available from the year 2012 until 2024. However, only entries from 2015 were retained, in order to
-avoid masking \textit{real} fishing dynamics with the increase in adoption of AIS devices, which
-only became mandatory in the EU in 2014 for all vessels > 15 m in length \citep{ec2011directive}.
-It is estimated however, that in the Mediterranean the EU fishing fleet >15 m is 100\% equipped
-with AIS since 2018 \citep{taconet2019global}.
+The GFW dataset was first cropped and adjusted to a
+\href{https://www.fao.org/gfcm/data/maps/gsas/es/}{shapefile} of the Mediterranean Sea
+\figref{fig:study_area}, obtained from the General Fisheries Commission for the Mediterranean
+(GFCM). Subsequent filtering was based on the assigned gear type and GFW registry information. Only
+entries with the gear type drifting longlines or tuna purse seines, and that were registered with
+ICCAT were retained \figref{fig:workflow}. All data filtering was conducted using R (v4.4.1;
+\citeauthor{r_language}, \citeyear{r_language}) within the RStudio environment \citep{rstudio},
+primarily using the \texttt{dplyr} package \citep{dplyr}. Longlines and purse seines were chosen as
+they are the main gear types involved in the exploitation of large-pelagic species in the
+Mediterranean. Since 2015, on average, 95\% of BFT's, and 99\% of albacore tunas are caught using
+either longlines or purse seine nets and close to 100\% of swordfish catches use longlines
+\citep{iccat_bft_summary,iccat_alb_summary,iccat_swo_summary} The GFW dataset is available from the
+year 2012 until 2024. However, only entries from 2015 were retained, in order to avoid masking
+\textit{real} fishing dynamics with the increase in adoption of AIS devices, which only became
+mandatory in the EU in 2014 for all vessels > 15 m in length \citep{ec2011directive}. It is
+estimated however, that in the Mediterranean, the EU fishing fleet >15 m is 100\% equipped with AIS
+at least since 2018 \citep{taconet2019global}.
 
 \begin{figure}[htp]
 	\begin{center}
@@ -157,7 +163,7 @@ with AIS since 2018 \citep{taconet2019global}.
 
 		\end{tikzpicture}
 	\end{center}
-	\caption{Global Fishing Watch data processing pipeline and filtering steps to obtain the final dataset used in this study. CNN = Convolutional Neural Network}
+	\caption{Global Fishing Watch data processing pipeline and filtering steps to obtain the final dataset used in this study. CNN = Convolutional Neural Network.}
 	\label{fig:workflow}
 \end{figure}
 
@@ -178,24 +184,19 @@ towards the harbour to land catches or vessel maintenance \citep{souza}. Thus, t
 areas from the analysis, the points inside the 1 km boundary around ports were removed. Distance
 from port was determined based on a dataset from GFW, which contains anchorages that are either
 known ports, or that contained at least 20 unique stationary vessels since 2012
-(Fig.~\ref{fig:distance}; \citealp{gfw_distance}).
-
-\medskip
-
-To enable seasonal analysis, each date was assigned to a season. These were defined as winter (Dec.
-21 - Mar. 19), spring (Mar. 20 - Jun. 20), summer (Jun. 21 - Sep. 21), and fall (Sep. 22 - Dec. 20)
-based on the approximate timing of solstices and equinoxes following common definitions.
+(Fig.~\ref{fig:distance}; \citealp{gfw_distance}). The distance to port of each fishing hour cell
+was extracted with the \texttt{exactextractr} package \citep{exactextractr}. Bathymetry was
+extracted in the same manner and obtained from \cite{EMODnetDTM2024}.
 
 \section{Data analysis}
 To identify persistent hotspot areas throughout the one decade study time and analyse
 spatio-temporal trends, the Emerging Hotspot Analysis (EHA) tool was used in ArcGIS Pro
 \citep{arcgis}. For this, multidimensional netCDF (network common data form) files of the fishing
-hours data were generated after curation and filtering in R, using the \textit{terra} package
-(v1.8.18; \citeauthor{terra_package}, \citeyear{terra_package}). Subsequently, this data was read
-in as multidimensional raster files in ArcGIS Pro, with the dimensions corresponding to longitude,
-latitude and time. Data was aggregated annually, using the sum of fishing hours per year for each
-cell. From this, a space-time cube, which is the input required for the EHA tool, was created
-(Fig.~\ref{fig:cube}A).
+hours data were generated after curation and filtering in R, using the \texttt{terra} package
+\citep{terra_package}. Subsequently, this data was read in as multidimensional raster files in
+ArcGIS Pro, with the dimensions corresponding to longitude, latitude and time. Data was aggregated
+annually, using the sum of fishing hours per year for each cell. From this, a space-time cube,
+which is the input required for the EHA tool, was created (Fig.~\ref{fig:cube}A).
 
 \begin{figure}[H]
 	\begin{subfigure}{0.45\textwidth}
@@ -371,3 +372,8 @@ significance of \(S\), the variance \(V^*_0\) can be calculated as (\citeauthor{
 
 where \(n\) is the total number of observations, and \(m\) the number of groups with tied ranks,
 each with \(t_j\) tied observations.
+
+\medskip
+
+Results of the EHA tool were then exported as tables and visualized using the R package
+\textit{ggplot2} \citep{ggplot2}.

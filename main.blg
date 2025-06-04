@@ -13,45 +13,45 @@ Database file #1: bibliography.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--missing publisher in FAO2024
-You've used 89 entries,
+You've used 99 entries,
             3067 wiz_defined-function locations,
-            1221 strings with 30528 characters,
-and the built_in function-call counts, 60619 in all, are:
-= -- 4392
-> -- 3658
-< -- 43
-+ -- 1215
-- -- 1119
-* -- 5370
-:= -- 9094
-add.period$ -- 507
-call.type$ -- 89
-change.case$ -- 816
-chr.to.int$ -- 86
-cite$ -- 179
-duplicate$ -- 4426
-empty$ -- 4368
-format.name$ -- 1353
-if$ -- 12054
+            1274 strings with 32905 characters,
+and the built_in function-call counts, 66462 in all, are:
+= -- 4825
+> -- 3985
+< -- 47
++ -- 1324
+- -- 1218
+* -- 5869
+:= -- 9997
+add.period$ -- 561
+call.type$ -- 99
+change.case$ -- 898
+chr.to.int$ -- 96
+cite$ -- 199
+duplicate$ -- 4868
+empty$ -- 4797
+format.name$ -- 1472
+if$ -- 13210
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 943
-newline$ -- 371
-num.names$ -- 359
-pop$ -- 1831
+missing$ -- 1035
+newline$ -- 411
+num.names$ -- 399
+pop$ -- 2018
 preamble$ -- 1
-purify$ -- 728
+purify$ -- 801
 quote$ -- 0
-skip$ -- 1237
+skip$ -- 1377
 stack$ -- 0
-substring$ -- 2113
-swap$ -- 1977
-text.length$ -- 2
+substring$ -- 2268
+swap$ -- 2151
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 786
+type$ -- 873
 warning$ -- 1
-while$ -- 335
+while$ -- 368
 width$ -- 0
-write$ -- 1161
+write$ -- 1288
 (There was 1 warning)

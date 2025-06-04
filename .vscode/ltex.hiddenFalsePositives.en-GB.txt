@@ -11,3 +11,4 @@
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsub0:fig:seines_ridge) Spatial differences between seasons.\\E$"}
 {"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QAlong with the exact location, each AIS transmission includes a timestamp, speed, and heading of the vessel.\\E$"}
 {"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q analysed the longline fishery around Malta and reported that Caretta caretta makes up 40% of the total catch in terms of individual animals.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QLoggerhead turtle Caretta caretta is one of the main bycatch species in some Mediterranean longline fisheries \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and their estimated areas of high abundance overlap with some of the longline hotspots identified in the present work \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
