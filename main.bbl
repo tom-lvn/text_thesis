@@ -1,4 +1,4 @@
-\begin{thebibliography}{88}
+\begin{thebibliography}{89}
 \renewcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -37,6 +37,12 @@ Andrews, Adam~J, Antonio Di Natale, Darío Bernal-Casasola, Veronica Aniceti,
 Arocha, F. (2007). Swordfish reproduction in the atlantic ocean: An overview.
   \emph{Gulf and Caribbean Research},  19, 21--36.
 \bibAnnoteFile{arocha_2007}
+
+\bibitem[{Ayers and Leong(2022)}]{bycatch_humans}
+Ayers, Adam~L. and Kirsten Leong. (2022). Focusing on the human dimensions to
+  reduce protected species bycatch. \emph{Fisheries Research},  254, 106432.
+  \href{https://doi.org/10.1016/j.fishres.2022.106432}{\url{https://doi.org/10.1016/j.fishres.2022.106432}}.
+\bibAnnoteFile{bycatch_humans}
 
 \bibitem[{Balbín et~al.(2014)Balbín, López-Jurado, Flexas, Reglero,
   Vélez-Velchí, González-Pola, Rodríguez, García, and Alemany}]{balbin_14}
@@ -84,16 +90,6 @@ Bell, James~B., Johannes~H. Fischer, Ana~P.B. Carneiro, Shane Griffiths,
   \href{https://doi.org/10.1016/j.biocon.2025.110981}{\url{https://doi.org/10.1016/j.biocon.2025.110981}}.
 \bibAnnoteFile{ais_bird_bycatch}
 
-\bibitem[{{Bertolino, F. and Camolese, C. and Dell'Aquila, M. and Mariani, A.
-  and Valastro, M.}(2015)}]{swo_gear_italy}
-{Bertolino, F. and Camolese, C. and Dell'Aquila, M. and Mariani, A. and
-  Valastro, M.} (2015). {Swordfish \textit{Xiphias gladius L.} fisheries using
-  mesopelagic longline in the Mediterranean Sea by Italian fishing fleet}.
-  \emph{Collective Volume of Scientific Papers, ICCAT},  71, 2073--2078.
-  \href{{https://www.iccat.int/Documents/CVSP/CV071\_2015/n\_5/CV071052073.pdf}}{\url{{https://www.iccat.int/Documents/CVSP/CV071\_2015/n\_5/CV071052073.pdf}}}
-   \urlaccessed\ 2025-06-02.
-\bibAnnoteFile{swo_gear_italy}
-
 \bibitem[{Burgess et~al.(2010)Burgess, Dimech, Caruana, Darmanin, Raine,
   Harrison, and Schembri}]{bycatch_malta}
 Burgess, E., M.~Dimech, R.~Caruana, M.~Darmanin, H.~Raine, A.~Harrison, and
@@ -131,6 +127,15 @@ Caldas~de Castro, Marcia and Burton~H. Singer. (2006). {Controlling the False
   38, 180--208.
   \href{https://doi.org/10.1111/j.0016-7363.2006.00682.x}{\url{https://doi.org/10.1111/j.0016-7363.2006.00682.x}}.
 \bibAnnoteFile{fdr_correction}
+
+\bibitem[{Campos et~al.(2023)Campos, Leitão, Sousa, Gaspar, and
+  Henriques}]{campos_ais_logbook}
+Campos, Aida, Pedro Leitão, Luís Sousa, Patrícia Gaspar, and Victor
+  Henriques. (2023). {Spatial patterns of fishing activity inside the Gorringe
+  bank MPA based on VMS, AIS and e-logbooks data}. \emph{Marine Policy},  147,
+  105356.
+  \href{https://doi.org/10.1016/j.marpol.2022.105356}{\url{https://doi.org/10.1016/j.marpol.2022.105356}}.
+\bibAnnoteFile{campos_ais_logbook}
 
 \bibitem[{Carpentieri et~al.(2021)Carpentieri, Nastasi, Sessa, and
   Srour}]{bycatch_book}
@@ -371,14 +376,6 @@ Hinz, H, L~G Murray, G~I Lambert, J~G Hiddink, and M~J Kaiser. (2013).
   \href{https://doi.org/10.1111/j.1467-2979.2012.00475.x}{\url{https://doi.org/10.1111/j.1467-2979.2012.00475.x}}.
 \bibAnnoteFile{confidentiality}
 
-\bibitem[{{ICCAT}(2018)}]{iccat_mp}
-{ICCAT}. (2018). Draft recommendation by iccat establishing a multi‐annual
-  management plan for bluefin tuna in the eastern atlantic and the
-  mediterranean sea.
-  \href{{https://www.iccat.int/com2018/}}{\url{{https://www.iccat.int/com2018/}}}
-   \urlaccessed\ 2025-06-02.
-\bibAnnoteFile{iccat_mp}
-
 \bibitem[{{ICCAT}(2022)}]{iccat_climate_change}
 {ICCAT}. (2022). {Resolution by ICCAT on Climate Change}.
   \href{https://www.iccat.int/Documents/Recs/compendiopdf-e/2022-13-e.pdf}{\url{https://www.iccat.int/Documents/Recs/compendiopdf-e/2022-13-e.pdf}}
@@ -426,6 +423,15 @@ James, Mark, Tania Mendo, Esther~L. Jones, Kyla Orr, Ali McKnight, and John
   \href{https://doi.org/10.1016/j.marpol.2018.02.012}{\url{https://doi.org/10.1016/j.marpol.2018.02.012}}.
 \bibAnnoteFile{ais_mpa_designation}
 
+\bibitem[{Jelić~Mrčelić et~al.(2023)Jelić~Mrčelić, Nerlović,
+  Slišković, and Zubak~Čižmek}]{hrv_farms}
+Jelić~Mrčelić, Gorana, Vedrana Nerlović, Merica Slišković, and Ivana
+  Zubak~Čižmek. (2023). An overview of atlantic bluefin tuna farming
+  sustainability in the mediterranean with special regards to the republic of
+  croatia. \emph{Sustainability},  15.
+  \href{https://doi.org/10.3390/su15042976}{\url{https://doi.org/10.3390/su15042976}}.
+\bibAnnoteFile{hrv_farms}
+
 \bibitem[{Kendall and Gibbons(1990)}]{kendall1990rank}
 Kendall, M.~G. and J.~D. Gibbons. (1990). \emph{{Rank Correlation Methods}} 5th
   edition. Oxford University Press, New York.
@@ -458,16 +464,6 @@ Kroodsma, David~A., Juan Mayorga, Timothy Hochberg, Nathan~A. Miller, Kristina
   359, 904--908.
   \href{https://doi.org/10.1126/science.aao5646}{\url{https://doi.org/10.1126/science.aao5646}}.
 \bibAnnoteFile{Kroodsma18}
-
-\bibitem[{Macías~López et~al.(2012)Macías~López, Barcelona, Báez, De~la
-  Serna, and Ortiz~de Urbina}]{mammal_bycatch}
-Macías~López, David, Salvador~García Barcelona, José~Carlos Báez,
-  José~Miguel De~la Serna, and José~María Ortiz~de Urbina. (2012). Marine
-  mammal bycatch in spanish mediterranean large pelagic longline fisheries,
-  with a focus on risso’s dolphin (grampus griseus). \emph{Aquatic Living
-  Resources},  25, 321–331.
-  \href{10.1051/alr/2012038}{\url{10.1051/alr/2012038}}.
-\bibAnnoteFile{mammal_bycatch}
 
 \bibitem[{Maina et~al.(2016)Maina, Kavadas, Katsanevakis, Somarakis, Tserpes,
   and Georgakarakos}]{fishing_grounds_greece}
@@ -577,6 +573,15 @@ Palko, B.~J., G.~L. Beardsley, and W.~J. Richards. (1981). {Synopsis of the
   Oceanic and Atmospheric Administration (NOAA)
   \href{https://www.fao.org/4/ap932e/ap932e.pdf}{\url{https://www.fao.org/4/ap932e/ap932e.pdf}}.
 \bibAnnoteFile{palko1981swordfish}
+
+\bibitem[{Paolo et~al.(2024)Paolo, Kroodsma, Raynor, Hochberg, Davis, Cleary,
+  Marsaglia, Orofino, Thomas, and Halpin}]{paolo24satellite}
+Paolo, Fernando~S., David Kroodsma, Jennifer Raynor, Tim Hochberg, Pete Davis,
+  Jesse Cleary, Luca Marsaglia, Sara Orofino, Christian Thomas, and Patrick
+  Halpin. (2024). Satellite mapping reveals extensive industrial activity at
+  sea. \emph{Nature},  625, 85--91.
+  \href{https://doi.org/10.1038/s41586-023-06825-8}{\url{https://doi.org/10.1038/s41586-023-06825-8}}.
+\bibAnnoteFile{paolo24satellite}
 
 \bibitem[{Papaconstantinou and Farrugio(2000)}]{fisheries_med_2000}
 Papaconstantinou, C. and H.~Farrugio. (2000). {Fisheries in the Mediterranean}.
